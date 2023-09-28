@@ -118,5 +118,29 @@
 
 // const d;  // error
 
-const d = 20;
+// const d = 20;
+
+// reinitialization
+
+// var num = 20;
+
+// var num = 30;
+
+// let num = 10;
+
+// let num = 20;
+
+// const num = 30;
+// const num=40;
+
+// var num=10;
+// num =30;
+// let a = 10;
+// a = 40;
+
+// const PI = 3.14;
+// PI=3;
+
+
+
 
