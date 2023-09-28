@@ -105,7 +105,18 @@
 // const d;
 // const d;
 
-let a;
-{
-    let a;
-}
+// let a;
+// {
+//     let a;
+// }
+
+// initialization
+
+// var a;
+
+// let b;
+
+// const d;  // error
+
+const d = 20;
+
