@@ -41,16 +41,43 @@
 
 // console.log(a);
 
+// function test() {
+//   let a = "Hello";
+
+//   if (true) {
+//     let a = "Hi";
+
+//     console.log(a);
+//   }
+
+//   console.log(a);
+// }
+
+
+
 function test() {
-  let a = "Hello";
-
-  if (true) {
-    let a = "Hi";
-
+    var a = "Hello";
+  
+    if (true) {
+      let a = "Hi";
+  
+      console.log(a);
+    }
+  
     console.log(a);
   }
 
-  console.log(a);
-}
+  function test() {
+    let a = "Hello";
+  
+    if (true) {
+      var a = "Hi";
+  
+      console.log(a);
+    }
+  
+    console.log(a);
+  }
+  
 
 test();
