@@ -53,31 +53,59 @@
 //   console.log(a);
 // }
 
+// function test() {
+//     var a = "Hello";
 
+//     if (true) {
+//       let a = "Hi";
 
-function test() {
-    var a = "Hello";
-  
-    if (true) {
-      let a = "Hi";
-  
-      console.log(a);
-    }
-  
-    console.log(a);
-  }
+//       console.log(a);
+//     }
 
-  function test() {
-    let a = "Hello";
-  
-    if (true) {
-      var a = "Hi";
-  
-      console.log(a);
-    }
-  
-    console.log(a);
-  }
-  
+//     console.log(a);
+//   }
 
-test();
+//   function test() {
+//     let a = "Hello";
+
+//     if (true) {
+//       var a = "Hi";
+
+//       console.log(a);
+//     }
+
+//     console.log(a);
+//   }
+
+// function test() {
+//     var a = "Hello";
+//     let b = "Bye";
+
+//     if (true) {
+//       let a = "Hi";
+//     //   var b = "Good bye";
+
+//       console.log(a);
+//       console.log(b);
+//     }
+
+//     console.log(a);
+//   }
+
+// test();
+
+// declaration
+
+// var a;
+// var a;
+
+// let b;
+// let b;
+
+// const d;
+// const d;
+
+let a;
+{
+    let a;
+}
