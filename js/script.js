@@ -3,7 +3,6 @@
 // start with var vs let vs const
 // we can declare variables using these 3 keywords
 
-
 // console.log(num);
 // var num = 10;
 
@@ -14,7 +13,6 @@
 // it is a certain region where particular variable can be accessed beyond that we can not access
 
 // var is functional scope but let & const is block scope
-
 
 // var a = 5;
 // console.log(a);
@@ -31,15 +29,28 @@
 
 // console.log(a);
 
-{
-    let a = 20;
+// {
+//     let a = 20;
+// }
+
+// console.log(a);
+
+// {
+//     const a = 20;
+// }
+
+// console.log(a);
+
+function test() {
+  let a = "Hello";
+
+  if (true) {
+    let a = "Hi";
+
+    console.log(a);
+  }
+
+  console.log(a);
 }
 
-console.log(a);
-
-{
-    const a = 20;
-}
-
-console.log(a);
-
+test();
