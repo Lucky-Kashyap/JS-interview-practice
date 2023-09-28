@@ -141,6 +141,44 @@
 // const PI = 3.14;
 // PI=3;
 
+// Javascript Execution Context
 
+// Hoisting
 
+// It means moving variables declaration & functions are top of the scope
 
+// console.log(count);
+
+// var count = 30;
+
+// console.log(num);
+
+// let num=10;
+
+// console.log(PI);
+
+// const PI = 3.14;
+
+// let num = 10;
+// var num =20;
+
+// var num = 20;
+
+// let num = 10;
+
+// var is hoisted but let  a & const hoist in TDZ
+
+function abc() {
+  console.log(a, b, c);
+
+  const c = 30;
+  let b = 10;
+  var a = 20;
+}
+
+// abc();
+
+// console.log(count);
+
+let count = 10;
+var count2 = 2;
