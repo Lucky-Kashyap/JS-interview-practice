@@ -16,12 +16,30 @@
 // var is functional scope but let & const is block scope
 
 
-var a = 5;
+// var a = 5;
+// console.log(a);
+
+// console.log(num);
+
+// let num = 20;
+
+// console.log(num);
+
+// {
+//     var a = 20;
+// }
+
+// console.log(a);
+
+{
+    let a = 20;
+}
+
 console.log(a);
 
-console.log(num);
+{
+    const a = 20;
+}
 
-let num = 20;
-
-console.log(num);
+console.log(a);
 
