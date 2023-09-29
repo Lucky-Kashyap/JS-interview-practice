@@ -183,16 +183,22 @@
 // let count = 10;
 // var count2 = 2;
 
-
 // Functions
 
 // what is function declaration
 
+// function square(num){
+//   return num * num;
+// }
 
-function square(num){
+// function expression
+
+// anonymos function which has no name
+
+var square = function (num) {
   return num * num;
-}
+};
 
+let res = square();
 
-
-
+console.log(res);
