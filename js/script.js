@@ -333,6 +333,60 @@
 
 // arrow
 
-const add = (x, y) => console.log(x + y);
+// const add = (x, y) => console.log(x + y);
 
-add(18, 6);
+// add(18, 6);
+
+// arrow function vs regular function
+
+// function square(num){
+//   return num * num;
+// }
+
+// const square = (num)=>{
+//   return num * num;
+// }
+
+// Implicit return keyword
+
+// const square = (num) => num * num;
+
+// arguments obj
+
+// function fn(){
+//   console.log(arguments);
+// }
+
+// fn(1,2,3,4);
+
+// this
+
+// function fn(){
+//   console.log(this);
+// }
+
+// const fun = ()=>console.log(this);
+
+// fn();
+
+// fun();
+
+let user = {
+  name:'Lucky',
+  fun1:()=>{
+    console.log(this);
+    console.log('this value ' + this.name);
+  },
+  fun2(){
+    console.log('this value ' + this.name);
+  }
+};
+
+user.fun1();
+
+user.fun2();
+
+
+
+
+
