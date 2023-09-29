@@ -283,11 +283,36 @@
 
 // functionName();
 
-var x = 10;
+// var x = 10;
 
-var fun = function () {
-  console.log(x);
-  var x = 20;
+// var fun = function () {
+//   console.log(x);
+//   var x = 20;
+// };
+
+// fun();
+
+// params vs arguments
+
+// function square(num) {
+//   // params
+//   console.log(num * num);
+// }
+
+// square(10); // arguments
+
+// function multiply(num1, num2) {
+//   console.log(num1 * num2);
+// }
+
+// var arr = [5, 8];
+
+// multiply(...arr);
+
+const fn = (a,...number,x,y)=>{
+  console.log(x,y);
 };
 
-fun();
+fn(5,6,3,7);
+
+
