@@ -195,10 +195,25 @@
 
 // anonymos function which has no name
 
-var square = function (num) {
+// var square = function (num) {
+//   return num * num;
+// };
+
+// let res = square();
+
+// console.log(res);
+
+// what is first class fucntion
+
+// basically it is variable like function it can be assigned
+// fucntion can be pass ed to another function
+
+function square(num) {
   return num * num;
-};
+}
 
-let res = square();
+function displaySquare(fn) {
+  console.log("Square is " + fn(10));
+}
 
-console.log(res);
+displaySquare(square);
