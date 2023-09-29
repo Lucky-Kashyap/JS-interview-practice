@@ -317,16 +317,22 @@
 
 // callback function
 
-function op(op, x, y) {
-  op(x, y);
-}
+// function op(op, x, y) {
+//   op(x, y);
+// }
 
-function add(x, y) {
-  console.log(x + y);
-}
-function sub(x, y) {
-  console.log(x - y);
-}
+// function add(x, y) {
+//   console.log(x + y);
+// }
+// function sub(x, y) {
+//   console.log(x - y);
+// }
 
-op(add, 10, 20);
-op(sub, 40, 6);
+// op(add, 10, 20);
+// op(sub, 40, 6);
+
+// arrow
+
+const add = (x, y) => console.log(x + y);
+
+add(18, 6);
