@@ -208,12 +208,26 @@
 // basically it is variable like function it can be assigned
 // fucntion can be pass ed to another function
 
-function square(num) {
-  return num * num;
-}
+// function square(num) {
+//   return num * num;
+// }
 
-function displaySquare(fn) {
-  console.log("Square is " + fn(10));
-}
+// function displaySquare(fn) {
+//   console.log("Square is " + fn(10));
+// }
 
-displaySquare(square);
+// displaySquare(square);
+
+// what is IIFE
+
+(function square(num){
+  // return num* num;
+  console.log(num * num);
+})(10);
+
+(function(x){
+  return (function(y){
+    console.log(x);
+  })(2);
+})(1);
+
