@@ -309,10 +309,24 @@
 
 // multiply(...arr);
 
-const fn = (a,...number,x,y)=>{
-  console.log(x,y);
-};
+// const fn = (a,...number,x,y)=>{
+//   console.log(x,y);
+// };
 
-fn(5,6,3,7);
+// fn(5,6,3,7);
 
+// callback function
 
+function op(op, x, y) {
+  op(x, y);
+}
+
+function add(x, y) {
+  console.log(x + y);
+}
+function sub(x, y) {
+  console.log(x - y);
+}
+
+op(add, 10, 20);
+op(sub, 40, 6);
