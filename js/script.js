@@ -168,17 +168,31 @@
 
 // var is hoisted but let  a & const hoist in TDZ
 
-function abc() {
-  console.log(a, b, c);
+// function abc() {
+//   console.log(a, b, c);
 
-  const c = 30;
-  let b = 10;
-  var a = 20;
-}
+//   const c = 30;
+//   let b = 10;
+//   var a = 20;
+// }
 
 // abc();
 
 // console.log(count);
 
-let count = 10;
-var count2 = 2;
+// let count = 10;
+// var count2 = 2;
+
+
+// Functions
+
+// what is function declaration
+
+
+function square(num){
+  return num * num;
+}
+
+
+
+
