@@ -265,11 +265,29 @@
 // var b =20;
 // let b = 10;
 
-
 // output based question
 
-for(var i=0;i<5;i++){
-  setTimeout(function(){
-    console.log(i);
-  },i*1000);
-}
+// for(var i=0;i<5;i++){
+//   setTimeout(function(){
+//     console.log(i);
+//   },i*1000);
+// }
+
+// Hoisting
+
+// functionName();
+
+// function functionName(){
+//   console.log('work at tech');
+// }
+
+// functionName();
+
+var x = 10;
+
+var fun = function () {
+  console.log(x);
+  var x = 20;
+};
+
+fun();
