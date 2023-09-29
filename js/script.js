@@ -233,30 +233,30 @@
 
 // function scope
 
-var num1 = 20,
-  num2 = 3,
-  name = "Coder";
+// var num1 = 20,
+//   num2 = 3,
+//   name = "Coder";
 
-function multiply() {
-  return num1 * num2;
-}
+// function multiply() {
+//   return num1 * num2;
+// }
 
-multiply(); // return s 60
+// multiply(); // return s 60
 
 // A nested function example
 
-function getScore() {
-  var num1 = 2,
-    num2 = 3;
+// function getScore() {
+//   var num1 = 2,
+//     num2 = 3;
 
-  function add() {
-    return name + " scored " + (num1 + num2);
-  }
+//   function add() {
+//     return name + " scored " + (num1 + num2);
+//   }
 
-  return add();
-}
+//   return add();
+// }
 
-getScore();
+// getScore();
 
 // let b = 100;
 
@@ -264,3 +264,12 @@ getScore();
 
 // var b =20;
 // let b = 10;
+
+
+// output based question
+
+for(var i=0;i<5;i++){
+  setTimeout(function(){
+    console.log(i);
+  },i*1000);
+}
