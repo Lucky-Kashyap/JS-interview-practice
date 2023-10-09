@@ -371,22 +371,75 @@
 
 // fun();
 
-let user = {
-  name:'Lucky',
-  fun1:()=>{
-    console.log(this);
-    console.log('this value ' + this.name);
-  },
-  fun2(){
-    console.log('this value ' + this.name);
-  }
-};
+// let user = {
+//   name:'Lucky',
+//   fun1:()=>{
+//     console.log(this);
+//     console.log('this value ' + this.name);
+//   },
+//   fun2(){
+//     console.log('this value ' + this.name);
+//   }
+// };
 
-user.fun1();
+// user.fun1();
 
-user.fun2();
+// user.fun2();
 
+// if else
 
+// if(5 > 4){   // statement
+//   // 'true';
+//   return 'true';
+//   // console.log('true');
+// }
+// else{
+//   'false'
+//   // console.log('false');
+// }
 
+if(5>4) 'true';
 
+// for(let i=0;i<3;i++){   // statement   // we can not store
+//   console.log(i);
+// }
 
+// swicth case statement
+// variable declare bhi statement hai
+
+// let c = 6;
+
+// const res = 5 > 4 ? console.log('true'):console.log('false');  // expression
+
+// const d = 5 > 4;
+// console.log(d);
+
+// console.log(res);
+
+// const arr= [1,2,3,4];
+
+// const b = arr.forEach(el=>console.log(el));
+// console.log(b);
+
+// arr.forEach(console.log);
+
+// function declaration expression
+// const xyz = function abc(){
+//   return 'hello';
+// }
+
+// console.log(xyz);
+
+// const e = xyz();
+
+// console.log(e);
+// const sum = 4 + 5 -2 / 4;
+
+// console.log(sum);
+
+// AND or OR
+
+// const val = 5 || 6;
+// const val = 0 || 3;
+
+// console.log(val);
