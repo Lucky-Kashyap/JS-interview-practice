@@ -114,10 +114,25 @@
 
 // alg alg baar function create hoga
 
-for (
-  let i = 0, getI = () => i, incrementI = () => i++;
-  getI() < 3;
-  incrementI()
-) {
-  console.log(i);
+// for (
+//   let i = 0, getI = () => i, incrementI = () => i++;
+//   getI() < 3;
+//   incrementI()
+// ) {
+//   console.log(i);
+// }
+
+const nums = [1, 2, 3];
+
+// for (const num of nums) {
+//   setTimeout(() => {
+//     console.log(num);
+//   },1000);
+// }
+
+
+for (var num of nums) {
+  setTimeout(() => {
+    console.log(num);
+  },1000);
 }
