@@ -196,12 +196,17 @@
 
 // console.log(name);
 
-
 // function getItems(fruitList,...args){
 //     return [...fruitList,...args];
 // }
 
-
 // const res = getItems(["banana","apple"],"pear","orange")
 
 // console.log(res);
+
+// let c = { greeting: "Hey!" };
+// let d;
+
+// d = c;
+// c.greeting = "Hello";
+// console.log(d.greeting);
