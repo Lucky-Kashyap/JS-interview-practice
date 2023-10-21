@@ -175,23 +175,33 @@
 
 // taking out the specific properties
 
-let user = {
-  name: "Lucky",
-  age: 22,
-  fullName: {
-    first: "Lucky",
-    second: "KAshyap",
-  },
-};
+// let user = {
+//   name: "Lucky",
+//   age: 22,
+//   fullName: {
+//     first: "Lucky",
+//     second: "KAshyap",
+//   },
+// };
 
 // const { name: n, age } = user;
 
-const {
-  fullName: { first },
-} = user;
+// const {
+//   fullName: { first },
+// } = user;
 
 // console.log(n, age);
 
-console.log(first);
+// console.log(first);
 
 // console.log(name);
+
+
+// function getItems(fruitList,...args){
+//     return [...fruitList,...args];
+// }
+
+
+// const res = getItems(["banana","apple"],"pear","orange")
+
+// console.log(res);
