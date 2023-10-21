@@ -115,10 +115,10 @@
 
 // what is JSON.stringify & JSON.parse  ?
 
-const user = {
-  name: "lucky",
-  age: 24,
-};
+// const user = {
+//   name: "lucky",
+//   age: 24,
+// };
 
 // const strObj = JSON.stringify(user);
 
@@ -126,7 +126,6 @@ const user = {
 // localStorage.setItem('test',strObj);   // store obj into local storage
 
 // console.log(JSON.parse(localStorage.getItem('test')));
-
 
 // console.log(strObj);
 
@@ -142,3 +141,11 @@ const user = {
 
 // console.log(user);
 // console.log(JSON.stringify(user));
+
+// console.log([..."Lucky"]);   // spread
+
+// const user = { name: "Lucky", age: 22 };
+
+// const admin = { admin: true, ...user };
+
+// console.log(admin);
