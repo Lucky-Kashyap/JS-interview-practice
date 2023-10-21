@@ -24,11 +24,35 @@
 // console.log(func);   // 5
 
 
-const user= {
-    name:'Lucky',
-    age:23,
-    "Like this repo":true,
-}
+// const user= {
+//     name:'Lucky',
+//     age:23,
+//     "Like this repo":true,
+// }
+
+// console.log(user);
+
+// delete user["Like this repo"];
+
+// console.log(user);
+
+// console.log(user["Like this repo"]);
 
 
-console.log(user);
+
+// const prperty = "firstName";
+// const name = "Lucky";
+
+// const user = {
+//     prperty:name
+// }
+
+// const user = {
+//     [prperty]:name
+// }
+
+
+// console.log(user);
+// console.log(user.firstName);
+
+
