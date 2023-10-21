@@ -15,14 +15,12 @@
 
 // delete is used in case of objects not local variables
 
-
 // const func = (function(a){
 //     delete a;
 //     return a;
 // })(5);
 
 // console.log(func);   // 5
-
 
 // const user= {
 //     name:'Lucky',
@@ -38,8 +36,6 @@
 
 // console.log(user["Like this repo"]);
 
-
-
 // const prperty = "firstName";
 // const name = "Lucky";
 
@@ -51,8 +47,34 @@
 //     [prperty]:name
 // }
 
-
 // console.log(user);
 // console.log(user.firstName);
+
+// const user = {
+//   name: "lucky",
+//   age: 23,
+//   isValid: true,
+// };
+
+// console.log(user);
+
+// for (let key in user) {
+// console.log(key);
+//   console.log(user[key]);
+// }
+
+// for(let item of user){
+//     console.log(item);    // object is not iterable
+
+// }
+
+// const obj = {
+//   a: "one",
+//   b: "two",
+//   a: "three", // overwrite it
+// };
+
+// console.log(obj);
+
 
 
