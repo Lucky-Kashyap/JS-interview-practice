@@ -159,3 +159,39 @@
 // const data = JSON.stringify(settings, ["level", "health"]);   // specifically stringify value
 
 // console.log(data);
+
+// const shape = {
+//   radius: 10,
+//   diameter() {
+//     return this.radius * 2;
+//   },
+//   perimeter: () => 2 * Math.PI * this.radius,
+// };
+
+// console.log(shape.diameter());
+// console.log(shape.perimeter());
+
+// destructuring
+
+// taking out the specific properties
+
+let user = {
+  name: "Lucky",
+  age: 22,
+  fullName: {
+    first: "Lucky",
+    second: "KAshyap",
+  },
+};
+
+// const { name: n, age } = user;
+
+const {
+  fullName: { first },
+} = user;
+
+// console.log(n, age);
+
+console.log(first);
+
+// console.log(name);
