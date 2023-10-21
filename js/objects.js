@@ -149,3 +149,13 @@
 // const admin = { admin: true, ...user };
 
 // console.log(admin);
+
+// const settings = {
+//   username: "lucky",
+//   level: 22,
+//   health: 95,
+// };
+
+// const data = JSON.stringify(settings, ["level", "health"]);   // specifically stringify value
+
+// console.log(data);
