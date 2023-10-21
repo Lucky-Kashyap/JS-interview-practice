@@ -253,3 +253,27 @@
 
 // console.log(personObj1);
 // console.log(personObj2);
+
+// waht is shallow & deep copy
+
+// shallow copy one level        
+// 
+// deep copy nested level
+
+
+let user = {
+    name:"Lucky",
+    age:22,
+};
+
+// this will not clone nested objects
+// const objColne = Object.assign({},user);
+
+// const objColne = JSON.parse(JSON.stringify(user));
+
+const objColne = {...user};
+
+objColne.name = "Arun";
+
+console.log(user);
+console.log(objColne);
