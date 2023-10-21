@@ -76,5 +76,26 @@
 
 // console.log(obj);
 
+//  create a fucntion multiplyByTwo(obj) that multiplies all numeric property values of nums by 2
 
+let nums = {
+  a: 100,
+  b: 200,
+  title: "My nums",
+};
 
+// console.log(nums);
+
+function multiplyByTwo(nums) {
+  for (key in nums) {
+    if (typeof nums[key] === "number") {
+      console.log(nums[key] * 2);
+    }
+  }
+}
+
+// function multiplyByTwo(nums){
+//     console.log(nums*2);
+// }
+
+multiplyByTwo(nums);
