@@ -210,3 +210,46 @@
 // d = c;
 // c.greeting = "Hello";
 // console.log(d.greeting);
+
+// console.log({ a: 1 } == { a: 1 });
+// console.log({ a: 1 } === { a: 1 });
+
+// let person = { name: "Lucky" };
+
+// const numbers = [person];
+
+// const numbers = person;
+
+// person = null;
+// person.name = null;
+// console.log(numbers);
+
+// const value = {number : 10};
+
+// const multiply = (x = {...value})=>{
+//     console.log((x.number *= 2));
+// }
+
+// multiply();
+// multiply();
+// multiply(value);
+// multiply(value);
+
+// function changeAgeAndReference(person) {
+//   person.age = 25;
+//   person = {
+//     name: "John",
+//     age: 50,
+//   };
+
+//   return person;
+// }
+
+// const personObj1 = {
+//   name: "Alex",
+//   age: 30,
+// };
+// const personObj2 = changeAgeAndReference(personObj1);
+
+// console.log(personObj1);
+// console.log(personObj2);
