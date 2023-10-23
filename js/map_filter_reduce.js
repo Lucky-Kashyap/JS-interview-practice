@@ -124,17 +124,50 @@
 
 // reduce
 
-const nums = [1, 2, 3, 4, 5];
+// const nums = [1, 2, 3, 4, 5];
 
-Array.prototype.myReduce = function (callback) {
-  let temp=0;
+// Array.prototype.myReduce = function (callback) {
+//   let temp=0;
 
-  for (let i = 0; i < this.length; i++) {
-    temp += callback(0,this[i]);
-  }
-  return temp;
-};
+//   for (let i = 0; i < this.length; i++) {
+//     temp += callback(0,this[i]);
+//   }
+//   return temp;
+// };
 
-const sum = nums.myReduce((acc, num) => acc + num);
+// const sum = nums.myReduce((acc, num) => acc + num);
 
-console.log(sum);
+// console.log(sum);
+
+// Array.prototype.myReduce = function (cb, initialValue) {
+//   let accumulator = initialValue;
+
+//   for (let i = 0; i < this.length; i++) {
+//     accumulator = accumulator ? cb(accumulator, this[i], i, this) : this[i];
+//   }
+
+//   return accumulator;
+// };
+
+// const nums = [1,2,3,4,5,6];
+
+// const result = nums.myReduce((acc,num)=>{
+//     return acc += num;
+// },10);
+
+// console.log(result);
+
+// map vs forEach
+
+// const arr = [2, 5, 3, 6];
+
+// const newArr = arr.map((num) => num + 2);
+
+// const newForEachArr = arr.forEach((num, i) => {
+//   arr[i] = num + 4;
+// });
+
+// console.log(newArr);
+
+// console.log(arr);
+// console.log(newForEachArr);
