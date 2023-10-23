@@ -171,3 +171,67 @@
 
 // console.log(arr);
 // console.log(newForEachArr);
+
+// Return only name of students in Capital
+
+let students = [
+  {
+    name: "Lucky",
+    rollNumber: 31,
+    marks: 80,
+  },
+  {
+    name: "Jenny",
+    rollNumber: 15,
+    marks: 79,
+  },
+  {
+    name: "Kaushal",
+    rollNumber: 16,
+    marks: 35,
+  },
+  {
+    name: "Dilpreet",
+    rollNumber: 7,
+    marks: 85,
+  },
+  {
+    name: "aushal",
+    rollNumber: 16,
+    marks: 35,
+  },
+  {
+    name: "Dilpreet",
+    rollNumber: 7,
+    marks: 69,
+  },
+];
+
+// let names = [];
+
+// for(let i=0;i<students.length;i++){
+//     names.push(students[i].name.toUpperCase());
+// }
+
+// console.log(names);
+
+// const filterName = students.filter((st)=> st.name);
+
+// const filterName = students
+//   .map((st) => st.name)
+//   .filter((name) => {
+//     return name.toUpperCase();
+//   });
+
+// console.log(filterName);
+
+// const capitalName = students
+//   .map((st) => st.name.toUpperCase())
+  
+
+//   console.log(capitalName);
+
+// return only details of those who scored more than 60 marks
+
+
+// const score = 
