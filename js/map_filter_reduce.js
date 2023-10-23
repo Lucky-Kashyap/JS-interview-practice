@@ -252,4 +252,9 @@ let students = [
 
 // console.log(sumOfMarks);
 
+// return only names of students who scored more than 60
+
+const nameScore = students.filter(st=> st.marks>60 ).map(st=>st.name);
+
+console.log(nameScore);
 
