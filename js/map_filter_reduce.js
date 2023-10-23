@@ -36,27 +36,88 @@
 
 // console.log(sum);
 
-
 // polyfill
 
-const nums = [1,2,3,4,5];
+// const nums = [1,2,3,4,5];
 
-function mapPoyfill(callback,nums){
-    let arr=[];
-    for(let i=0;i<nums.length;i++){
-        arr.push(callback(nums[i]));
+// function mapPoyfill(callback,nums){
+//     let arr=[];
+//     for(let i=0;i<nums.length;i++){
+//         arr.push(callback(nums[i]));
+//     }
+
+//     return arr;
+
+// }
+
+// function multiplyThree(num){
+//     return num*3;
+// }
+
+// const newArr = mapPoyfill(multiplyThree,nums);
+
+// console.log(newArr);
+
+// const nums = [1,2,3,4,5];
+
+// Array.map((num,i,arr)=>{
+
+// });
+
+// Array.prototype.myMap = function(callback){
+//     let temp = [];
+
+//     for(let i=0;i<this.length;i++){
+//         temp.push(callback(this[i],i,this));
+//     }
+
+//     return temp;
+// }
+
+// const multiplyThree = nums.myMap((num,i,arr)=>{
+//     return num * 3;
+// });
+
+// console.log(multiplyThree);
+
+// filter
+
+// const nums = [1, 2,12, 3, 4, 5];
+
+// function filterPoyfill(callback, nums) {
+//   const newArr = [];
+
+//   for (let i = 0; i < nums.length; i++) {
+//     // newArr.push(callback(nums[i]));
+//     if (callback(nums[i])) {
+//       newArr.push(nums[i]);
+//     }
+//   }
+
+//   return newArr;
+// }
+
+// function moreThanTwo(num) {
+//   return num > 2;
+// }
+
+// const filterThanTwo = filterPoyfill(moreThanTwo, nums);
+
+// console.log(filterThanTwo);
+
+const nums = [1, 2, 3, 4, 5];
+
+Array.prototype.myFilter = function (callback) {
+  let temp = [];
+
+  for (let i = 0; i < this.length; i++) {
+    if (callback(this[i], i, this)) {
+      temp.push(this[i]);
     }
+  }
+  return temp;
+};
 
-    return arr;
-    
-}
+const moreThanTwo = nums.myFilter((num) => num > 2);
 
-function multiplyThree(num){
-    return num*3;
-}
-
-const newArr = mapPoyfill(multiplyThree,nums);
-
-console.log(newArr);
-
-
+console.log(moreThanTwo);
