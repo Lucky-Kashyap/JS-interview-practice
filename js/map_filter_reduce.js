@@ -241,9 +241,15 @@ let students = [
 
 // more than 60 marks & rollNumber greater than 15
 
-const score = students.filter(st=>st.marks>60 && st.rollNumber>15);
+// const score = students.filter(st=>st.marks>60 && st.rollNumber>15);
 
 
-console.log(score);
+// console.log(score);
+
+// const sumOfMarks = students.map(st=>st.marks).reduce((acc,st)=>{
+//     return acc += st;
+// });
+
+// console.log(sumOfMarks);
 
 
