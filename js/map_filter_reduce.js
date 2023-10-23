@@ -227,11 +227,13 @@ let students = [
 
 // const capitalName = students
 //   .map((st) => st.name.toUpperCase())
-  
 
 //   console.log(capitalName);
 
 // return only details of those who scored more than 60 marks
 
+// const score = students.filter(st=>st.marks>60);
 
-// const score = 
+const score = students.map((st) => st.marks).filter((marks) => marks > 60);
+
+console.log(score);
