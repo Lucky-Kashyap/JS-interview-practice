@@ -105,19 +105,36 @@
 
 // console.log(filterThanTwo);
 
+// const nums = [1, 2, 3, 4, 5];
+
+// Array.prototype.myFilter = function (callback) {
+//   let temp = [];
+
+//   for (let i = 0; i < this.length; i++) {
+//     if (callback(this[i], i, this)) {
+//       temp.push(this[i]);
+//     }
+//   }
+//   return temp;
+// };
+
+// const moreThanTwo = nums.myFilter((num) => num > 2);
+
+// console.log(moreThanTwo);
+
+// reduce
+
 const nums = [1, 2, 3, 4, 5];
 
-Array.prototype.myFilter = function (callback) {
-  let temp = [];
+Array.prototype.myReduce = function (callback) {
+  let temp=0;
 
   for (let i = 0; i < this.length; i++) {
-    if (callback(this[i], i, this)) {
-      temp.push(this[i]);
-    }
+    temp += callback(0,this[i]);
   }
   return temp;
 };
 
-const moreThanTwo = nums.myFilter((num) => num > 2);
+const sum = nums.myReduce((acc, num) => acc + num);
 
-console.log(moreThanTwo);
+console.log(sum);
