@@ -238,11 +238,9 @@ let students = [
 
 // console.log(score);
 
-
 // more than 60 marks & rollNumber greater than 15
 
 // const score = students.filter(st=>st.marks>60 && st.rollNumber>15);
-
 
 // console.log(score);
 
@@ -254,7 +252,22 @@ let students = [
 
 // return only names of students who scored more than 60
 
-const nameScore = students.filter(st=> st.marks>60 ).map(st=>st.name);
+// const nameScore = students.filter(st=> st.marks>60 ).map(st=>st.name);
 
-console.log(nameScore);
+// console.log(nameScore);
 
+// return total marks for students with marks greater than 60 after 20
+// marks have been added to those who scored less than 60
+
+const totalMarks = students
+  .map((st) => {
+    if (st.marks < 60) {
+      st.marks += 20;
+    }
+
+    return st;
+  })
+  .filter((st) => st.marks > 60)
+  .reduce((acc, curr) => acc + curr.marks, 0);
+
+console.log(totalMarks);
