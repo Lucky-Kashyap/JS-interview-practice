@@ -198,7 +198,7 @@ let students = [
   {
     name: "aushal",
     rollNumber: 16,
-    marks: 35,
+    marks: 85,
   },
   {
     name: "Dilpreet",
@@ -234,6 +234,16 @@ let students = [
 
 // const score = students.filter(st=>st.marks>60);
 
-const score = students.map((st) => st.marks).filter((marks) => marks > 60);
+// const score = students.map((st) => st.marks).filter((marks) => marks > 60);
+
+// console.log(score);
+
+
+// more than 60 marks & rollNumber greater than 15
+
+const score = students.filter(st=>st.marks>60 && st.rollNumber>15);
+
 
 console.log(score);
+
+
