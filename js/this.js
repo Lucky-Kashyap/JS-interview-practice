@@ -27,7 +27,6 @@
 
 // console.log(result);
 
-
 // this.a = 10;
 
 // function getParam(){
@@ -57,7 +56,6 @@
 
 // user.getDetailsArrow();
 
-
 // let user = {
 //     name:'Lucky',
 //     age:23,
@@ -69,7 +67,6 @@
 
 // user.getDetails();
 
-
 // class user{
 //     constructor(n){
 //         this.name = n;
@@ -80,19 +77,46 @@
 //     }
 // }
 
-
 // const User = new user('Lucky');
 
 // console.log(User);
 
 // User.getName();
 
+// const user = {
+// firstName :'lucky',
+//     getName(){
+//         const firstName = "Divyanshu";
+//         return this.firstName;
+//     }
+// };
+
+// console.log(user.getName());
+
+// function makeUser() {
+//   return {
+//     name: "John",
+//     // ref: this,
+//     ref(){
+//         return this;
+//     }
+//   };
+// }
+
+// let user = makeUser();
+
+// console.log(user.ref.name);
+// console.log(user.ref().name);
+
+
 const user = {
-    firstName :'lucky',
-    getName(){
-        const firstName = "Divyanshu";
-        return this.firstName;
+    name:'Lucky kashyap',
+    logMessage(){
+        console.log(this.name);
     }
 };
 
-console.log(user.getName());
+// setTimeout(user.logMessage(),1000);
+setTimeout(user.logMessage,1000);
+
+// user.logMessage();
