@@ -109,14 +109,29 @@
 // console.log(user.ref().name);
 
 
-const user = {
-    name:'Lucky kashyap',
-    logMessage(){
-        console.log(this.name);
-    }
-};
+// const user = {
+//     name:'Lucky kashyap',
+//     logMessage(){
+//         console.log(this.name);
+//     }
+// };
 
 // setTimeout(user.logMessage(),1000);
-setTimeout(user.logMessage,1000);
+// setTimeout(user.logMessage,1000);
 
 // user.logMessage();
+
+
+const user = {
+    name:'Lucky',
+    greet(){
+        return `Hello, ${this.name}!`;
+    },
+    farewell:()=>{
+        return `Goodbye, ${this.name}!`;
+    },
+};
+
+console.log(user.greet());
+
+console.log(user.farewell());
