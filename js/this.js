@@ -122,16 +122,62 @@
 // user.logMessage();
 
 
-const user = {
-    name:'Lucky',
-    greet(){
-        return `Hello, ${this.name}!`;
-    },
-    farewell:()=>{
-        return `Goodbye, ${this.name}!`;
+// const user = {
+//     name:'Lucky',
+//     greet(){
+//         return `Hello, ${this.name}!`;
+//     },
+//     farewell:()=>{
+//         return `Goodbye, ${this.name}!`;
+//     },
+// };
+
+// console.log(user.greet());
+
+// console.log(user.farewell());
+
+
+// let calculator = {
+//     a:10,
+//     b:20,
+//     read(){
+//         console.log(this.a,this.b);
+//         // return this.a;
+//     },
+//     sum(){
+//         return this.a + this.b;
+//     },
+//     mul(){
+//         return this.a * this.b;
+//     }
+// };
+
+
+// calculator.read();
+// console.log(calculator.read());
+// console.log(calculator.sum());
+// console.log(calculator.mul());
+
+
+var length = 4;
+
+function callback(){
+    console.log(this.length);
+}
+
+// const object = {
+//     length : 5,
+//     method(fn){
+//         fn();
+//     },
+// };
+
+const object = {
+    length : 5,
+    method(){
+        arguments[0]();
     },
 };
 
-console.log(user.greet());
 
-console.log(user.farewell());
+object.method(callback,2,3);
