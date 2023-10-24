@@ -70,19 +70,29 @@
 // user.getDetails();
 
 
-class user{
-    constructor(n){
-        this.name = n;
-    }
+// class user{
+//     constructor(n){
+//         this.name = n;
+//     }
 
-    getName(){
-        console.log(this.name);
-    }
-}
+//     getName(){
+//         console.log(this.name);
+//     }
+// }
 
 
-const User = new user('Lucky');
+// const User = new user('Lucky');
 
 // console.log(User);
 
-User.getName();
+// User.getName();
+
+const user = {
+    firstName :'lucky',
+    getName(){
+        const firstName = "Divyanshu";
+        return this.firstName;
+    }
+};
+
+console.log(user.getName());
