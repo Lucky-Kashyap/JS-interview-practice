@@ -108,7 +108,6 @@
 // console.log(user.ref.name);
 // console.log(user.ref().name);
 
-
 // const user = {
 //     name:'Lucky kashyap',
 //     logMessage(){
@@ -120,7 +119,6 @@
 // setTimeout(user.logMessage,1000);
 
 // user.logMessage();
-
 
 // const user = {
 //     name:'Lucky',
@@ -135,7 +133,6 @@
 // console.log(user.greet());
 
 // console.log(user.farewell());
-
 
 // let calculator = {
 //     a:10,
@@ -152,18 +149,16 @@
 //     }
 // };
 
-
 // calculator.read();
 // console.log(calculator.read());
 // console.log(calculator.sum());
 // console.log(calculator.mul());
 
+// var length = 4;
 
-var length = 4;
-
-function callback(){
-    console.log(this.length);
-}
+// function callback(){
+//     console.log(this.length);
+// }
 
 // const object = {
 //     length : 5,
@@ -172,12 +167,32 @@ function callback(){
 //     },
 // };
 
-const object = {
-    length : 5,
-    method(){
-        arguments[0]();
-    },
+// const object = {
+//     length : 5,
+//     method(){
+//         console.log(arguments);
+//         arguments[0]();
+//     },
+// };
+
+// object.method(callback,2,3);
+
+const calc = {
+  total: 0,
+  add(a) {
+    this.total = this.total + a;
+    return this;
+  },
+  subtract(a) {
+    this.total = this.total - a;
+    return this;
+  },
+  multiply(a) {
+    this.total = this.total * a;
+    return this;
+  },
 };
 
+const result = calc.add(10).multiply(5).subtract(30).add(10);
 
-object.method(callback,2,3);
+console.log(result.total);
