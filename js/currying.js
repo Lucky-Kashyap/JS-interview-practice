@@ -59,16 +59,30 @@
 // console.log(evaluate("divide")(4)(2));
 // console.log(evaluate("substract")(4)(2));
 
-
-
 // infinite currying
 
-function add(a){
-    return function(b){
-        // return a+b;
-        if(b) return add(a+b);
-        return a;
-    }
+// function add(a){
+//     return function(b){
+//         // return a+b;
+//         if(b) return add(a+b);
+//         return a;
+//     }
+// }
+
+// console.log(add(5)(2)(10)(23)(24)());
+
+// partial app vs currying
+
+function sum(a) {
+  return function (b, c) {
+    return a + b + c;
+  };
 }
 
-console.log(add(5)(2)(10)(23)(24)());
+const x = sum(10);
+console.log(x(5, 6));
+console.log(x(3, 2));
+
+// or
+
+console.log(sum(20)(1, 4));
