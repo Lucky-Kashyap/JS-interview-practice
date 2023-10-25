@@ -73,16 +73,30 @@
 
 // partial app vs currying
 
-function sum(a) {
-  return function (b, c) {
-    return a + b + c;
-  };
-}
+// function sum(a) {
+//   return function (b, c) {
+//     return a + b + c;
+//   };
+// }
 
-const x = sum(10);
-console.log(x(5, 6));
-console.log(x(3, 2));
+// const x = sum(10);
+// console.log(x(5, 6));
+// console.log(x(3, 2));
 
 // or
 
-console.log(sum(20)(1, 4));
+// console.log(sum(20)(1, 4));
+
+// DOM
+
+function updateElementText (id){
+    return function(content){
+        document.querySelector('#' + id).textContent = content;
+
+
+    };
+};
+
+const updateHeader = updateElementText("Heading");
+
+updateHeader("follow my github profile");
