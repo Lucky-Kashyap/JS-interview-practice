@@ -89,14 +89,37 @@
 
 // DOM
 
-function updateElementText (id){
-    return function(content){
-        document.querySelector('#' + id).textContent = content;
+// function updateElementText (id){
+//     return function(content){
+//         document.querySelector('#' + id).textContent = content;
 
 
-    };
-};
+//     };
+// };
 
-const updateHeader = updateElementText("Heading");
+// const updateHeader = updateElementText("Heading");
 
-updateHeader("follow my github profile");
+// updateHeader("follow my github profile");
+
+// curry()
+
+
+function curry(func){
+    return function curriedFunc(...args){
+        if(args.length >= func.length){
+            return func(...args)
+        }
+        else{
+            return function (...next){
+                return curriedFunc(...args,...next);
+            }
+        }
+    }
+}
+
+
+const sum= (a,b,c)=> a+b+c;
+
+const totalSum = curry(sum);
+
+console.log(totalSum(1)(2)(3));
