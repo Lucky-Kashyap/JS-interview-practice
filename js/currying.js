@@ -41,20 +41,34 @@
 // evaluate('divide')(4)(2) => 2
 // evaluate('subtract')(4)(2) => 2
 
-function evaluate(op) {
-  return function (a) {
-    return function (b) {
-      if (op === "sum") return a + b;
-      else if (op === "multiply") return a * b;
-      else if (op === "divide") return a / b;
-      else if (op === "substract") return a - b;
-      else return "Invalid operation";
-    };
-  };
+// function evaluate(op) {
+//   return function (a) {
+//     return function (b) {
+//       if (op === "sum") return a + b;
+//       else if (op === "multiply") return a * b;
+//       else if (op === "divide") return a / b;
+//       else if (op === "substract") return a - b;
+//       else return "Invalid operation";
+//     };
+//   };
+// }
+
+// console.log(evaluate("sum")(4)(2));
+
+// console.log(evaluate("multiply")(4)(2));
+// console.log(evaluate("divide")(4)(2));
+// console.log(evaluate("substract")(4)(2));
+
+
+
+// infinite currying
+
+function add(a){
+    return function(b){
+        // return a+b;
+        if(b) return add(a+b);
+        return a;
+    }
 }
 
-console.log(evaluate("sum")(4)(2));
-
-console.log(evaluate("multiply")(4)(2));
-console.log(evaluate("divide")(4)(2));
-console.log(evaluate("substract")(4)(2));
+console.log(add(5)(2)(10)(23)(24)());
