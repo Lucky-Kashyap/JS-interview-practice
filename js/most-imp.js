@@ -64,8 +64,6 @@
 // Name = 'mohan'
 // console.log(Name)
 
-
-
 //typeof operator
 // defenition :- Typeof in JavaScript is an operator used for type checking and returns the data type of the operand passed to it. The operand can be any variable, function, or object whose type you want to find out using the typeof operator.
 
@@ -82,7 +80,6 @@
 
 // console.log(typeof 'string');
 
-
 // == and ===
 // defenition :- Both are comparison operators. The difference between both the operators is that “==” is used to compare values whereas, “ === “ is used to compare both values and types.
 
@@ -93,27 +90,37 @@
 
 // console.log(number1 === number2) // ===check the values and type as well
 
-
-
 // Spread Operator
 // defenition :- The JavaScript spread operator ( ... ) allows us to quickly copy all or part of an existing array or object into another array or object.
 
-const person1 = {
-    Name : 'suman',
-    age: 23,
-    gmail:'suman@gmal.com',
-    address:'indore',
-    country:'india'
-}
+// const person1 = {
+//     Name : 'suman',
+//     age: 23,
+//     gmail:'suman@gmal.com',
+//     address:'indore',
+//     country:'india'
+// }
 
-const person2 = {...person1, Name:'ram',age:200}
+// const person2 = {...person1, Name:'ram',age:200}
+
+// console.log("this is person 2 = ",person2)
+
+// const arr1 = [10,20,30];
+
+// const arr2 = [...arr1,40,50,60];
+// console.log(arr1)
+// console.log(arr2)
 
 
-console.log("this is person 2 = ",person2)
+//call by value
 
+// const number = (x,y) =>{
+    // x = 100;
+    // y = 200;
+// }
 
-const arr1 = [10,20,30];
-
-const arr2 = [...arr1,40,50,60];
-console.log(arr1)
-console.log(arr2)
+// const a = 10;
+// const b = 20;
+// console.log("Before calling function "+a+" "+b);
+// number(a,b);
+// console.log("After calling function "+a+" "+b);
