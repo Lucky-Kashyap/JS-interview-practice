@@ -472,16 +472,31 @@
 
 // console.log(response());
 
-
 // currying
 // defenition :- Currying is an advanced technique to transform a function of arguments n, to n functions of one or fewer arguments.
 
-function calculate(a){
-    return function(b){
-        return function(c){
-            return a+b*c;
-        }
-    }
+// function calculate(a){
+//     return function(b){
+//         return function(c){
+//             return a+b*c;
+//         }
+//     }
+// }
+
+// console.log(calculate(10)(20)(30))
+
+//Closures in JavaScript.
+// defenition :- Closures are an ability of a function to remember the variables and functions that are declared in its outer scope.
+
+function random() {
+  let obj = {
+    name: "suman",
+    age: 23,
+  };
+  return function () {
+    console.log(obj.name);
+  };
 }
 
-console.log(calculate(10)(20)(30))
+const response = random();
+response();
