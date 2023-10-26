@@ -63,3 +63,18 @@
 // print();
 // Name = 'mohan'
 // console.log(Name)
+
+
+
+//typeof operator
+// defenition :- Typeof in JavaScript is an operator used for type checking and returns the data type of the operand passed to it. The operand can be any variable, function, or object whose type you want to find out using the typeof operator.
+
+// const suman = true;
+
+// console.log(typeof(suman))
+
+// const number1 = 10;
+// const number2 = 10;
+
+
+
