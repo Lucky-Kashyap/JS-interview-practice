@@ -124,7 +124,6 @@
 // number(a,b);
 // console.log("After calling function "+a+" "+b);
 
-
 //call by reference
 
 // con/st callByReference = (obj) =>{
@@ -144,6 +143,33 @@
 // selfInvoking function
 // defenition :- A self-invoking function is a JavaScript function that executes immediately after it has been defined. This is done by wrapping the function in parentheses and then immediately calling it.
 
-(function(){
-    console.log("This is self Invoking function");
-})();
+// (function(){
+//     console.log("This is self Invoking function");
+// })();
+
+
+
+
+
+//callbacks
+// defenition :- A JavaScript callback is a function which is to be executed after another function has finished execution. A more formal definition would be - Any function that is passed as an argument to another function so that it can be executed in that other function is called as a callback function.
+
+function greet(name,callback){
+    console.log("Hello Mr "+name);
+    callback();
+}
+
+function hello(){
+    console.log("This is callback function 1");
+}
+function hello2(){
+    console.log("This is callback function 2");
+}
+
+greet('ram',hello)
+
+// app = 100
+// friend = 100 (udhar diya)
+
+// paisa lauta dega
+// paisa nhi dega
