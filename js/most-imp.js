@@ -147,29 +147,45 @@
 //     console.log("This is self Invoking function");
 // })();
 
-
-
-
-
 //callbacks
 // defenition :- A JavaScript callback is a function which is to be executed after another function has finished execution. A more formal definition would be - Any function that is passed as an argument to another function so that it can be executed in that other function is called as a callback function.
 
-function greet(name,callback){
-    console.log("Hello Mr "+name);
-    callback();
-}
+// function greet(name,callback){
+//     console.log("Hello Mr "+name);
+//     callback();
+// }
 
-function hello(){
-    console.log("This is callback function 1");
-}
-function hello2(){
-    console.log("This is callback function 2");
-}
+// function hello(){
+//     console.log("This is callback function 1");
+// }
+// function hello2(){
+//     console.log("This is callback function 2");
+// }
 
-greet('ram',hello)
+// greet('ram',hello)
 
 // app = 100
 // friend = 100 (udhar diya)
 
 // paisa lauta dega
 // paisa nhi dega
+
+// promises
+//defenition :- A promise in JavaScript is an object that represents the eventual completion of an asynchronous operation and its resulting value. It is used to handle asynchronous operations in a more predictable way.
+
+// promise has three stage
+
+// 1.) Pending
+// 2.) Fulfilled -> .then  [resolve]
+// 3.) Reject   -> .catch  [reject]
+
+let p = new Promise((resolve,reject)=>{
+
+    let number = "30"
+    if(number === 30){
+      resolve('This is a number')
+    }else{
+        reject('This is not a number');
+    }
+})
+p.then((msg)=>console.log(msg)).catch((err)=>console.log(err))
