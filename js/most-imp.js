@@ -488,15 +488,22 @@
 //Closures in JavaScript.
 // defenition :- Closures are an ability of a function to remember the variables and functions that are declared in its outer scope.
 
-function random() {
-  let obj = {
-    name: "suman",
-    age: 23,
-  };
-  return function () {
-    console.log(obj.name);
-  };
-}
+// function random() {
+//   let obj = {
+//     name: "suman",
+//     age: 23,
+//   };
+//   return function () {
+//     console.log(obj.name);
+//   };
+// }
 
-const response = random();
-response();
+// const response = random();
+// response();
+
+"use strict"
+
+// let empname = 'suman'
+empname = 'suman';
+
+console.log(empname)
