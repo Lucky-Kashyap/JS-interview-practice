@@ -111,12 +111,11 @@
 // console.log(arr1)
 // console.log(arr2)
 
-
 //call by value
 
 // const number = (x,y) =>{
-    // x = 100;
-    // y = 200;
+// x = 100;
+// y = 200;
 // }
 
 // const a = 10;
@@ -124,3 +123,20 @@
 // console.log("Before calling function "+a+" "+b);
 // number(a,b);
 // console.log("After calling function "+a+" "+b);
+
+
+//call by reference
+
+const callByReference = (obj) =>{
+    obj.name = 'suman';
+    obj.age = 500
+}
+
+const obj = {
+ name : 'ram',
+age:23
+}
+
+console.log("Before calling a function ",obj.name,obj.age)
+callByReference(obj)
+console.log("After calling a function ",obj.name,obj.age)
