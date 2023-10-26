@@ -333,7 +333,6 @@
 //     console.log('sum fucntion');
 // }
 
-
 // not with arrow
 
 // sum();
@@ -341,4 +340,27 @@
 // const sum = ()=>console.log('sum');
 
 // sum();
+
+//Coercion in javascript.
+// defeniton :-  Implicit type coercion in javascript is the automatic conversion of value from one data type to another. It takes place when the operands of an expression are of different data types.
+
+// string coercion
+// let x = 3;
+// let y = "5";
+
+// console.log(x+y) // string coercion
+// console.log(x-y) // number coercion
+
+//NaN property in JavaScript?
+// defenition :- isNaN() property represents the “Not-a-Number” value. It indicates a value that is not a legal number.
+
+//typeof of NaN will return a Number.
+
+// isNaN() // Not a Number
+
+console.log(isNaN("10")); // false
+console.log(isNaN(10)); // false
+console.log(isNaN(undefined)); // true
+console.log(isNaN(true)); // false
+
 
