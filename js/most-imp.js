@@ -358,9 +358,29 @@
 
 // isNaN() // Not a Number
 
-console.log(isNaN("10")); // false
-console.log(isNaN(10)); // false
-console.log(isNaN(undefined)); // true
-console.log(isNaN(true)); // false
+// console.log(isNaN("10")); // false
+// console.log(isNaN(10)); // false
+// console.log(isNaN(undefined)); // true
+// console.log(isNaN(true)); // false
 
+// Higher Order Functions in javascript.
+// defenition :- Functions that operate on other functions, either by taking them as arguments or by returning them, are called higher-order functions.
 
+// function higherOrderFun(suman){
+//     console.log("Higher order Function")
+//     suman();
+// }
+
+// const print = () =>console.log("Interiew preparation")
+
+// higherOrderFun(print)
+
+const higherOrderFun = () => {
+  return function () {
+    console.log("Returning a brand new Function");
+  };
+};
+
+const respose = higherOrderFun();
+
+respose();
