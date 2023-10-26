@@ -190,8 +190,6 @@
 // })
 // p.then((msg)=>console.log(msg)).catch((err)=>console.log(err))
 
-
-
 //callback hell
 
 // const userLeft = true;
@@ -212,4 +210,27 @@
 // }
 // watchTutorial((msg)=>console.log(msg),(err)=>console.log(err))
 
+// callback change to promises
 
+const userLeft = null;
+const watchingAdd = null;
+
+function watchTutorial() {
+  return new Promise((resolve, reject) => {
+    if (userLeft) {
+      reject({
+        satus: "user has been left",
+      });
+    } else if (watchingAdd) {
+      reject({
+        satus: "Watching add right now",
+      });
+    } else {
+      resolve("resolve prmise..");
+    }
+  });
+}
+
+watchTutorial()
+  .then((msg) => console.log(msg))
+  .catch((err) => console.log(err));
