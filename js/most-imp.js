@@ -235,7 +235,6 @@
 //   .then((msg) => console.log(msg))
 //   .catch((err) => console.log(err));
 
-
 // const fetchDataAPIOne = new Promise((resolve,reject)=>{
 //     setTimeout(() => {
 //         resolve('Fetching Data from API 1')
@@ -264,27 +263,26 @@
 //     fetchDataAPIThree,
 // ]).then((suman)=>console.log(suman))
 
-
 // async await
 // defenition :- Use of async and await enables the use of ordinary try / catch blocks around asynchronous code. Note: The await keyword is only valid inside async functions within regular JavaScript code. If you use it outside of an async function's body, you will get a SyntaxError .
 
-function otpVarify(otp) {
-    return new Promise((resolve, reject) => {
-        console.log('varifying otp...')
-        if (otp === 1234) {
-            resolve('Welcome to Our Website')
-        } else {
-            reject('otp is not vailid')
-        }
-    })
-}
+// function otpVarify(otp) {
+//     return new Promise((resolve, reject) => {
+//         console.log('varifying otp...')
+//         if (otp === 1234) {
+//             resolve('Welcome to Our Website')
+//         } else {
+//             reject('otp is not vailid')
+//         }
+//     })
+// }
 
-function processRequest(respose) {
-    return new Promise((resolve, reject) => {
-        console.log('Processing Response');
-        resolve(respose);
-    })
-}
+// function processRequest(respose) {
+//     return new Promise((resolve, reject) => {
+//         console.log('Processing Response');
+//         resolve(respose);
+//     })
+// }
 
 // const otp = 12345;
 // const otp = 1234;
@@ -294,18 +292,53 @@ function processRequest(respose) {
 //     return processRequest(msg)
 // }).then(msg => console.log(msg)).catch(err => console.log(err))
 
-const otp = 12345
-const otpVarificationFunction = async () =>{
-    try {
-        const respose =  await otpVarify(otp)
-        console.log("OTP received");
-        const processrespose =  await processRequest(respose)
-        console.log(processrespose)
-    } catch (error) {
-        console.log(error)
-    }
- 
-}
+// const otp = 12345
+// const otpVarificationFunction = async () =>{
+//     try {
+//         const respose =  await otpVarify(otp)
+//         console.log("OTP received");
+//         const processrespose =  await processRequest(respose)
+//         console.log(processrespose)
+//     } catch (error) {
+//         console.log(error)
+//     }
 
-otpVarificationFunction();
+// }
+
+// otpVarificationFunction();
+
+//Hoisting in javascript.
+// defenition :- Hoisting is the default behaviour of javascript where all the variable and function declarations are moved on top.
+
+// hoistedVar = 3;
+// console.log(hoistedVar)
+
+// var hoistedVar;
+
+// hoistedFun();
+
+// function hoistedFun(){
+//     x = 34;
+//     console.log(x)
+//     // var x;
+// }
+
+// console.log(a);
+
+// var a;
+
+// sum();
+
+// function sum(){
+//     console.log('sum fucntion');
+// }
+
+
+// not with arrow
+
+// sum();
+
+// const sum = ()=>console.log('sum');
+
+// sum();
 
