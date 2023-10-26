@@ -168,7 +168,7 @@
 // friend = 100 (udhar diya)
 
 // paisa lauta dega
-// paisa nhi dega
+// paisa nhi degaś
 
 // promises
 //defenition :- A promise in JavaScript is an object that represents the eventual completion of an asynchronous operation and its resulting value. It is used to handle asynchronous operations in a more predictable way.
@@ -179,13 +179,37 @@
 // 2.) Fulfilled -> .then  [resolve]
 // 3.) Reject   -> .catch  [reject]
 
-let p = new Promise((resolve,reject)=>{
+// let p = new Promise((resolve,reject)=>{
 
-    let number = "30"
-    if(number === 30){
-      resolve('This is a number')
-    }else{
-        reject('This is not a number');
-    }
-})
-p.then((msg)=>console.log(msg)).catch((err)=>console.log(err))
+//     let number = "30"
+//     if(number === 30){
+//       resolve('This is a number')
+//     }else{
+//         reject('This is not a number');
+//     }
+// })
+// p.then((msg)=>console.log(msg)).catch((err)=>console.log(err))
+
+
+
+//callback hell
+
+// const userLeft = true;
+// const watchingAdd = true;
+
+// function watchTutorial(callback,callbackerror){
+//     if(userLeft){
+//         callbackerror({
+//             satus:'user has been left'
+//         })
+//     }else if(watchingAdd){
+//         callbackerror({
+//             satus:'Watching add right now'
+//         })
+//     }else{
+//         callback('Error in code..')
+//     }
+// }
+// watchTutorial((msg)=>console.log(msg),(err)=>console.log(err))
+
+
