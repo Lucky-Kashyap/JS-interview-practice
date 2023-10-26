@@ -281,31 +281,31 @@ function otpVarify(otp) {
 
 function processRequest(respose) {
     return new Promise((resolve, reject) => {
-        console.log('Processing Response')
-        resolve(respose)
+        console.log('Processing Response');
+        resolve(respose);
     })
 }
 
 // const otp = 12345;
-const otp = 1234;
+// const otp = 1234;
 
-otpVarify(otp).then(msg => {
-    console.log("OTP received");
-    return processRequest(msg)
-}).then(msg => console.log(msg)).catch(err => console.log(err))
+// otpVarify(otp).then(msg => {
+//     console.log("OTP received");
+//     return processRequest(msg)
+// }).then(msg => console.log(msg)).catch(err => console.log(err))
 
-// const otp = 12345
-// const otpVarificationFunction = async () =>{
-//     try {
-//         const respose =  await otpVarify(otp)
-//         console.log("OTP received");
-//         const processrespose =  await processRequest(respose)
-//         console.log(processrespose)
-//     } catch (error) {
-//         console.log(error)
-//     }
+const otp = 12345
+const otpVarificationFunction = async () =>{
+    try {
+        const respose =  await otpVarify(otp)
+        console.log("OTP received");
+        const processrespose =  await processRequest(respose)
+        console.log(processrespose)
+    } catch (error) {
+        console.log(error)
+    }
  
-// }
+}
 
-// otpVarificationFunction();
+otpVarificationFunction();
 
