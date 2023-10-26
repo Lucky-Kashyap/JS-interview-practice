@@ -401,6 +401,7 @@
 // console.log("This is object ", person.getThis());
 
 // call()
+// function borrowing methods
 
 // const person1 = {
 //   name: "ram",
@@ -454,19 +455,33 @@
 // };
 // console.log(person1.sayName.apply(person2, ["indore", "India"]));
 
-// bind()
-const person1 = {
-  name: "ram",
-  age: 200,
-  sayName: function () {
-    return this.name + " " + this.age + " " + this.salary;
-  },
-};
-const person2 = {
-  name: "mohan",
-  age: 500,
-  salary: 1000000,
-};
-const response = person1.sayName.bind(person2);
+// bind()  returns function
+// const person1 = {
+//   name: "ram",
+//   age: 200,
+//   sayName: function () {
+//     return this.name + " " + this.age + " " + this.salary;
+//   },
+// };
+// const person2 = {
+//   name: "mohan",
+//   age: 500,
+//   salary: 1000000,
+// };
+// const response = person1.sayName.bind(person2);
 
-console.log(response());
+// console.log(response());
+
+
+// currying
+// defenition :- Currying is an advanced technique to transform a function of arguments n, to n functions of one or fewer arguments.
+
+function calculate(a){
+    return function(b){
+        return function(c){
+            return a+b*c;
+        }
+    }
+}
+
+console.log(calculate(10)(20)(30))
