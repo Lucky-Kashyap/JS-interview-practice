@@ -375,12 +375,27 @@
 
 // higherOrderFun(print)
 
-const higherOrderFun = () => {
-  return function () {
-    console.log("Returning a brand new Function");
-  };
+// const higherOrderFun = () => {
+//   return function () {
+//     console.log("Returning a brand new Function");
+//   };
+// };
+
+// const respose = higherOrderFun();
+
+// respose();
+
+// this keyword
+// defenition :- In JavaScript, the this keyword always refers to an object. The thing about it is that the object it refers to will vary depending on how and where this is being called.
+
+const person = {
+  empName: "ram",
+  deg: "react developer",
+  age: 200,
+  salary: 100,
+  getThis: function () {
+    return this.empName;
+  },
 };
 
-const respose = higherOrderFun();
-
-respose();
+console.log("This is object ", person.getThis());
