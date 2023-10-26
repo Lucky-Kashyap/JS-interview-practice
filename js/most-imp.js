@@ -388,14 +388,85 @@
 // this keyword
 // defenition :- In JavaScript, the this keyword always refers to an object. The thing about it is that the object it refers to will vary depending on how and where this is being called.
 
-const person = {
-  empName: "ram",
-  deg: "react developer",
+// const person = {
+//   empName: "ram",
+//   deg: "react developer",
+//   age: 200,
+//   salary: 100,
+//   getThis: function () {
+//     return this.empName;
+//   },
+// };
+
+// console.log("This is object ", person.getThis());
+
+// call()
+
+// const person1 = {
+//   name: "ram",
+//   age: 200,
+//   sayName: function (city, country) {
+//     return (
+//       this.name +
+//       " " +
+//       this.age +
+//       " " +
+//       this.salary +
+//       " " +
+//       city +
+//       " " +
+//       country
+//     );
+//   },
+// };
+// const person2 = {
+//   name: "mohan",
+//   age: 500,
+//       salary:1000000
+// };
+// console.log(person1.sayName.call(person2, "indore", "India"));
+
+// console.log(person2);
+
+//apply()    values can be  passed as an array
+
+// const person1 = {
+//   name: "ram",
+//   age: 200,
+//   sayName: function (city, country) {
+//     return (
+//       this.name +
+//       " " +
+//       this.age +
+//       " " +
+//       this.salary +
+//       " " +
+//       city +
+//       " " +
+//       country
+//     );
+//   },
+// };
+// const person2 = {
+//   name: "mohan",
+//   age: 500,
+//   salary: 1000000,
+// };
+// console.log(person1.sayName.apply(person2, ["indore", "India"]));
+
+// bind()
+const person1 = {
+  name: "ram",
   age: 200,
-  salary: 100,
-  getThis: function () {
-    return this.empName;
+  sayName: function () {
+    return this.name + " " + this.age + " " + this.salary;
   },
 };
+const person2 = {
+  name: "mohan",
+  age: 500,
+  salary: 1000000,
+};
+const response = person1.sayName.bind(person2);
 
-console.log("This is object ", person.getThis());
+console.log(response());
