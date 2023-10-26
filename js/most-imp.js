@@ -76,5 +76,22 @@
 // const number1 = 10;
 // const number2 = 10;
 
+// const number = "10";
+
+// console.log(typeof(number) === 'string');
+
+// console.log(typeof 'string');
+
+
+// == and ===
+// defenition :- Both are comparison operators. The difference between both the operators is that “==” is used to compare values whereas, “ === “ is used to compare both values and types.
+
+// const number1 = 10;
+// const number2 = 10;
+
+// console.log(number1 == number2) // == only check the values
+
+// console.log(number1 === number2) // ===check the values and type as well
+
 
 
