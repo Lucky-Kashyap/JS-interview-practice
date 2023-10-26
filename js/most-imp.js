@@ -127,16 +127,23 @@
 
 //call by reference
 
-const callByReference = (obj) =>{
-    obj.name = 'suman';
-    obj.age = 500
-}
+// con/st callByReference = (obj) =>{
+//     obj.name = 'suman';
+//     obj.age = 500
+// }
 
-const obj = {
- name : 'ram',
-age:23
-}
+// const obj = {
+//  name : 'ram',
+// age:23
+// }
 
-console.log("Before calling a function ",obj.name,obj.age)
-callByReference(obj)
-console.log("After calling a function ",obj.name,obj.age)
+// console.log("Before calling a function ",obj.name,obj.age)
+// callByReference(obj)
+// console.log("After calling a function ",obj.name,obj.age)
+
+// selfInvoking function
+// defenition :- A self-invoking function is a JavaScript function that executes immediately after it has been defined. This is done by wrapping the function in parentheses and then immediately calling it.
+
+(function(){
+    console.log("This is self Invoking function");
+})();
