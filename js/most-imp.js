@@ -212,25 +212,54 @@
 
 // callback change to promises
 
-const userLeft = null;
-const watchingAdd = null;
+// const userLeft = null;
+// const watchingAdd = null;
 
-function watchTutorial() {
-  return new Promise((resolve, reject) => {
-    if (userLeft) {
-      reject({
-        satus: "user has been left",
-      });
-    } else if (watchingAdd) {
-      reject({
-        satus: "Watching add right now",
-      });
-    } else {
-      resolve("resolve prmise..");
-    }
-  });
-}
+// function watchTutorial() {
+//   return new Promise((resolve, reject) => {
+//     if (userLeft) {
+//       reject({
+//         satus: "user has been left",
+//       });
+//     } else if (watchingAdd) {
+//       reject({
+//         satus: "Watching add right now",
+//       });
+//     } else {
+//       resolve("resolve prmise..");
+//     }
+//   });
+// }
 
-watchTutorial()
-  .then((msg) => console.log(msg))
-  .catch((err) => console.log(err));
+// watchTutorial()
+//   .then((msg) => console.log(msg))
+//   .catch((err) => console.log(err));
+
+
+// const fetchDataAPIOne = new Promise((resolve,reject)=>{
+//     setTimeout(() => {
+//         resolve('Fetching Data from API 1')
+//     },4000);
+// })
+// const fetchDataAPITwo = new Promise((resolve,reject)=>{
+//     setTimeout(() => {
+//         resolve('Fetching Data from API 2')
+//     },3000);
+// })
+// const fetchDataAPIThree = new Promise((resolve,reject)=>{
+//     setTimeout(() => {
+//         resolve('Fetching Data from API 3')
+//     },2000);
+// })
+
+// Promise.all([
+//     fetchDataAPIOne,
+//     fetchDataAPITwo,
+//     fetchDataAPIThree,
+// ]).then((suman)=>console.log(suman))
+
+// Promise.race([
+//     fetchDataAPIOne,
+//     fetchDataAPITwo,
+//     fetchDataAPIThree,
+// ]).then((suman)=>console.log(suman))
