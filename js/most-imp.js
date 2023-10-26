@@ -501,9 +501,24 @@
 // const response = random();
 // response();
 
-"use strict"
+// "use strict"
 
 // let empname = 'suman'
-empname = 'suman';
+// empname = 'suman';
 
-console.log(empname)
+// console.log(empname)
+
+
+
+// setTimeout
+
+const print = ()=>console.log('suman')
+
+setTimeout(print, 4000);
+
+// setInterval(print,2000)
+
+// setInterval(() => {
+//     const time = new Date();
+//     console.log(time)
+// }, 1000);
