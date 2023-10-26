@@ -508,13 +508,11 @@
 
 // console.log(empname)
 
-
-
 // setTimeout
 
-const print = ()=>console.log('suman')
+// const print = ()=>console.log('suman')
 
-setTimeout(print, 4000);
+// setTimeout(print, 4000);
 
 // setInterval(print,2000)
 
@@ -522,3 +520,12 @@ setTimeout(print, 4000);
 //     const time = new Date();
 //     console.log(time)
 // }, 1000);
+
+//Anonymous Functions
+// defenition :- It is a function that does not have any name associated with it. Normally we use the function keyword before the function name to define a function in JavaScript, however, in anonymous functions in JavaScript, we use only the function keyword without the function name.
+
+let show = function () {
+  console.log("Anoymous function");
+};
+
+show();
