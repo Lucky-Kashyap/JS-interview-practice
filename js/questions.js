@@ -39,15 +39,36 @@
 
 // 3- how to empty an array
 
-function empty(arr) {
-  arr.length = 0;
+// function empty(arr) {
+//   arr.length = 0;
 
-  return arr;
+//   return arr;
 
   // arr=[];
 
   // return arr;
   // return [];
-}
+// }
 
-console.log(empty([2, 3, 4, 5, 6, 2, 3]));
+// console.log(empty([2, 3, 4, 5, 6, 2, 3]));
+
+
+// 4 - how would you check if an number is an integer 
+
+
+// function checkInteger(a){
+//     return Number.isInteger(a);
+// }
+
+
+// console.log(checkInteger(''));
+
+// let a = 15;
+
+// console.log(a%1);   // 0
+// if(a%1===0){
+//     console.log('Integer');
+// }
+// else{
+//     console.log('Not an Integer');
+// }
