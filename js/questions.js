@@ -81,3 +81,34 @@
 // let res = duplicate(arr);
 
 // console.log(res);
+
+
+
+// 6 - reverse number
+
+// function reverseNumber(num){
+
+//     let rev=0;
+//     // console.log(num%10);
+//     let temp = num;
+//     while(temp!=0){
+//         let rem = temp % 10;
+//         rev = rev*10 + rem;
+//         // num =num<<1;
+//         temp=Math.floor(temp/10);
+//     }
+
+//     return rev;
+// }
+
+
+function reverseNumber(num){
+    return Number(num.toString().split('').reverse().join(''));
+}
+
+
+let num = 123544;
+
+let res = reverseNumber(num);
+
+console.log(res);
