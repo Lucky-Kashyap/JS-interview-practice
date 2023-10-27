@@ -44,22 +44,19 @@
 
 //   return arr;
 
-  // arr=[];
+// arr=[];
 
-  // return arr;
-  // return [];
+// return arr;
+// return [];
 // }
 
 // console.log(empty([2, 3, 4, 5, 6, 2, 3]));
 
-
-// 4 - how would you check if an number is an integer 
-
+// 4 - how would you check if an number is an integer
 
 // function checkInteger(a){
 //     return Number.isInteger(a);
 // }
-
 
 // console.log(checkInteger(''));
 
@@ -72,3 +69,15 @@
 // else{
 //     console.log('Not an Integer');
 // }
+
+// 5- make this work  duplicate ([1,2,3,4,5]); [1,2,3,4,5,1,2,3,4,5]
+
+// function duplicate(arr){
+//     return arr.concat(arr);
+// }
+
+// let arr = [1,2,3,4,5];
+
+// let res = duplicate(arr);
+
+// console.log(res);
