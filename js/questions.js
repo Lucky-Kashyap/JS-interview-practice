@@ -25,19 +25,29 @@
 
 // console.log(res);
 
-
-
 // 2 - how to check if an object is an array or not
 
+// function checkArr(el){
+//     let check = Array.isArray(el);
 
-function checkArr(el){
-    let check = Array.isArray(el);
+//     console.log(check);
 
-    console.log(check);
+// }
 
+// checkArr([]);
+// checkArr({});
 
+// 3- how to empty an array
+
+function empty(arr) {
+  arr.length = 0;
+
+  return arr;
+
+  // arr=[];
+
+  // return arr;
+  // return [];
 }
 
-checkArr([]);
-checkArr({});
-
+console.log(empty([2, 3, 4, 5, 6, 2, 3]));
