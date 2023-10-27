@@ -82,8 +82,6 @@
 
 // console.log(res);
 
-
-
 // 6 - reverse number
 
 // function reverseNumber(num){
@@ -101,14 +99,30 @@
 //     return rev;
 // }
 
+// function reverseNumber(num){
+//     return Number(num.toString().split('').reverse().join(''));
+// }
 
-function reverseNumber(num){
-    return Number(num.toString().split('').reverse().join(''));
+// let num = 123544;
+
+// let res = reverseNumber(num);
+
+// console.log(res);
+
+// 7 string is palindrome or not
+
+function isPalindrome(str) {
+  let rev = str.split("").reverse().join("");
+
+  if (rev === str) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
+let str = "rahul";
 
-let num = 123544;
-
-let res = reverseNumber(num);
+let res = isPalindrome(str);
 
 console.log(res);
