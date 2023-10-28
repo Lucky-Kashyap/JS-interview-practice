@@ -323,13 +323,13 @@
 // write a js function to clone an array
 
 // function cloneArr(arr) {
-  // return [...arr];
+// return [...arr];
 
-  // let newArr = [];
+// let newArr = [];
 
-  // arr.forEach((el) => newArr.push(el));
+// arr.forEach((el) => newArr.push(el));
 
-  // return newArr;
+// return newArr;
 
 //   return arr.map((char) => char);
 // }
@@ -340,10 +340,8 @@
 
 // console.log(arr, res);
 
-
-// write a js function which accepts an argument & returns the type 
+// write a js function which accepts an argument & returns the type
 // Note : there are six possible values that typeof returns : object, boolean, function, number , string & undefined
-
 
 // function typeTeller(arg){
 //   return typeof arg;
@@ -358,3 +356,21 @@
 // console.log(typeTeller(true));
 // console.log(typeTeller(10));
 
+// write a js function to get the first element of an array. Passing a paramter 'n' will return the first 'n' elements of the array.
+
+function retreive(arr = [], n = 1) {
+  // console.log(arr);
+  let newArr = [];
+
+  for (let i = 0; i < n; i++) {
+    newArr.push(arr[i]);
+  }
+
+  return newArr;
+}
+
+let arr = [1, 2, 3, 4, 5];
+
+let res = retreive(arr,4);
+
+console.log(res);
