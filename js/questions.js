@@ -271,28 +271,28 @@
 // loop an array of objects and remove all objects
 // which don't have gender's value male
 
-let arr = [
-  {
-    name: "lucky",
-    gender: "male",
-  },
-  {
-    name: "harsh",
-    gender: "female",
-  },
-  {
-    name: "arun",
-    gender: "non",
-  },
-  {
-    name: "mukul",
-    gender: "others",
-  },
-  {
-    name: "lucky",
-    gender: "female",
-  },
-];
+// let arr = [
+//   {
+//     name: "lucky",
+//     gender: "male",
+//   },
+//   {
+//     name: "harsh",
+//     gender: "female",
+//   },
+//   {
+//     name: "arun",
+//     gender: "non",
+//   },
+//   {
+//     name: "mukul",
+//     gender: "others",
+//   },
+//   {
+//     name: "lucky",
+//     gender: "female",
+//   },
+// ];
 
 // let newArr = arr.filter(char=> char.gender === 'male');
 
@@ -302,20 +302,33 @@ let arr = [
 // ek non male bande ko hataane ka code likho
 // fir us code ko total non-male chla do
 
-let count = 0;
+// let count = 0;
 
-arr.forEach((char) => {
-  if (char.gender !== "male") count++;
-});
+// arr.forEach((char) => {
+//   if (char.gender !== "male") count++;
+// });
 
 // console.log(count);
 
-for (let i = 0; i <= count; i++) {
-  for (let j = 0; j < arr.length; j++) {
-    if (arr[j].gender !== "male") {
-      arr.splice(j, 1);
-    }
-  }
+// for (let i = 1; i <= count; i++) {
+//   for (let j = 0; j < arr.length; j++) {
+//     if (arr[j].gender !== "male") {
+//       arr.splice(j, 1);
+//     }
+//   }
+// }
+
+// console.log(arr);
+
+
+// write a js function to clone an array
+
+function cloneArr(arr){
+  return [...arr];
 }
 
-console.log(arr);
+let arr = [1,2,3,4,5];
+
+let res = cloneArr(arr);
+
+console.log(arr,res);
