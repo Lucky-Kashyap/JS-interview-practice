@@ -406,3 +406,37 @@
 // let res = retreive(arr,3);
 
 // console.log(res);
+
+
+
+// write a js program to find the most frequent item of an array
+
+
+// function freq(arr){
+//   let freq= {};
+
+//   arr.forEach(char=>{
+//     if(freq.hasOwnProperty(char)) freq[char]++;
+//     else freq[char] = 1;
+//   });
+
+  // console.log(Object.keys(freq));
+
+//   let ans = Object.keys(freq).reduce((acc,num)=>{
+//     return freq[acc] > freq[num] ? acc : num;
+//   })
+// console.log(ans);
+  // for(let i=0;i<arr.length;i++){
+  //   for(let j=1;j<arr.length;j++){
+  //     if(arr[i]==arr[j]){
+  //       count++;
+  //     }
+  //   }
+  // }
+// }
+
+// let arr = [1,2,3,12,2,3,12,1,2,3,2121];
+
+// freq(arr);
+
+
