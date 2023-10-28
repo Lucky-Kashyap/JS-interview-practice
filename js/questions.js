@@ -196,19 +196,19 @@
 
 // apple = a - 1 p - 2 l - 1 e - 1
 
-let str = "hello i am lucky";
+// let str = "hello i am lucky";
 
-function findOccurences(str) {
+// function findOccurences(str) {
   // let count = [];
-  let occ = {};
+//   let occ = {};
 
-  str.split("").forEach((char) => {
-    if (occ.hasOwnProperty(char) === false) {
-      occ[char] = 1;
-    } else {
-      occ[char]++;
-    }
-  });
+//   str.split("").forEach((char) => {
+//     if (occ.hasOwnProperty(char) === false) {
+//       occ[char] = 1;
+//     } else {
+//       occ[char]++;
+//     }
+//   });
 
   // for(let i=0;i<str.length;i++){
   //   for(let j=1;j<str.length;j++){
@@ -218,9 +218,31 @@ function findOccurences(str) {
   //     }
   //   }
   // }
-  return occ;
+//   return occ;
+// }
+
+// let res = findOccurences(str);
+
+// console.log(res);
+
+
+// loops
+
+// loop an array and add all members of it
+
+
+let arr = [1,2,3,4,5,6];
+
+function addAll(arr){
+  let sum = 0;
+
+  for(let i=0;i<arr.length;i++){
+    sum +=arr[i];
+  }
+
+  return sum;
 }
 
-let res = findOccurences(str);
+let res = addAll(arr);
 
 console.log(res);
