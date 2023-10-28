@@ -199,7 +199,7 @@
 // let str = "hello i am lucky";
 
 // function findOccurences(str) {
-  // let count = [];
+// let count = [];
 //   let occ = {};
 
 //   str.split("").forEach((char) => {
@@ -210,14 +210,14 @@
 //     }
 //   });
 
-  // for(let i=0;i<str.length;i++){
-  //   for(let j=1;j<str.length;j++){
-  //     if(str[i]==str[j]){
-  //       // count++;
+// for(let i=0;i<str.length;i++){
+//   for(let j=1;j<str.length;j++){
+//     if(str[i]==str[j]){
+//       // count++;
 
-  //     }
-  //   }
-  // }
+//     }
+//   }
+// }
 //   return occ;
 // }
 
@@ -225,24 +225,30 @@
 
 // console.log(res);
 
-
 // loops
 
 // loop an array and add all members of it
 
+// let arr = [1,2,3,4,5,6];
 
-let arr = [1,2,3,4,5,6];
+// function addAll(arr){
+//   let sum = 0;
 
-function addAll(arr){
-  let sum = 0;
+//   for(let i=0;i<arr.length;i++){
+//     sum +=arr[i];
+//   }
 
-  for(let i=0;i<arr.length;i++){
-    sum +=arr[i];
-  }
+//   return sum;
+// }
 
-  return sum;
-}
+// let res = addAll(arr);
 
-let res = addAll(arr);
+// console.log(res);
 
-console.log(res);
+var arr = [1, 2, 3, 4, 5, 6];
+
+let sum = 0;
+
+arr.forEach((num) => (sum += num));
+
+console.log(sum);
