@@ -358,19 +358,51 @@
 
 // write a js function to get the first element of an array. Passing a paramter 'n' will return the first 'n' elements of the array.
 
-function retreive(arr = [], n = 1) {
-  // console.log(arr);
-  let newArr = [];
+// function retreive(arr = [], n = 1) {
+//   // console.log(arr);
+//   let newArr = [];
 
-  for (let i = 0; i < n; i++) {
-    newArr.push(arr[i]);
-  }
+//   if(n<=arr.length){
+//     for (let i = 0; i < n; i++) {
+//       newArr.push(arr[i]);
+//     }
+//   }
+//   else{
+//     console.log('limit exceded');
+//   }
 
-  return newArr;
-}
+  // for (let i = 0; i < n; i++) {
+  //   newArr.push(arr[i]);
+  // }
 
-let arr = [1, 2, 3, 4, 5];
+  // return newArr;
+// }
 
-let res = retreive(arr,4);
+// let arr = [1, 2, 3, 4, 5];
 
-console.log(res);
+// let res = retreive(arr,4);
+
+// console.log(res);
+
+
+
+//write a js function to get the last element of an array. Passing a parameter 'n' will return the last 'n' elements of the array
+
+// function retreive(arr=[],n=1){
+
+//   if(n<=arr.length){
+//     for(let i=0;i<n;i++){
+//       console.log(arr[arr.length - 1 - i]);
+//     }
+//   }
+//   else{
+//     console.log('limit exceeded');
+//   }
+// }
+
+
+// let arr = [1,2,3,4,5,6];
+
+// let res = retreive(arr,3);
+
+// console.log(res);
