@@ -320,15 +320,20 @@
 
 // console.log(arr);
 
-
 // write a js function to clone an array
 
-function cloneArr(arr){
-  return [...arr];
+function cloneArr(arr) {
+  // return [...arr];
+
+  let newArr = [];
+
+  arr.forEach((el) => newArr.push(el));
+
+  return newArr;
 }
 
-let arr = [1,2,3,4,5];
+let arr = [1, 2, 3, 4, 5];
 
 let res = cloneArr(arr);
 
-console.log(arr,res);
+console.log(arr, res);
