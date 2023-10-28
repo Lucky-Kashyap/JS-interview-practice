@@ -143,24 +143,24 @@
 // 9 Write a Javascript function that accepts a string as a parameter
 //and converts the first letter of each word of the string in uppercase
 
-let str = "hello how are you..";
+// let str = "hello how are You..";
 
-function firstUpper(str) {
-  let upper = str.split(" ").map(word=> word.charAt(0).toUpperCase() + word.substring(1));
+// function firstUpper(str) {
+//   let upper = str.split(" ").map(word=> word.charAt(0).toUpperCase() + word.substring(1));
 
-  // let res = upper.charAt(0).toUpperCase() + upper.substring(1);
+// let res = upper.charAt(0).toUpperCase() + upper.substring(1);
 
-  // for (let i = 0; i < upper.length; i++) {
-  //   // upper.charAt(i).toUpperCase();
-  //   upper = upper[i].charAt(i).toUpperCase() + upper.substring(1)
-  // }
+// for (let i = 0; i < upper.length; i++) {
+//   // upper.charAt(i).toUpperCase();
+//   upper = upper[i].charAt(i).toUpperCase() + upper.substring(1)
+// }
 
-  return upper;
-}
+//   return upper.join(' ');
+// }
 
-let res = firstUpper(str);
+// let res = firstUpper(str);
 
-console.log(res);
+// console.log(res);
 
 // find targeted element
 
@@ -182,7 +182,7 @@ console.log(res);
 //     }
 //     mid =start + (end -start) / 2;
 //   }
-  // console.log(start,end);
+// console.log(start,end);
 //   return res;
 // }
 
@@ -191,3 +191,36 @@ console.log(res);
 // let res = findTarget(target, arr);
 
 // console.log(res);
+
+// 11 - write a js function to get the number of occurrences of each letter in specified string
+
+// apple = a - 1 p - 2 l - 1 e - 1
+
+let str = "hello i am lucky";
+
+function findOccurences(str) {
+  // let count = [];
+  let occ = {};
+
+  str.split("").forEach((char) => {
+    if (occ.hasOwnProperty(char) === false) {
+      occ[char] = 1;
+    } else {
+      occ[char]++;
+    }
+  });
+
+  // for(let i=0;i<str.length;i++){
+  //   for(let j=1;j<str.length;j++){
+  //     if(str[i]==str[j]){
+  //       // count++;
+
+  //     }
+  //   }
+  // }
+  return occ;
+}
+
+let res = findOccurences(str);
+
+console.log(res);
