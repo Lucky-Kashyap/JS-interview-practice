@@ -245,10 +245,26 @@
 
 // console.log(res);
 
-var arr = [1, 2, 3, 4, 5, 6];
+// var arr = [1, 2, 3, 4, 5, 6];
+
+// let sum = 0;
+
+// arr.forEach((num) => (sum += num));
+
+// console.log(sum);
+
+// in an array of numbers and strings, only add
+// those members which are not strings
+
+
+let arr =['Hello',123,"jhbvh ","hjb u","hjgbuyhj",3,4,'ugvyug'];
 
 let sum = 0;
 
-arr.forEach((num) => (sum += num));
+arr.forEach(char=>{
+  if(typeof char === 'number'){
+    sum += char;
+  }
+});
 
 console.log(sum);
