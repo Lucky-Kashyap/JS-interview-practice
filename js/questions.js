@@ -322,7 +322,7 @@
 
 // write a js function to clone an array
 
-function cloneArr(arr) {
+// function cloneArr(arr) {
   // return [...arr];
 
   // let newArr = [];
@@ -331,11 +331,30 @@ function cloneArr(arr) {
 
   // return newArr;
 
-  return arr.map((char) => char);
-}
+//   return arr.map((char) => char);
+// }
 
-let arr = [1, 2, 3, 4, 5];
+// let arr = [1, 2, 3, 4, 5];
 
-let res = cloneArr(arr);
+// let res = cloneArr(arr);
 
-console.log(arr, res);
+// console.log(arr, res);
+
+
+// write a js function which accepts an argument & returns the type 
+// Note : there are six possible values that typeof returns : object, boolean, function, number , string & undefined
+
+
+// function typeTeller(arg){
+//   return typeof arg;
+// }
+
+// console.log(typeof typeTeller);
+
+// console.log(typeTeller([]));
+// console.log(typeTeller('lucky'));
+// console.log(typeTeller(null));
+// console.log(typeTeller({}));
+// console.log(typeTeller(true));
+// console.log(typeTeller(10));
+
