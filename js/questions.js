@@ -111,18 +111,34 @@
 
 // 7 string is palindrome or not
 
-function isPalindrome(str) {
-  let rev = str.split("").reverse().join("");
+// function isPalindrome(str) {
+  // let rev = str.split("").reverse().join("");
 
-  if (rev === str) {
-    return true;
-  } else {
-    return false;
-  }
+//   if (rev === str) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// let str = "rahul";
+
+// let res = isPalindrome(str);
+
+// console.log(res);
+
+
+// 8 - write a javascript function that returns a passed string with letters in 
+// alphabetical order
+
+function alphabeticalOrder(str){
+    return str.split('').sort().join();
 }
 
-let str = "rahul";
 
-let res = isPalindrome(str);
+
+let str ='divyanshukashyap';
+
+let res = alphabeticalOrder(str);
 
 console.log(res);
