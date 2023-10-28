@@ -440,3 +440,35 @@
 // freq(arr);
 
 
+// write a js program to shuffle an
+// array
+
+
+// [1,2,3,4,5,6,7] = > [2,4,5,1,3,6];
+
+// function shuffleArr(arr){
+//   let totalShuffleArea = arr.length;
+
+//   while(totalShuffleArea>0){
+//   totalShuffleArea--;
+//   let indexToBeExchanged = Math.floor(Math.random() * totalShuffleArea);
+
+//   let temp = arr[totalShuffleArea];
+
+//   arr[totalShuffleArea] = arr[indexToBeExchanged];
+//   arr[indexToBeExchanged] = temp;
+//   }
+
+//   return arr;
+// }
+
+// let arr = [1,2,3,4,5,6];
+
+// let res = shuffleArr(arr);
+
+// console.log(res);
+
+
+
+// write a js program to compute the union
+// of two arrays
