@@ -256,15 +256,64 @@
 // in an array of numbers and strings, only add
 // those members which are not strings
 
+// let arr =['Hello',123,"jhbvh ","hjb u","hjgbuyhj",3,4,'ugvyug'];
 
-let arr =['Hello',123,"jhbvh ","hjb u","hjgbuyhj",3,4,'ugvyug'];
+// let sum = 0;
 
-let sum = 0;
+// arr.forEach(char=>{
+//   if(typeof char === 'number'){
+//     sum += char;
+//   }
+// });
+
+// console.log(sum);
+
+// loop an array of objects and remove all objects
+// which don't have gender's value male
+
+let arr = [
+  {
+    name: "lucky",
+    gender: "male",
+  },
+  {
+    name: "harsh",
+    gender: "female",
+  },
+  {
+    name: "arun",
+    gender: "non",
+  },
+  {
+    name: "mukul",
+    gender: "others",
+  },
+  {
+    name: "lucky",
+    gender: "female",
+  },
+];
+
+
+// let newArr = arr.filter(char=> char.gender === 'male');
+
+// console.log(newArr);
+
+// sbase pehle total non-male count lo
+// ek non male bande ko hataane ka code likho
+// fir us code ko total non-male chla do
+
+
+let count = 0;
 
 arr.forEach(char=>{
-  if(typeof char === 'number'){
-    sum += char;
-  }
+  if(char.gender !== 'male') count++;
 });
 
-console.log(sum);
+// console.log(count);
+
+for(let i=0;i<arr.length;i++){
+  if(arr[i].gender !== 'male'){
+    arr.splice(i,1);
+  }
+}
