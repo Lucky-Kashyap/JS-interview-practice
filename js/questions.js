@@ -112,7 +112,7 @@
 // 7 string is palindrome or not
 
 // function isPalindrome(str) {
-  // let rev = str.split("").reverse().join("");
+// let rev = str.split("").reverse().join("");
 
 //   if (rev === str) {
 //     return true;
@@ -127,18 +127,64 @@
 
 // console.log(res);
 
-
-// 8 - write a javascript function that returns a passed string with letters in 
+// 8 - write a javascript function that returns a passed string with letters in
 // alphabetical order
 
-function alphabeticalOrder(str){
-    return str.split('').sort().join();
+// function alphabeticalOrder(str){
+//     return str.split('').sort().join();
+// }
+
+// let str ='divyanshukashyap';
+
+// let res = alphabeticalOrder(str);
+
+// console.log(res);
+
+// 9 Write a Javascript function that accepts a string as a parameter
+//and converts the first letter of each word of the string in uppercase
+
+// let str = "hello how are you..";
+
+// function firstUpper(str) {
+//   let upper = str.split(" ");
+
+//   for (let i = 0; i < upper.length; i++) {
+//     upper[i] = upper[i].toUpperCase();
+//   }
+
+//   return upper;
+// }
+
+// let res = firstUpper(str);
+
+// console.log(res);
+
+// find targeted element
+
+let arr = [10, 20, 30, 40, 50, 60];
+
+function findTarget(target, arr) {
+  let start = 0;
+  let end = arr.length;
+  let mid = start + (end -start) / 2;
+  let res = false;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] == target) {
+      res = true;
+    } else if (arr[mid] < target) {
+      end = mid - 1;
+    } else {
+      start = mid + 1;
+    }
+    mid =start + (end -start) / 2;
+  }
+  // console.log(start,end);
+  return res;
 }
 
+let target = 100;
 
-
-let str ='divyanshukashyap';
-
-let res = alphabeticalOrder(str);
+let res = findTarget(target, arr);
 
 console.log(res);
