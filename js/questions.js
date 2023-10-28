@@ -131,7 +131,7 @@
 // alphabetical order
 
 // function alphabeticalOrder(str){
-//     return str.split('').sort().join();
+//     return str.split('').sort().join("");
 // }
 
 // let str ='divyanshukashyap';
@@ -143,48 +143,51 @@
 // 9 Write a Javascript function that accepts a string as a parameter
 //and converts the first letter of each word of the string in uppercase
 
-// let str = "hello how are you..";
+let str = "hello how are you..";
 
-// function firstUpper(str) {
-//   let upper = str.split(" ");
+function firstUpper(str) {
+  let upper = str.split(" ").map(word=> word.charAt(0).toUpperCase() + word.substring(1));
 
-//   for (let i = 0; i < upper.length; i++) {
-//     upper[i] = upper[i].toUpperCase();
-//   }
+  // let res = upper.charAt(0).toUpperCase() + upper.substring(1);
 
-//   return upper;
-// }
+  // for (let i = 0; i < upper.length; i++) {
+  //   // upper.charAt(i).toUpperCase();
+  //   upper = upper[i].charAt(i).toUpperCase() + upper.substring(1)
+  // }
 
-// let res = firstUpper(str);
+  return upper;
+}
 
-// console.log(res);
+let res = firstUpper(str);
+
+console.log(res);
 
 // find targeted element
 
-let arr = [10, 20, 30, 40, 50, 60];
+// let arr = [10, 20, 30, 40, 50, 60];
 
-function findTarget(target, arr) {
-  let start = 0;
-  let end = arr.length;
-  let mid = start + (end -start) / 2;
-  let res = false;
+// function findTarget(target, arr) {
+//   let start = 0;
+//   let end = arr.length;
+//   let mid = start + (end -start) / 2;
+//   let res = false;
 
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] == target) {
-      res = true;
-    } else if (arr[mid] < target) {
-      end = mid - 1;
-    } else {
-      start = mid + 1;
-    }
-    mid =start + (end -start) / 2;
-  }
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] == target) {
+//       res = true;
+//     } else if (arr[mid] < target) {
+//       end = mid - 1;
+//     } else {
+//       start = mid + 1;
+//     }
+//     mid =start + (end -start) / 2;
+//   }
   // console.log(start,end);
-  return res;
-}
+//   return res;
+// }
 
-let target = 100;
+// let target = 100;
 
-let res = findTarget(target, arr);
+// let res = findTarget(target, arr);
 
-console.log(res);
+// console.log(res);
