@@ -325,11 +325,13 @@
 function cloneArr(arr) {
   // return [...arr];
 
-  let newArr = [];
+  // let newArr = [];
 
-  arr.forEach((el) => newArr.push(el));
+  // arr.forEach((el) => newArr.push(el));
 
-  return newArr;
+  // return newArr;
+
+  return arr.map((char) => char);
 }
 
 let arr = [1, 2, 3, 4, 5];
