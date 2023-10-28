@@ -294,7 +294,6 @@ let arr = [
   },
 ];
 
-
 // let newArr = arr.filter(char=> char.gender === 'male');
 
 // console.log(newArr);
@@ -303,17 +302,20 @@ let arr = [
 // ek non male bande ko hataane ka code likho
 // fir us code ko total non-male chla do
 
-
 let count = 0;
 
-arr.forEach(char=>{
-  if(char.gender !== 'male') count++;
+arr.forEach((char) => {
+  if (char.gender !== "male") count++;
 });
 
 // console.log(count);
 
-for(let i=0;i<arr.length;i++){
-  if(arr[i].gender !== 'male'){
-    arr.splice(i,1);
+for (let i = 0; i <= count; i++) {
+  for (let j = 0; j < arr.length; j++) {
+    if (arr[j].gender !== "male") {
+      arr.splice(j, 1);
+    }
   }
 }
+
+console.log(arr);
