@@ -463,13 +463,36 @@
 // write a js program to compute the union
 // of two arrays
 
-function unionArr(arr1, arr2) {
-  return [...new Set(arr1.concat(arr2))];
+// function unionArr(arr1, arr2) {
+//   return [...new Set(arr1.concat(arr2))];
+// }
+
+// let arr1 = [1, 2, 3, 4];
+// let arr2 = [2, 3, 4, 6666];
+
+// let res = unionArr(arr1, arr2);
+
+// console.log(res);
+
+
+// count words
+
+
+
+function countWord(str){
+
+  let character = str.length;
+
+  let wordLength = str.trim().split(' ').length;
+
+  console.log('Character length  ',character);
+
+  return wordLength;
+
 }
 
-let arr1 = [1, 2, 3, 4];
-let arr2 = [2, 3, 4, 6666];
+let str = "React JS Developer from India";
 
-let res = unionArr(arr1, arr2);
+let res = countWord(str);
 
-console.log(res);
+console.log('Word Count : '+res);
