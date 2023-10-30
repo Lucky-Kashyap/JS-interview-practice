@@ -77,26 +77,72 @@
 
 // Problem 4: Checking for palindrome numbers
 
-function checkPalindromeNumber(num) {
-  let bool = false;
+// function checkPalindromeNumber(num) {
+//   let bool = false;
 
-  let rev = 0;
-  let temp = num;
-  while (temp > 0) {
-    let rem = temp % 10;
-    rev = rem + rev * 10;
-    temp = Math.floor(temp / 10);
-  }
+//   let rev = 0;
+//   let temp = num;
+//   while (temp > 0) {
+//     let rem = temp % 10;
+//     rev = rem + rev * 10;
+//     temp = Math.floor(temp / 10);
+//   }
 
-  if (rev == num) {
-    bool = true;
-  }
+//   if (rev == num) {
+//     bool = true;
+//   }
 
-  return bool;
-}
+//   return bool;
+// }
 
-let num = 1121;
+// let num = 1121;
 
-let res = checkPalindromeNumber(num);
+// let res = checkPalindromeNumber(num);
 
-console.log(`Number palindrome for  ${num}  : ${res}`);
+// console.log(`Number palindrome for  ${num}  : ${res}`);
+
+// Problem 5: Finding Fibonacci numbers
+
+// function fibonacciNumber(num) {
+//   // let fib = 0;
+
+//   // if(num == 0 || num == 1){
+//   //         return 0;
+//   // }
+//   let curr = 0;
+//   let prev = 1;
+
+//   console.log(curr,prev);
+//   for (let i = 1; i < num; i++) {
+//     next = curr + prev;
+//     console.log(next);
+//     curr = prev;
+//     prev = next;
+//   }
+// }
+
+// function fibonacciNumber(num) {
+//   if (num == 0 || num == 1) {
+//     return num;
+//   }
+
+//   let prev = 0;
+//   let curr = 1;
+//   let next;
+
+//   for (let i = 1; i < num; i++) {
+//     next = prev + curr;
+//     prev = curr;
+//     curr = next;
+//   }
+
+//   return next;
+// }
+
+// let num = 4;
+
+// let res = fibonacciNumber(num);
+
+// console.log(`fibonacci number ${num} : ${res}`);
+
+// Problem 6: Identifying missing numbers
