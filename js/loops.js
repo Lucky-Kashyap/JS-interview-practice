@@ -146,3 +146,21 @@
 // console.log(`fibonacci number ${num} : ${res}`);
 
 // Problem 6: Identifying missing numbers
+
+// function findMissingNumber(num){
+//     // let missing;
+//     // let sum = 0;
+//     // for(let i=0;i<num.length;i++){
+//     //     sum += num[i];
+//     // }
+
+//     // missing = num.length*(num.length + 1)/2 - sum;
+
+//     // return missing;
+// }
+
+// let nums = [9,6,4,2,3,5,7,0,1];
+
+// let res = findMissingNumber(nums);
+
+// console.log(`Mising Number of ${nums} : ${res}`);
