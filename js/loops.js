@@ -20,20 +20,41 @@
 
 // Problem 2: Finding the sum of digits
 
-function sumOfDigits(digit) {
-  let sum = 0;
+// function sumOfDigits(digit) {
+//   let sum = 0;
 
-  while (digit != 0) {
+//   while (digit != 0) {
+// digit > 0
+//     let rem = digit % 10;
+//     sum += rem;
+//     digit = Math.floor(digit / 10);   // for getting integer value
+//   }
+
+//   return sum;
+// }
+
+// let digit = 1234678;
+
+// let res = sumOfDigits(digit);
+
+// console.log(`Sum of ${digit} is : ${res}`);
+
+// Problem 3: Counting the number of digits
+
+function countNumberOfDigits(digit) {
+  let count = 0;
+
+  while (digit > 0) {
     let rem = digit % 10;
-    sum += rem;
+    count++;
     digit = Math.floor(digit / 10);
   }
 
-  return sum;
+  return count;
 }
 
-let digit = 1234678;
+let digit = 123467;
 
-let res = sumOfDigits(digit);
+let res = countNumberOfDigits(digit);
 
-console.log(`Sum of ${digit} is : ${res}`);
+console.log(`Count Digits ${digit} : ${res}`);
