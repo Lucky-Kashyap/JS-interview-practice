@@ -164,3 +164,43 @@
 // let res = findMissingNumber(nums);
 
 // console.log(`Mising Number of ${nums} : ${res}`);
+
+// Count Odd Numbers in an Interval Range
+
+function countOddNumbers(low, high) {
+  let count = 0;
+  // let arr= [];
+
+  //   for(let i=low;i<=high;i++){
+  //         if(i%2 !=0){
+  //             arr.push(i);
+  //         }
+
+  //   }
+
+  //   for(let i=0;i<arr.length;i++){
+  //     if(arr[i] % 2!=0){
+  //         count++;
+  //     }
+  //   }
+
+  //   console.log(arr);
+
+  for (let i = low; i <= high; i++) {
+    if (i % 2) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+// let low = 8;
+// let high = 10;
+
+let low = 3;
+let high = 7;
+
+let res = countOddNumbers(low, high);
+
+console.log(`Count Odd Numbers ${low} to ${high} : ${res}`);
