@@ -116,21 +116,42 @@
 
 // Question 2: Capitalize the first letter of each word in the array
 
-const strings = ["hello world", "i am openai", "welcome to javascript"];
+// const strings = ["hello world", "i am openai", "welcome to javascript"];
 
 // Expected Output: ['Hello World', 'I Am Openai', 'Welcome To Javascript']
 
-function capitalizeFirstWord(str) {
-  let capital = str.map((word) => {
-    let elem = word.split(" ");
+// function capitalizeFirstWord(str) {
+//   let capital = str.map((word) => {
+//     let elem = word.split(" ");
 
-    let result = elem.map((word) => word[0].toUpperCase() + word.slice(1));
+//     let result = elem.map((word) => word[0].toUpperCase() + word.slice(1));
 
-    return result.join(" ");
-  });
-  return capital;
+//     return result.join(" ");
+//   });
+//   return capital;
+// }
+
+// let res = capitalizeFirstWord(strings);
+
+// console.log(res);
+
+// Find the Index of the First Occurrence in a String
+
+function firstOcc(str1, str2) {
+  let index = -1;
+
+  for (let i = 0; i < str1.length; i++) {
+    if (str1) {
+      index = i;
+    }
+  }
+
+  return index;
+  // return str1.indexOf(str2);
 }
 
-let res = capitalizeFirstWord(strings);
+let str1 = "sadbutsad";
 
-console.log(res);
+let str2 = "sad";
+
+console.log(firstOcc(str1, str2));
