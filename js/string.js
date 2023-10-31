@@ -97,19 +97,44 @@
 
 //  Question 1: Filter out books published before the year 2000 and return their titles
 
-const books = [
-  { title: "Book 1", year: 1998 },
-  { title: "Book 2", year: 2003 },
-  { title: "Book 3", year: 1995 },
-  { title: "Book 4", year: 2001 },
-];
+// const books = [
+//   { title: "Book 1", year: 1998 },
+//   { title: "Book 2", year: 2003 },
+//   { title: "Book 3", year: 1995 },
+//   { title: "Book 4", year: 2001 },
+// ];
 
-const filterBooks = books
-  .filter((book) => {
-    if (book.year > 2000) {
-      return book.title;
-    }
-  })
-  .map((book) => book.title);
+// const filterBooks = books
+//   .filter((book) => {
+//     if (book.year > 2000) {
+//       return book.title;
+//     }
+//   })
+//   .map((book) => book.title);
 
-console.log(filterBooks);
+// console.log(filterBooks);
+
+// Question 2: Capitalize the first letter of each word in the array
+
+const strings = ["hello world", "i am openai", "welcome to javascript"];
+
+// Expected Output: ['Hello World', 'I Am Openai', 'Welcome To Javascript']
+
+function capitalizeFirstWord(str) {
+  let capital = [];
+
+  for (let i = 0; i < str.length; i++) {
+    capital.push(str[i].split(" "));
+  }
+  capital.join(" ");
+  let flatArr = capital.flatMap((subArray) => subArray);
+  console.log(flatArr);
+  //   console.log(capital);
+  let elem = flatArr.map((item) => item[0].toUpperCase() + item.slice(1));
+  elem.join(',');
+  return elem;
+}
+
+let res = capitalizeFirstWord(strings);
+
+console.log(res);
