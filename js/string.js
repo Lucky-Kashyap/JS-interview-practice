@@ -121,18 +121,14 @@ const strings = ["hello world", "i am openai", "welcome to javascript"];
 // Expected Output: ['Hello World', 'I Am Openai', 'Welcome To Javascript']
 
 function capitalizeFirstWord(str) {
-  let capital = [];
+  let capital = str.map((word) => {
+    let elem = word.split(" ");
 
-  for (let i = 0; i < str.length; i++) {
-    capital.push(str[i].split(" "));
-  }
-  capital.join(" ");
-  let flatArr = capital.flatMap((subArray) => subArray);
-  console.log(flatArr);
-  //   console.log(capital);
-  let elem = flatArr.map((item) => item[0].toUpperCase() + item.slice(1));
-  elem.join(',');
-  return elem;
+    let result = elem.map((word) => word[0].toUpperCase() + word.slice(1));
+
+    return result.join(" ");
+  });
+  return capital;
 }
 
 let res = capitalizeFirstWord(strings);
