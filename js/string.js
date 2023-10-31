@@ -73,24 +73,43 @@
 
 // Question 4: Calculate the average score of students who scored above 90
 
-const students = [
-  { name: "John", score: 85 },
-  { name: "Sarah", score: 92 },
-  { name: "Michael", score: 88 },
-  { name: "Emma", score: 95 },
-  { name: "Daniel", score: 90 },
+// const students = [
+//   { name: "John", score: 85 },
+//   { name: "Sarah", score: 92 },
+//   { name: "Michael", score: 88 },
+//   { name: "Emma", score: 95 },
+//   { name: "Daniel", score: 90 },
+// ];
+
+// function averageScore(students) {
+//   let average = 0;
+
+//   average = students
+//     .filter((student) => student.score > 90)
+//     .reduce((acc, curr, i, arr) => acc + curr.score / arr.length, 0);
+
+//   return average;
+// }
+
+// let res = averageScore(students);
+
+// console.log(res);
+
+//  Question 1: Filter out books published before the year 2000 and return their titles
+
+const books = [
+  { title: "Book 1", year: 1998 },
+  { title: "Book 2", year: 2003 },
+  { title: "Book 3", year: 1995 },
+  { title: "Book 4", year: 2001 },
 ];
 
-function averageScore(students) {
-  let average = 0;
+const filterBooks = books
+  .filter((book) => {
+    if (book.year > 2000) {
+      return book.title;
+    }
+  })
+  .map((book) => book.title);
 
-  average = students
-    .filter((student) => student.score > 90)
-    .reduce((acc, curr, i, arr) => acc + curr.score / arr.length, 0);
-
-  return average;
-}
-
-let res = averageScore(students);
-
-console.log(res);
+console.log(filterBooks);
