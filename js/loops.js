@@ -167,40 +167,64 @@
 
 // Count Odd Numbers in an Interval Range
 
-function countOddNumbers(low, high) {
-  let count = 0;
-  // let arr= [];
+// function countOddNumbers(low, high) {
+//   let count = 0;
+// let arr= [];
 
-  //   for(let i=low;i<=high;i++){
-  //         if(i%2 !=0){
-  //             arr.push(i);
-  //         }
+//   for(let i=low;i<=high;i++){
+//         if(i%2 !=0){
+//             arr.push(i);
+//         }
 
-  //   }
+//   }
 
-  //   for(let i=0;i<arr.length;i++){
-  //     if(arr[i] % 2!=0){
-  //         count++;
-  //     }
-  //   }
+//   for(let i=0;i<arr.length;i++){
+//     if(arr[i] % 2!=0){
+//         count++;
+//     }
+//   }
 
-  //   console.log(arr);
+//   console.log(arr);
 
-  for (let i = low; i <= high; i++) {
-    if (i % 2) {
-      count++;
-    }
-  }
+//   for (let i = low; i <= high; i++) {
+//     if (i % 2) {
+//       count++;
+//     }
+//   }
 
-  return count;
-}
+//   return count;
+// }
 
 // let low = 8;
 // let high = 10;
 
-let low = 3;
-let high = 7;
+// let low = 3;
+// let high = 7;
 
-let res = countOddNumbers(low, high);
+// let res = countOddNumbers(low, high);
 
-console.log(`Count Odd Numbers ${low} to ${high} : ${res}`);
+// console.log(`Count Odd Numbers ${low} to ${high} : ${res}`);
+
+function fizzBuzz(num) {
+  let str = [];
+
+  for (let i = '1'; i <= num; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+      str.push("FizzBuzz");
+    } else if (i % 3 == 0) {
+      str.push("Fizz");
+    } else if (i % 5 == 0) {
+      str.push("Buzz");
+    } else {
+      str.push(i.toString());
+    }
+  }
+
+  return str;
+}
+
+let num = 3; // ['1','2','Fizz']
+
+let res = fizzBuzz(num);
+
+console.log(res);
