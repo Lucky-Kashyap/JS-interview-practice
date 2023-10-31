@@ -137,21 +137,38 @@
 
 // Find the Index of the First Occurrence in a String
 
-function firstOcc(str1, str2) {
-  let index = -1;
+// function firstOcc(str1, str2) {
+//   let index = -1;
 
-  for (let i = 0; i < str1.length; i++) {
-    if (str1) {
-      index = i;
-    }
-  }
+//   for (let i = 0; i < str1.length; i++) {
+//     if (str1) {
+//       index = i;
+//     }
+//   }
 
-  return index;
+  // return index;
   // return str1.indexOf(str2);
+// }
+
+// let str1 = "sadbutsad";
+
+// let str2 = "sad";
+
+// console.log(firstOcc(str1, str2));
+
+
+
+// Reverse Words in a String
+
+
+function reverseWords(str){
+  let word;
+
+  word = str.split(' ').reverse().join(' ');
+
+  return word;
 }
 
-let str1 = "sadbutsad";
+let str = 'the sky is blue';
 
-let str2 = "sad";
-
-console.log(firstOcc(str1, str2));
+console.log(reverseWords(str));
