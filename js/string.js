@@ -48,25 +48,49 @@
 
 // Question 3: Calculate the factorial of the largest number in the array
 
-function factorialLargest(arr) {
-  let fact = 1;
-  let count = 0;
+// function factorialLargest(arr) {
+//   let fact = 1;
+//   let count = 0;
 
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > count) {
-      count = arr[i];
-    }
-  }
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > count) {
+//       count = arr[i];
+//     }
+//   }
 
-  for (let i = count; i > 0; i--) {
-    fact = fact * i;
-  }
+//   for (let i = count; i > 0; i--) {
+//     fact = fact * i;
+//   }
 
-  return fact;
+//   return fact;
+// }
+
+// const numbers = [5, 2, 8, 4, 3];
+
+// let res = factorialLargest(numbers);
+
+// console.log(`Factorial of the largest number : ${res}`);
+
+// Question 4: Calculate the average score of students who scored above 90
+
+const students = [
+  { name: "John", score: 85 },
+  { name: "Sarah", score: 92 },
+  { name: "Michael", score: 88 },
+  { name: "Emma", score: 95 },
+  { name: "Daniel", score: 90 },
+];
+
+function averageScore(students) {
+  let average = 0;
+
+  average = students
+    .filter((student) => student.score > 90)
+    .reduce((acc, curr, i, arr) => acc + curr.score / arr.length, 0);
+
+  return average;
 }
 
-const numbers = [5, 2, 8, 4, 3];
+let res = averageScore(students);
 
-let res = factorialLargest(numbers);
-
-console.log(`Factorial of the largest number : ${res}`);
+console.log(res);
