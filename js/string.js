@@ -146,8 +146,8 @@
 //     }
 //   }
 
-  // return index;
-  // return str1.indexOf(str2);
+// return index;
+// return str1.indexOf(str2);
 // }
 
 // let str1 = "sadbutsad";
@@ -156,19 +156,28 @@
 
 // console.log(firstOcc(str1, str2));
 
-
-
 // Reverse Words in a String
 
+// function reverseWords(str){
+//   let word;
 
-function reverseWords(str){
-  let word;
+//   word = str.split(' ').reverse().join(' ');
 
-  word = str.split(' ').reverse().join(' ');
+//   return word;
+// }
 
-  return word;
+// let str = 'the sky is blue';
+
+// console.log(reverseWords(str));
+
+// reverse string
+
+function reverseString(str) {
+  let rev;
+  rev = str.reverse();
+  return rev;
 }
 
-let str = 'the sky is blue';
+let str = ["h", "e", "l", "l", "o"];
 
-console.log(reverseWords(str));
+console.log(reverseString(str));
