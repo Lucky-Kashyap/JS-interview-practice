@@ -119,15 +119,28 @@
 
 // console.log(isArrayEqual(arr,arr2));
 
-
 //  how to sort an array in ascending and desending order
 
-let arr = [1,4,6,0,-9,-5];
+// let arr = [1,4,6,0,-9,-5];
 
-arr.sort();
+// arr.sort();
 
-console.log(arr);
+// console.log(arr);
 
-arr.sort((a,b)=> b-a);
+// arr.sort((a,b)=> b-a);
 
-console.log(arr);
+// console.log(arr);
+
+// How to reverse array
+
+let arr = [1, 4, 6, 0, -9, -5];
+
+// arr.reverse();  // mutate original array
+
+let newArr = [];
+
+for (let i = arr.length - 1; i >= 0; i--) {
+  newArr.push(arr[i]);
+}
+
+console.log(newArr);
