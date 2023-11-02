@@ -12,7 +12,7 @@
 
 // %DebugPrint(myArr);
 
-const arr = [1, 2, 3, 4, "hello"];
+// const arr = [1, 2, 3, 4, "hello"];
 
 // pop
 // push
@@ -77,7 +77,7 @@ const arr = [1, 2, 3, 4, "hello"];
 
 // const arrC = [...arr];
 // const arrD = Array.from(arr);
-const arrE = arr.concat();
+// const arrE = arr.concat();
 
 // arrC.splice(1, 4);
 // arrD.splice(1, 4);
@@ -85,6 +85,36 @@ const arrE = arr.concat();
 
 // Q 4 : how to add two array
 
-const newArr = [...arr, ...arrE];
+// const newArr = [...arr, ...arrE];
 
-console.log(newArr);
+// console.log(newArr);
+
+// const arr = [1, 2, 3, 4, "hello"];
+
+// concat
+// spread operatow
+
+// how to check if two arrays are equal
+
+// const isArrayEqual=(arr1,arr2)=>{
+// if(arr1.length !== arr2.length){
+//     return false;
+// }
+
+// for(let i=0;i<arr1.length;i++){
+//     if(arr1[i] !== arr2[i]){
+//         return false;
+//     }
+// }
+
+// return true;
+
+// return arr1.length === arr2.length && arr1.every((ele,i)=> arr1[i] === arr2[i])
+
+// }
+
+// const arr = [1, 2, 3, 4, "hello"];
+
+// const arr2 = [1,2,3,4,'hello'];
+
+// console.log(isArrayEqual(arr,arr2));
