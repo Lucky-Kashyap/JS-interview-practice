@@ -25,16 +25,37 @@ const arr = [1, 2, 3, 4, "hello"];
 
 // Q1 : How do you check if an element exits in an array?
 
-const findElement = (arr, target) => {
-  for (let x of arr) {
-    console.log(x);
-    if (x == target) {
-      return true;
+// const findElement = (arr, target) => {
+//   for (let x of arr) {
+//     console.log(x);
+//     if (x == target) {
+//       return true;
+//     }
+//   }
+//   return false;
+// };
+
+// console.log(findElement(arr, "hello"));
+
+// console.log(findElement(arr, 3));
+
+// console.log(arr.includes("hello"));
+
+
+// Q2 : How do check if an element exits or not if exits return its index
+
+
+const findElementIndex = (arr,target)=>{
+    for(let i=0;i<arr.length;i++){
+        if(arr[i] === target){
+            return i;
+        }
     }
-  }
-  return false;
-};
 
-console.log(findElement(arr, "hello"));
+    return -1;
+}
 
-console.log(findElement(arr, 3));
+
+console.log(findElementIndex(arr,3));
+
+console.log(arr.indexOf(2));
