@@ -41,21 +41,50 @@ const arr = [1, 2, 3, 4, "hello"];
 
 // console.log(arr.includes("hello"));
 
-
 // Q2 : How do check if an element exits or not if exits return its index
 
+// const findElementIndex = (arr,target)=>{
+//     for(let i=0;i<arr.length;i++){
+//         if(arr[i] === target){
+//             return i;
+//         }
+//     }
 
-const findElementIndex = (arr,target)=>{
-    for(let i=0;i<arr.length;i++){
-        if(arr[i] === target){
-            return i;
-        }
-    }
+//     return -1;
+// }
 
-    return -1;
-}
+// console.log(findElementIndex(arr,3));
 
+// console.log(arr.indexOf(2));
 
-console.log(findElementIndex(arr,3));
+// Q3 : How to delete, add & Update element from specific index
 
-console.log(arr.indexOf(2));
+// arr.splice(1,3);  // delete 3 items from 1 index
+
+// console.log(arr);
+
+// arr.splice(1, 0, 10, 20, 30); // add items from 1 index
+
+// arr.splice(1,3,10,20,30,40);
+
+// let subArr = arr.slice(1,3);   // slice or break arr into subarray
+
+// console.log(subArr);
+
+// console.log(arr);
+
+// deep copy array
+
+// const arrC = [...arr];
+// const arrD = Array.from(arr);
+const arrE = arr.concat();
+
+// arrC.splice(1, 4);
+// arrD.splice(1, 4);
+// console.log(arrC, arrD, arrE, arr);
+
+// Q 4 : how to add two array
+
+const newArr = [...arr, ...arrE];
+
+console.log(newArr);
