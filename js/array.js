@@ -118,3 +118,16 @@
 // const arr2 = [1,2,3,4,'hello'];
 
 // console.log(isArrayEqual(arr,arr2));
+
+
+//  how to sort an array in ascending and desending order
+
+let arr = [1,4,6,0,-9,-5];
+
+arr.sort();
+
+console.log(arr);
+
+arr.sort((a,b)=> b-a);
+
+console.log(arr);
