@@ -133,14 +133,27 @@
 
 // How to reverse array
 
-let arr = [1, 4, 6, 0, -9, -5];
+// let arr = [1, 4, 6, 0, -9, -5];
 
 // arr.reverse();  // mutate original array
 
-let newArr = [];
+// let newArr = [];
 
-for (let i = arr.length - 1; i >= 0; i--) {
-  newArr.push(arr[i]);
-}
+// for (let i = arr.length - 1; i >= 0; i--) {
+//   newArr.push(arr[i]);
+// }
 
-console.log(newArr);
+// console.log(newArr);
+
+// filter vs find
+
+// find method return first element  when condition satisfies
+
+// filter check for revery element and return all elements which satisfy the condition
+
+const numbers = [1, 2, 3, 4, 5];
+
+// const evenNumbers = numbers.filter((number) => number % 2 === 0);
+
+const evenNumbers = numbers.find((number) => number % 2 === 0);
+console.log(evenNumbers); // return first element which statis condiiton
