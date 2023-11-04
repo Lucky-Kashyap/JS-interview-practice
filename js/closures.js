@@ -143,29 +143,56 @@
 
 // how would you use a closure to create a private counter
 
-function counter(){
-    var _counter = 0;
+// function counter(){
+//     var _counter = 0;
 
-    function add(increment){
-        _counter += increment;
-    }
+//     function add(increment){
+//         _counter += increment;
+//     }
 
-    function retrieve(){
-        return 'Counter = ' + _counter
-    }
+//     function retrieve(){
+//         return 'Counter = ' + _counter
+//     }
 
-    return {
-        add,
-        retrieve
-    }
-}
+//     return {
+//         add,
+//         retrieve
+//     }
+// }
 
-const c = counter();
+// const c = counter();
 
-c.add(5);
-c.add(10);
+// c.add(5);
+// c.add(10);
 
-console.log(c.retrieve());
+// console.log(c.retrieve());
+
+
+
+// module pattern
+
+// var Module = (function(){
+    // function privateMethod(){
+        // do something
+        // console.log('private');
+    // }
+
+    // return {
+        // publicMethod:function(){
+            // console.log('public');
+            // can call privateMethod()
+//         },
+//     };
+// })();
+
+
+// Module.publicMethod();
+// Module.privateMethod();
+
+
+
+
+
 
 
 
