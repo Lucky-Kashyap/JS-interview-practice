@@ -77,17 +77,46 @@
 
 // Write a function that would allow you to do this
 
-var addSix = createBase(6);
+// var addSix = createBase(6);
 
 
-function createBase(num){
+// function createBase(num){
     
-    return function(innerNum){
-        console.log(innerNum + num);
+    // return function(innerNum){
+        // console.log(innerNum + num);
         // return innerNum + num;
-    }
-}
+//     }
+// }
 
-addSix(10);  // return 16
+// addSix(10);  // return 16
 
-addSix(21);   // return 27
+// addSix(21);   // return 27
+
+
+// Time optimization
+
+// function find(){
+//     let a = [];
+
+//     for(let i=0;i<1000000;i++){
+//         a[i] = i*i;
+//     }
+
+    // console.log(a[index]);
+
+//     return function(index){
+//         console.log(a[index]);
+//     }
+// }
+
+// const closure = find();
+// console.time('6');
+// find(6);
+// closure(6);
+// console.timeEnd('6');
+// console.time('50')
+// find(12);
+// closure(50)
+// console.timeEnd('50');
+
+
