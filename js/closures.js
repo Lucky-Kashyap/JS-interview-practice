@@ -44,17 +44,33 @@
 // myFunc();
 
 // global scope
-const e = 10;
-function sum(a) {
-  return function (b) {
-    return function (c) {
+// const e = 10;
+// function sum(a) {
+//   return function (b) {
+//     return function (c) {
       // outer functions scope
-      return function (d) {
+//       return function (d) {
         // local scope
-        return a + b + c + d + e;
-      };
-    };
-  };
-}
+//         return a + b + c + d + e;
+//       };
+//     };
+//   };
+// }
 
-console.log(sum(1)(2)(3)(4)); // 20
+// console.log(sum(1)(2)(3)(4)); // 20
+
+
+// output based qs
+
+
+let count = 0;
+
+(function printCount(){
+    if(count === 0){
+        let count = 1;
+
+        console.log(count);
+    }
+
+    console.log(count);
+})();
