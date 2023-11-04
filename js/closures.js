@@ -63,14 +63,31 @@
 // output based qs
 
 
-let count = 0;
+// let count = 0;
 
-(function printCount(){
-    if(count === 0){
-        let count = 1;
+// (function printCount(){
+//     if(count === 0){
+//         let count = 1;
 
-        console.log(count);
+//         console.log(count);
+//     }
+
+//     console.log(count);
+// })();
+
+// Write a function that would allow you to do this
+
+var addSix = createBase(6);
+
+
+function createBase(num){
+    
+    return function(innerNum){
+        console.log(innerNum + num);
+        // return innerNum + num;
     }
+}
 
-    console.log(count);
-})();
+addSix(10);  // return 16
+
+addSix(21);   // return 27
