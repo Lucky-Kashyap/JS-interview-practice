@@ -48,9 +48,9 @@
 // function sum(a) {
 //   return function (b) {
 //     return function (c) {
-      // outer functions scope
+// outer functions scope
 //       return function (d) {
-        // local scope
+// local scope
 //         return a + b + c + d + e;
 //       };
 //     };
@@ -59,9 +59,7 @@
 
 // console.log(sum(1)(2)(3)(4)); // 20
 
-
 // output based qs
-
 
 // let count = 0;
 
@@ -79,19 +77,17 @@
 
 // var addSix = createBase(6);
 
-
 // function createBase(num){
-    
-    // return function(innerNum){
-        // console.log(innerNum + num);
-        // return innerNum + num;
+
+// return function(innerNum){
+// console.log(innerNum + num);
+// return innerNum + num;
 //     }
 // }
 
 // addSix(10);  // return 16
 
 // addSix(21);   // return 27
-
 
 // Time optimization
 
@@ -102,7 +98,7 @@
 //         a[i] = i*i;
 //     }
 
-    // console.log(a[index]);
+// console.log(a[index]);
 
 //     return function(index){
 //         console.log(a[index]);
@@ -119,7 +115,6 @@
 // closure(50)
 // console.timeEnd('50');
 
-
 // for(var i = 0;i<3;i++){
 //     setTimeout(()=>{
 //         console.log(i);  // 3 times 3
@@ -135,11 +130,10 @@
 //     }
 
 //     inner(i);
-    // setTimeout(()=>{
-    //     console.log(i);  // 3 times 3
-    // },1000);
+// setTimeout(()=>{
+//     console.log(i);  // 3 times 3
+// },1000);
 // }
-
 
 // how would you use a closure to create a private counter
 
@@ -167,32 +161,55 @@
 
 // console.log(c.retrieve());
 
-
-
 // module pattern
 
 // var Module = (function(){
-    // function privateMethod(){
-        // do something
-        // console.log('private');
-    // }
+// function privateMethod(){
+// do something
+// console.log('private');
+// }
 
-    // return {
-        // publicMethod:function(){
-            // console.log('public');
-            // can call privateMethod()
+// return {
+// publicMethod:function(){
+// console.log('public');
+// can call privateMethod()
 //         },
 //     };
 // })();
 
-
 // Module.publicMethod();
 // Module.privateMethod();
 
+let view;
 
+function likeTheVideo() {
+  let called = 0;
 
+  return function () {
+    if (called > 0) {
+      console.log("Already called");
+    } else {
+      view = "Lucky";
+      console.log("developer", view);
+      called++;
+    }
+  };
 
+  // view = 'Lucky';
+  // console.log('developer',view);
+}
 
+let isSubscribed = likeTheVideo();
 
+isSubscribed();
+isSubscribed();
+isSubscribed();
+isSubscribed();
+isSubscribed();
+isSubscribed();
 
-
+// likeTheVideo();
+// likeTheVideo();
+// likeTheVideo();
+// likeTheVideo();
+// likeTheVideo();
