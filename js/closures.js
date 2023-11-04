@@ -126,12 +126,46 @@
 //     },1000);
 // }
 
-for(let i = 0;i<3;i++){
-    setTimeout(()=>{
-        console.log(i);  // 3 times 3
-    },1000);
+// for(let i = 0;i<3;i++){
+
+//     function inner(i){
+//         setTimeout(()=>{
+//             console.log(i);  // 3 times 3
+//         },1000);
+//     }
+
+//     inner(i);
+    // setTimeout(()=>{
+    //     console.log(i);  // 3 times 3
+    // },1000);
+// }
+
+
+// how would you use a closure to create a private counter
+
+function counter(){
+    var _counter = 0;
+
+    function add(increment){
+        _counter += increment;
+    }
+
+    function retrieve(){
+        return 'Counter = ' + _counter
+    }
+
+    return {
+        add,
+        retrieve
+    }
 }
 
+const c = counter();
+
+c.add(5);
+c.add(10);
+
+console.log(c.retrieve());
 
 
 
