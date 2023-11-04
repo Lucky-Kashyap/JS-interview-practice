@@ -27,16 +27,34 @@
 
 // subscribe();
 
-function makeFunc() {
-  var name = "Mozilla";
+// var userName = 'Piyush';
 
-  function displayName() {
-    console.log(name);
-  }
+// function makeFunc() {
+//   var name = "Mozilla";
 
-  return displayName;
+//   function displayName() {
+//     console.log(name,userName);
+//   }
+
+//   return displayName;
+// }
+
+// var myFunc = makeFunc();
+
+// myFunc();
+
+// global scope
+const e = 10;
+function sum(a) {
+  return function (b) {
+    return function (c) {
+      // outer functions scope
+      return function (d) {
+        // local scope
+        return a + b + c + d + e;
+      };
+    };
+  };
 }
 
-var myFunc = makeFunc();
-
-myFunc();
+console.log(sum(1)(2)(3)(4)); // 20
