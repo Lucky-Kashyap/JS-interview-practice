@@ -120,3 +120,18 @@
 // console.timeEnd('50');
 
 
+// for(var i = 0;i<3;i++){
+//     setTimeout(()=>{
+//         console.log(i);  // 3 times 3
+//     },1000);
+// }
+
+for(let i = 0;i<3;i++){
+    setTimeout(()=>{
+        console.log(i);  // 3 times 3
+    },1000);
+}
+
+
+
+
