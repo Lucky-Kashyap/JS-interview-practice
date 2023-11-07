@@ -69,3 +69,31 @@ The new object is returned: After the constructor function has been called, if i
 */
 
 // prototype
+
+let myName = "Lucky       ";
+let myChannel = "chai";
+
+// console.log(myName.length);
+
+// property method
+
+// console.log(myName.truelength);
+
+let myHeroes = ["thor", "spiderman"];
+
+let heroPower = {
+  thor: "hammer",
+  spiderman: "sling",
+
+  getSpiderPower: function () {
+    console.log(`Spidey power is : ${this.spiderman}`);
+  },
+};
+
+// heroPower.prototype
+
+Object.prototype.lucky = function () {
+  console.log(`Lucky : ${this.thor} and ${this.spiderman}`);
+};
+
+heroPower.lucky();
