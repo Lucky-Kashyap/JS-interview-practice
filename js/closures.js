@@ -180,33 +180,33 @@
 // Module.publicMethod();
 // Module.privateMethod();
 
-let view;
+// let view;
 
-function likeTheVideo() {
-  let called = 0;
+// function likeTheVideo() {
+//   let called = 0;
 
-  return function () {
-    if (called > 0) {
-      console.log("Already called");
-    } else {
-      view = "Lucky";
-      console.log("developer", view);
-      called++;
-    }
-  };
+//   return function () {
+//     if (called > 0) {
+//       console.log("Already called");
+//     } else {
+//       view = "Lucky";
+//       console.log("developer", view);
+//       called++;
+//     }
+//   };
 
-  // view = 'Lucky';
-  // console.log('developer',view);
-}
+// view = 'Lucky';
+// console.log('developer',view);
+// }
 
-let isSubscribed = likeTheVideo();
+// let isSubscribed = likeTheVideo();
 
-isSubscribed();
-isSubscribed();
-isSubscribed();
-isSubscribed();
-isSubscribed();
-isSubscribed();
+// isSubscribed();
+// isSubscribed();
+// isSubscribed();
+// isSubscribed();
+// isSubscribed();
+// isSubscribed();
 
 // likeTheVideo();
 // likeTheVideo();
