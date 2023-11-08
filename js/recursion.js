@@ -51,22 +51,34 @@
 
 // sum of array
 
-function sumOfArrays(arr, n) {
-  // if (arr.length === 0) {
-  //   return 0;
-  // }
+// function sumOfArrays(arr, n) {
+// if (arr.length === 0) {
+//   return 0;
+// }
 
-  // return arr[arr.length - 1] + sumOfArrays(arr.slice(0, arr.length - 1));
+// return arr[arr.length - 1] + sumOfArrays(arr.slice(0, arr.length - 1));
 
-  // const lastElement = arr.pop();
+// const lastElement = arr.pop();
 
-  // return lastElement + sumOfArrays(arr);
+// return lastElement + sumOfArrays(arr);
 
-  if (n === 0) {
-    return 0;
-  }
+//   if (n === 0) {
+//     return 0;
+//   }
 
-  return arr[n - 1] + sumOfArrays(arr, n - 1);
-}
+//   return arr[n - 1] + sumOfArrays(arr, n - 1);
+// }
 
-console.log(sumOfArrays([1, 2, 3, 4, 5], 5));
+// console.log(sumOfArrays([1, 2, 3, 4, 5], 5));
+
+// find array elements product
+
+// function product(arr, n) {
+//   if (n === 0) {
+//     return 0;
+//   }
+
+//   return arr[n - 1] * product(arr, n - 1);
+// }
+
+// console.log(product([1, 2, 3, 4, 5], 5));
