@@ -20,15 +20,31 @@
 
 // factorial
 
-function fact(n) {
-  if (n == 0 || n == 1) {
-    return 1;
-  } else {
-    return n * fact(n - 1);
+// function fact(n) {
+//   if (n == 0 || n == 1) {
+//     return 1;
+//   } else {
+//     return n * fact(n - 1);
+//   }
+
+// }
+
+// let res = fact(5);
+
+// console.log(res);
+
+// fibonacci
+
+function fibonacci(n) {
+  if (n <= 1) {
+    return n;
   }
-  // return fact(n) * fact(n - 1);
+  return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
-let res = fact(5);
+// Printing n fibonacci sequence
+n = 10;
 
-console.log(res);
+for (let i = 0; i < n; i++) {
+  console.log(fibonacci(i));
+}
