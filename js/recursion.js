@@ -1,10 +1,19 @@
 // recursion
 
-console.log("recursion");
+// console.log("recursion");
 
-function fun() {
-  console.log("fun");
+// print fun n times
+
+// trust your function
+
+function fun(n) {
+  if (n === 0) {
+    return;
+  }
+  console.log("fun", n);
   // fun();    // maximum call stack size exceeded
+
+  fun(n - 1);
 }
 
-fun();
+fun(10);
