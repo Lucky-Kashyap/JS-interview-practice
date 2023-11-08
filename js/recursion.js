@@ -35,16 +35,32 @@
 
 // fibonacci
 
-function fibonacci(n) {
-  if (n <= 1) {
-    return n;
-  }
-  return fibonacci(n - 1) + fibonacci(n - 2);
-}
+// function fibonacci(n) {
+//   if (n <= 1) {
+//     return n;
+//   }
+//   return fibonacci(n - 1) + fibonacci(n - 2);
+// }
 
 // Printing n fibonacci sequence
-n = 10;
+// n = 10;
 
-for (let i = 0; i < n; i++) {
-  console.log(fibonacci(i));
+// for (let i = 0; i < n; i++) {
+//   console.log(fibonacci(i));
+// }
+
+// sum of array
+
+function sumOfArrays(arr) {
+  if (arr.length === 0) {
+    return 0;
+  }
+
+  // return arr[arr.length - 1] + sumOfArrays(arr.slice(0, arr.length - 1));
+
+  const lastElement = arr.pop();
+
+  return lastElement + sumOfArrays(arr);
 }
+
+console.log(sumOfArrays([1, 2, 3, 4, 5]));
