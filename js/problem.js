@@ -152,4 +152,33 @@
 
 // console.log(input.toUpperCase());
 
-//
+//  question 7
+
+// convert only vowels to uppercase
+
+const input = "neog";
+
+function convertVowelUppercase(input) {
+  let newStr = "";
+
+  for (let i = 0; i < input.length; i++) {
+    if (
+      input[i] === "a" ||
+      input[i] === "e" ||
+      input[i] === "i" ||
+      input[i] === "o" ||
+      input[i] === "u"
+    ) {
+      newStr += input[i].toUpperCase();
+      // console.log(input[i]);
+    } else {
+      newStr += input[i];
+    }
+  }
+
+  return newStr;
+}
+
+let res = convertVowelUppercase(input);
+
+console.log(res);
