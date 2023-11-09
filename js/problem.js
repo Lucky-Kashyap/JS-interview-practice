@@ -55,31 +55,55 @@
 
 // question 3
 
-const family = [
-  {
-    name: "Tanay",
-    haveCycle: true,
-  },
-  {
-    name: "Akansha",
-    haveCycle: false,
-  },
-  {
-    name: "Tanvi",
-    haveCycle: true,
-  },
-  {
-    name: "Kanak",
-    haveCycle: false,
-  },
-];
+// const family = [
+//   {
+//     name: "Tanay",
+//     haveCycle: true,
+//   },
+//   {
+//     name: "Akansha",
+//     haveCycle: false,
+//   },
+//   {
+//     name: "Tanvi",
+//     haveCycle: true,
+//   },
+//   {
+//     name: "Kanak",
+//     haveCycle: false,
+//   },
+// ];
 
 // output  ['Tanay','Tanvi'];
 
-console.log(
-  family.filter((name) => name.haveCycle == true).map((name) => name.name)
-);
+// console.log(
+//   family.filter((name) => name.haveCycle == true).map((name) => name.name)
+// );
 
 // console.log(family.map((el) => el.haveCycle === true).filter((name) => name));
 
 // console.log(family);
+
+// question4
+
+// convert into object
+
+const arr = ["you", "all", "are", "rockstars"];
+
+// output
+
+// {'0':'you','1':'all','2':'are','3':'rockstars'};
+
+function convertIntoObj(arr) {
+  let obj = {};
+
+  for (let i = 0; i < arr.length; i++) {
+    obj[i] = arr[i];
+  }
+
+  return obj;
+}
+
+let res = convertIntoObj(arr);
+
+console.log(res);
