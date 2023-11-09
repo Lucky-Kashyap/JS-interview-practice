@@ -112,20 +112,24 @@
 
 // question 5
 
-const arr = ["Violet", "Indigo", "Blue", "Green", "Yellow", "Orange", "Red"];
+// const arr = ["Violet", "Indigo", "Blue", "Green", "Yellow", "Orange", "Red"];
 
 // output
 
 // Violet-Indigo-Blue-Green-Yellow-Orange-Red
 
-function addArrow(arr) {
-  // for (let i = 0; i < arr.length; i++) {
-  //   arr[i] += "-";
-  // }
+// function addArrow(arr) {
+// for (let i = 0; i < arr.length; i++) {
+//   arr[i] += "-";
+// }
 
-  return arr.join("-");
-}
+//   return arr.join("-");
+// }
 
-let res = addArrow(arr);
+// let res = addArrow(arr);
 
-console.log(res);
+// console.log(res);
+
+// const arr = "Violet";
+
+// console.log([...arr].join("-"));
