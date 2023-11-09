@@ -133,3 +133,15 @@
 // const arr = "Violet";
 
 // console.log([...arr].join("-"));
+
+// const input = [
+//   ["a", "b", "c"],
+//   ["c", "d", "e"],
+//   ["e", "d", "f"],
+// ];
+
+// const flatArr = [...input];
+
+// const flatArr = input.reduce((acc, curr) => [...acc, ...curr], []);
+
+// console.log(flatArr);
