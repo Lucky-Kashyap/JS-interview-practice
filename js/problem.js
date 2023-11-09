@@ -145,3 +145,11 @@
 // const flatArr = input.reduce((acc, curr) => [...acc, ...curr], []);
 
 // console.log(flatArr);
+
+// question 6
+
+// const input = "neogrammer";
+
+// console.log(input.toUpperCase());
+
+//
