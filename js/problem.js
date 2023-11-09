@@ -88,22 +88,24 @@
 
 // convert into object
 
-const arr = ["you", "all", "are", "rockstars"];
+// const arr = ["you", "all", "are", "rockstars"];
 
 // output
 
 // {'0':'you','1':'all','2':'are','3':'rockstars'};
 
-function convertIntoObj(arr) {
-  let obj = {};
+// function convertIntoObj(arr) {
+//   let obj = {};
 
-  for (let i = 0; i < arr.length; i++) {
-    obj[i] = arr[i];
-  }
+//   for (let i = 0; i < arr.length; i++) {
+//     obj[i] = arr[i];
+//   }
 
-  return obj;
-}
+//   return obj;
+// }
 
-let res = convertIntoObj(arr);
+// let res = convertIntoObj(arr);
 
-console.log(res);
+// console.log(res);
+
+// console.log(arr.reduce((acc, curr, index) => ({ ...acc, [index]: curr }), {}));
