@@ -109,3 +109,23 @@
 // console.log(res);
 
 // console.log(arr.reduce((acc, curr, index) => ({ ...acc, [index]: curr }), {}));
+
+// question 5
+
+const arr = ["Violet", "Indigo", "Blue", "Green", "Yellow", "Orange", "Red"];
+
+// output
+
+// Violet-Indigo-Blue-Green-Yellow-Orange-Red
+
+function addArrow(arr) {
+  // for (let i = 0; i < arr.length; i++) {
+  //   arr[i] += "-";
+  // }
+
+  return arr.join("-");
+}
+
+let res = addArrow(arr);
+
+console.log(res);
