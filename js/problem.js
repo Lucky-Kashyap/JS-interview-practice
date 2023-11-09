@@ -28,27 +28,58 @@
 
 // question 2
 
-const arr = [
-  {
-    name: "jay",
-    age: 60,
-  },
-  {
-    name: "Gloria",
-    age: 36,
-  },
-  {
-    name: "Maddy",
-    age: 16,
-  },
-  {
-    name: "Joe",
-    age: 9,
-  },
-];
+// const arr = [
+//   {
+//     name: "jay",
+//     age: 60,
+//   },
+//   {
+//     name: "Gloria",
+//     age: 36,
+//   },
+//   {
+//     name: "Maddy",
+//     age: 16,
+//   },
+//   {
+//     name: "Joe",
+//     age: 9,
+//   },
+// ];
 
 // ouput  121 // 60 + 36 + 16 + 9
 
 // console.log(arr.map((el) => (el.age += el.age)));
 
-console.log(arr.map((el) => el.age).reduce((acc, curr) => (acc += curr)));
+// console.log(arr.map((el) => el.age).reduce((acc, curr) => (acc += curr)));
+
+// question 3
+
+const family = [
+  {
+    name: "Tanay",
+    haveCycle: true,
+  },
+  {
+    name: "Akansha",
+    haveCycle: false,
+  },
+  {
+    name: "Tanvi",
+    haveCycle: true,
+  },
+  {
+    name: "Kanak",
+    haveCycle: false,
+  },
+];
+
+// output  ['Tanay','Tanvi'];
+
+console.log(
+  family.filter((name) => name.haveCycle == true).map((name) => name.name)
+);
+
+// console.log(family.map((el) => el.haveCycle === true).filter((name) => name));
+
+// console.log(family);
