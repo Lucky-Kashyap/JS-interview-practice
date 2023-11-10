@@ -152,6 +152,8 @@
 
 // question 5
 
+// Given an array. Write a function to join all elements of the array with a hyphen in between them
+
 // const arr = ["Violet", "Indigo", "Blue", "Green", "Yellow", "Orange", "Red"];
 
 // output
@@ -295,4 +297,33 @@
 //   }
 // ];
 
-//
+// Write a function that accepts a number as input and inserts hyphens between every two even numbers
+
+// input  is: [24345687]
+
+// Your output should be : 2-23456-87
+
+// Given an array of objects
+
+const inventory = [
+  {
+    name: "fans",
+    quantity: 3,
+  },
+  {
+    name: "chimneys",
+    quantity: 0,
+  },
+  {
+    name: "bulbs",
+    quantity: 5,
+  },
+  {
+    name: "stove",
+    quantity: 1,
+  },
+];
+
+// part a : Get all the items in an array whose quantity is less than 2.
+// part b : Get the total quantity of items present in the inventory
+// part c : Find the object which contains the item whose quantity is zero
