@@ -100,6 +100,16 @@
 
 // console.log(arr.filter((el) => el.length > 5));
 
+// Given an array. Write a function to get the sum of all elements which are greater than 50.
+
+// const arr = [1, 2, 3, 58, 5, 62, 6, 8, 70];
+
+// Your output should be: 190
+
+// console.log(arr.reduce((acc, cur) => (acc += cur > 50)));
+
+// console.log(arr.filter((el) => el > 50).reduce((acc, curr) => (acc += curr)));
+
 // question4
 
 // convert into object
