@@ -174,6 +174,8 @@
 
 // console.log([...arr].join("-"));
 
+// Flatten an array without using flat()
+
 // const input = [
 //   ["a", "b", "c"],
 //   ["c", "d", "e"],
@@ -188,13 +190,19 @@
 
 // question 6
 
+// Write a function that takes in astring and converts all the characters to uppercase
+
 // const input = "neogrammer";
+// const str = "neoG";
 
 // console.log(input.toUpperCase());
+// console.log(str.toUpperCase());
 
 //  question 7
 
 // convert only vowels to uppercase
+
+// Write a function that takes in a string and converts only the vowels to uppercase and all other characters to lowercase
 
 // const input = "neog";
 
@@ -225,42 +233,42 @@
 
 // Given an array of objects. If the name of an item is more than 5 characters in length, add type as 'vegetable'. If the name of an item if less than or equal to 5 characters in length, add type as 'fruit'.
 
-const arr = [
-  {
-    name: "Apple",
-  },
-  {
-    name: "Mango",
-  },
-  {
-    name: "Potato",
-  },
-  {
-    name: "Guava",
-  },
-  {
-    name: "Capsicum",
-  },
-];
+// const arr = [
+//   {
+//     name: "Apple",
+//   },
+//   {
+//     name: "Mango",
+//   },
+//   {
+//     name: "Potato",
+//   },
+//   {
+//     name: "Guava",
+//   },
+//   {
+//     name: "Capsicum",
+//   },
+// ];
 
-function addProperty(arr) {
-  // let obj = {};
+// function addProperty(arr) {
+// let obj = {};
 
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].name.length > 5) {
-      // obj.type='vegetable';
-      arr[i].type = "vegetable";
-    } else if (arr[i].name.length <= 5) {
-      arr[i].type = "fruit";
-    }
-  }
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i].name.length > 5) {
+//       // obj.type='vegetable';
+//       arr[i].type = "vegetable";
+//     } else if (arr[i].name.length <= 5) {
+//       arr[i].type = "fruit";
+//     }
+//   }
 
-  return arr;
-}
+//   return arr;
+// }
 
-let res = addProperty(arr);
+// let res = addProperty(arr);
 
-console.log(res);
+// console.log(res);
 
 // [
 // Your output should be:
@@ -286,3 +294,5 @@ console.log(res);
 //     type: "vegetable",
 //   }
 // ];
+
+//
