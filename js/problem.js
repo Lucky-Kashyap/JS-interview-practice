@@ -327,3 +327,9 @@ const inventory = [
 // part a : Get all the items in an array whose quantity is less than 2.
 // part b : Get the total quantity of items present in the inventory
 // part c : Find the object which contains the item whose quantity is zero
+
+// console.log(inventory.filter((el) => el.quantity < 2));
+
+console.log(
+  inventory.map((el) => el.quantity).reduce((acc, curr) => (acc += curr))
+);
