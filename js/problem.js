@@ -305,24 +305,24 @@
 
 // Given an array of objects
 
-const inventory = [
-  {
-    name: "fans",
-    quantity: 3,
-  },
-  {
-    name: "chimneys",
-    quantity: 0,
-  },
-  {
-    name: "bulbs",
-    quantity: 5,
-  },
-  {
-    name: "stove",
-    quantity: 1,
-  },
-];
+// const inventory = [
+//   {
+//     name: "fans",
+//     quantity: 3,
+//   },
+//   {
+//     name: "chimneys",
+//     quantity: 0,
+//   },
+//   {
+//     name: "bulbs",
+//     quantity: 5,
+//   },
+//   {
+//     name: "stove",
+//     quantity: 1,
+//   },
+// ];
 
 // part a : Get all the items in an array whose quantity is less than 2.
 // part b : Get the total quantity of items present in the inventory
@@ -335,3 +335,66 @@ const inventory = [
 // );
 
 // console.log(inventory.filter((el) => el.quantity === 0));
+
+// Count the occurrences of distinct elements in the given array.
+
+const input = [
+  ["a", "b", "c"],
+  ["c", "d", "e"],
+  ["e", "d", "f"],
+];
+
+function countOccurrences(input) {
+  let freq = {};
+  let count = 0;
+
+  input.forEach((char) => {
+    if (freq.hasOwnProperty(char)) freq[char]++;
+    else freq[char] = 1;
+  });
+
+  // console.log(Object.keys(freq));
+
+  let ans = Object.keys(freq).reduce((acc, num) => {
+    return freq[acc] > freq[num] ? acc : num;
+  });
+  // console.log(ans);
+  for (let i = 0; i < input.length; i++) {
+    for (let j = 1; j < input.length; j++) {
+      if (input[i] === input[j]) {
+        count++;
+      }
+    }
+  }
+
+  return freq;
+}
+
+const occurrences = countOccurrences(
+  input.reduce((acc, curr) => [...acc, ...curr], [])
+);
+console.log(occurrences);
+
+// { a:1,b:1,c:2,d:2,e:2,f:1}
+
+// console.log(input.reduce((acc, curr, index) => [...acc, ...curr], []));
+
+// function occurrencesDistinct(input) {
+//   let obj = {};
+//   let count = 0;
+
+//   for (let i = 0; i < input.length; i++) {
+//     for (let j = 0; j < input[i].length; i++) {
+//       if (input[i][j]) {
+//         count++;
+//         obj[input[i][j]] += count;
+//       }
+//     }
+//   }
+
+//   return obj;
+// }
+
+// let res = occurrencesDistinct(input);
+
+// console.log(res);
