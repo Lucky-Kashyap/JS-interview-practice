@@ -86,11 +86,19 @@
 
 // Given an array. Write a function that takes in the given array and prints only the numbers which are less than 8 and also an even number
 
-const arr = [1, 2, 3, 58, 5, 6, 24, 8, 15, 4];
+// const arr = [1, 2, 3, 58, 5, 6, 24, 8, 15, 4];
 
 // output [2,6,8,4]
 
-console.log(arr.filter((el) => el % 2 == 0 && el <= 8));
+// console.log(arr.filter((el) => el % 2 == 0 && el <= 8));
+
+// Given an array. Write a function that takes in the given array and prints only the words which are more than 5 characters in length.
+
+// const arr = ["eat", "sleep", "repeat", "code"];
+
+// Your output should be : ['repeat']
+
+// console.log(arr.filter((el) => el.length > 5));
 
 // question4
 
