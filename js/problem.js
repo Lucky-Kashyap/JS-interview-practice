@@ -28,6 +28,8 @@
 
 // question 2
 
+// Given an array of objects. Write a function to find the sum of ages of each person.
+
 // const arr = [
 //   {
 //     name: "jay",
@@ -124,6 +126,8 @@
 
 // convert into object
 
+// Given an array. Convert it in to an object with key as the index of each element and value as the element itself.
+
 // const arr = ["you", "all", "are", "rockstars"];
 
 // output
@@ -218,3 +222,67 @@
 // let res = convertVowelUppercase(input);
 
 // console.log(res);
+
+// Given an array of objects. If the name of an item is more than 5 characters in length, add type as 'vegetable'. If the name of an item if less than or equal to 5 characters in length, add type as 'fruit'.
+
+const arr = [
+  {
+    name: "Apple",
+  },
+  {
+    name: "Mango",
+  },
+  {
+    name: "Potato",
+  },
+  {
+    name: "Guava",
+  },
+  {
+    name: "Capsicum",
+  },
+];
+
+function addProperty(arr) {
+  // let obj = {};
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].name.length > 5) {
+      // obj.type='vegetable';
+      arr[i].type = "vegetable";
+    } else if (arr[i].name.length <= 5) {
+      arr[i].type = "fruit";
+    }
+  }
+
+  return arr;
+}
+
+let res = addProperty(arr);
+
+console.log(res);
+
+// [
+// Your output should be:
+
+// [{
+//     name: "Apple",
+//     type: "fruit",
+//   },
+//   {
+//     name: "Mango",
+//     type: "fruit",
+//   },
+//   {
+//     name: "Potato",
+//     type: "vegetable",
+//   },
+//   {
+//     name: "Guava",
+//     type: "fruit",
+//   },
+//   {
+//     name: "Capsicum",
+//     type: "vegetable",
+//   }
+// ];
