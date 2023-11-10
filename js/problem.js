@@ -110,6 +110,16 @@
 
 // console.log(arr.filter((el) => el > 50).reduce((acc, curr) => (acc += curr)));
 
+// Given an array. Write a function to find the product of all elements which are even.
+
+// const arr = [1, 2, 3, 7, 5, 6, 8, 9];
+
+// Your output should be: 96
+
+// console.log(
+//   arr.filter((el) => el % 2 == 0).reduce((acc, curr) => (acc *= curr))
+// );
+
 // question4
 
 // convert into object
