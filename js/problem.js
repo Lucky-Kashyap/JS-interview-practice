@@ -330,6 +330,8 @@ const inventory = [
 
 // console.log(inventory.filter((el) => el.quantity < 2));
 
-console.log(
-  inventory.map((el) => el.quantity).reduce((acc, curr) => (acc += curr))
-);
+// console.log(
+// inventory.map((el) => el.quantity).reduce((acc, curr) => (acc += curr))
+// );
+
+// console.log(inventory.filter((el) => el.quantity === 0));
