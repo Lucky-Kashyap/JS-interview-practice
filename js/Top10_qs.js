@@ -170,7 +170,15 @@
 function factorialNumber(num) {
   let fact = 1;
 
-  for (let i = num; i > 0; i--) {
+  if (num === 0) {
+    return 1;
+  }
+
+  // for (let i = num; i > 0; i--) {
+  //   fact *= i;
+  // }
+
+  for (let i = 1; i <= num; i++) {
     fact *= i;
   }
 
