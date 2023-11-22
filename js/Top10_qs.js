@@ -132,24 +132,38 @@
 
 // Q7. Write a function to find the largest number in an array?
 
-function findLargestNumber(arr) {
-  let largest = arr[0];
+// function findLargestNumber(arr) {
+//   let largest = arr[0];
 
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] > largest) {
-      largest = arr[i];
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > largest) {
+//       largest = arr[i];
+//     }
+//   }
+
+//   return largest;
+// }
+
+// let arr = [2, 4, 6, 9, 3];
+
+// let res = findLargestNumber(arr);
+
+// console.log(res);
+
+// Q8. Write a function to check if a given number is prime or not?
+
+function isPrime(number) {
+  for (let i = 2; i <= number / 2; i++) {
+    if (number % i === 0) {
+      return false;
     }
   }
 
-  return largest;
+  return true;
 }
 
-let arr = [2, 4, 6, 9, 3];
+console.log(isPrime(7));
+console.log(isPrime(10));
 
-let res = findLargestNumber(arr);
-
-console.log(res);
-
-// Q8. Write a function to check if a given number is prime or not?
 // Q9. Write a function to calculate the factorial of a number?
 // Q10. Write a program to remove all whitespaces characters from a string?
