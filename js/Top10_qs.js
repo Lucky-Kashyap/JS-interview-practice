@@ -1,13 +1,13 @@
 // Q1. Write a function that returns the reverse of string?
 
 function reverseString(str) {
-  let rev = "";
+  // let rev = "";
 
-  for (let i = str.length - 1; i >= 0; i--) {
-    rev += str[i];
-  }
+  // for (let i = str.length - 1; i >= 0; i--) {
+  //   rev += str[i];
+  // }
 
-  return rev;
+  return str.split("").reverse().join("");
 }
 
 let str = "Lucky Kashyap";
