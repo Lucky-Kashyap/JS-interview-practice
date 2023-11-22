@@ -108,29 +108,48 @@
 
 // Q6. Write a function that returns the number of vowels in a string?
 
-function countVowels(str) {
-  let count = 0;
+// function countVowels(str) {
+//   let count = 0;
 
-  let vowels = ["a", "e", "i", "o", "u"];
+//   let vowels = ["a", "e", "i", "o", "u"];
 
-  for (let char of str.toLowerCase()) {
-    // Check if the character is a vowel
-    if (vowels.includes(char)) {
-      // if true, increment the count
-      count++;
+// for (let char of str.toLowerCase()) {
+// Check if the character is a vowel
+// if (vowels.includes(char)) {
+// if true, increment the count
+//       count++;
+//     }
+//   }
+
+//   return count;
+// }
+
+// let vowels = "Hello, world!";
+
+// let res = countVowels(vowels);
+
+// console.log(res);
+
+// Q7. Write a function to find the largest number in an array?
+
+function findLargestNumber(arr) {
+  let largest = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > largest) {
+      largest = arr[i];
     }
   }
 
-  return count;
+  return largest;
 }
 
-let vowels = "Hello, world!";
+let arr = [2, 4, 6, 9, 3];
 
-let res = countVowels(vowels);
+let res = findLargestNumber(arr);
 
 console.log(res);
 
-// Q7. Write a function to find the largest number in an array?
 // Q8. Write a function to check if a given number is prime or not?
 // Q9. Write a function to calculate the factorial of a number?
 // Q10. Write a program to remove all whitespaces characters from a string?
