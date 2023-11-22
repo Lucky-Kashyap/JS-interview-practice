@@ -152,18 +152,35 @@
 
 // Q8. Write a function to check if a given number is prime or not?
 
-function isPrime(number) {
-  for (let i = 2; i <= number / 2; i++) {
-    if (number % i === 0) {
-      return false;
-    }
-  }
+// function isPrime(number) {
+//   for (let i = 2; i <= number / 2; i++) {
+//     if (number % i === 0) {
+//       return false;
+//     }
+//   }
 
-  return true;
-}
+//   return true;
+// }
 
-console.log(isPrime(7));
-console.log(isPrime(10));
+// console.log(isPrime(7));
+// console.log(isPrime(10));
 
 // Q9. Write a function to calculate the factorial of a number?
+
+function factorialNumber(num) {
+  let fact = 1;
+
+  for (let i = num; i > 0; i--) {
+    fact *= i;
+  }
+
+  return fact;
+}
+
+let num = 5;
+
+let res = factorialNumber(num);
+
+console.log(res);
+
 // Q10. Write a program to remove all whitespaces characters from a string?
