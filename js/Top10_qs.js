@@ -63,34 +63,49 @@
 
 // Q4. Write a function to remove duplicate elements from an array?
 
-function removeDuplicates(arr) {
-  // for (let i = 0; i < arr.length; i++) {
-  // if(arr[i])
-  //   for (let j = 1; j < arr.length - 1; j++) {
-  //     if (arr[i] === arr[j]) {
-  //       arr.splice(i, 1, i);
-  //     }
-  //   }
-  // }
+// function removeDuplicates(arr) {
+// for (let i = 0; i < arr.length; i++) {
+// if(arr[i])
+//   for (let j = 1; j < arr.length - 1; j++) {
+//     if (arr[i] === arr[j]) {
+//       arr.splice(i, 1, i);
+//     }
+//   }
+// }
 
-  // let uniqueElements = [];
+// let uniqueElements = [];
 
-  // for (let i = 0; i < arr.length; i++) {
-  //   if (uniqueElements.indexOf(arr[i]) === -1) {
-  //     uniqueElements.push(arr[i]);
-  //   }
-  // }
+// for (let i = 0; i < arr.length; i++) {
+//   if (uniqueElements.indexOf(arr[i]) === -1) {
+//     uniqueElements.push(arr[i]);
+//   }
+// }
 
-  // return uniqueElements;
+// return uniqueElements;
 
-  return [...new Set(arr)];
+//   return [...new Set(arr)];
+// }
+
+// let arr = [1, 2, 3, 4, 4, 5, 6, 6];
+
+// let res = removeDuplicates(arr); // output  [1,2,3,4,5,6]
+// console.log(res);
+// Q5. Write a function that checks whether two strings are anagrams or not?
+
+function anagram(str1, str2) {
+  let sortedStr1 = str1.split("").sort().join("");
+  let sortedStr2 = str2.split("").sort().join("");
+
+  return sortedStr1 === sortedStr2;
 }
 
-let arr = [1, 2, 3, 4, 4, 5, 6, 6];
+let str1 = "listen";
+let str2 = "silent";
 
-let res = removeDuplicates(arr); // output  [1,2,3,4,5,6]
+let res = anagram(str1, str2);
+
 console.log(res);
-// Q5. Write a function that checks whether two strings are anagrams or not?
+
 // Q6. Write a function that returns the number of vowels in a string?
 // Q7. Write a function to find the largest number in an array?
 // Q8. Write a function to check if a given number is prime or not?
