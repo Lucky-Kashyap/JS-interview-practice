@@ -49,19 +49,45 @@
 
 // Q3. Write a function that checks whether a given string is a palindrome or not?
 
-function isPalindrome(str) {
-  let rev = str.split("").reverse().join("");
+// function isPalindrome(str) {
+//   let rev = str.split("").reverse().join("");
 
-  return str === rev;
-}
+//   return str === rev;
+// }
 
-let str = "racecar";
+// let str = "racecar";
 
-let res = isPalindrome(str);
+// let res = isPalindrome(str);
 
-console.log("palindrome or not: ", res);
+// console.log("palindrome or not: ", res);
 
 // Q4. Write a function to remove duplicate elements from an array?
+
+function removeDuplicates(arr) {
+  // for (let i = 0; i < arr.length; i++) {
+  // if(arr[i])
+  //   for (let j = 1; j < arr.length - 1; j++) {
+  //     if (arr[i] === arr[j]) {
+  //       arr.splice(i, 1, i);
+  //     }
+  //   }
+  // }
+
+  let uniqueElements = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (uniqueElements.indexOf(arr[i]) === -1) {
+      uniqueElements.push(arr[i]);
+    }
+  }
+
+  return uniqueElements;
+}
+
+let arr = [1, 2, 3, 4, 4, 5, 6, 6];
+
+let res = removeDuplicates(arr); // output  [1,2,3,4,5,6]
+console.log(res);
 // Q5. Write a function that checks whether two strings are anagrams or not?
 // Q6. Write a function that returns the number of vowels in a string?
 // Q7. Write a function to find the largest number in an array?
