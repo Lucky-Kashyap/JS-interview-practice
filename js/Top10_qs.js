@@ -167,28 +167,43 @@
 
 // Q9. Write a function to calculate the factorial of a number?
 
-function factorialNumber(num) {
-  let fact = 1;
+// function factorialNumber(num) {
+//   let fact = 1;
 
-  if (num === 0) {
-    return 1;
-  }
+//   if (num === 0) {
+//     return 1;
+//   }
 
-  // for (let i = num; i > 0; i--) {
-  //   fact *= i;
-  // }
+// for (let i = num; i > 0; i--) {
+//   fact *= i;
+// }
 
-  for (let i = 1; i <= num; i++) {
-    fact *= i;
-  }
+//   for (let i = 1; i <= num; i++) {
+//     fact *= i;
+//   }
 
-  return fact;
-}
+//   return fact;
+// }
 
-let num = 5;
+// let num = 5;
 
-let res = factorialNumber(num);
+// let res = factorialNumber(num);
 
-console.log(res);
+// console.log(res);
 
 // Q10. Write a program to remove all whitespaces characters from a string?
+
+function removeWhiteSpace(str) {
+  // Use a regular expression
+  // The \s pattern matches whitespaces characters
+  // Including spaces, tabs, and line breaks
+  // the g flag is used to perform a global search
+  // and replace, replacing all occurrences.
+  // let result = str.replace(/\s/g, "");
+  // return result;
+  // return str.trim();
+}
+
+let inputString = " Interview,    Happy   ";
+
+console.log(removeWhiteSpace(inputString));
