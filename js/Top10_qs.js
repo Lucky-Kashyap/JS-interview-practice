@@ -26,9 +26,15 @@ function longestWord(str) {
 
   // console.log(brea);
 
-  for (let i = 0; i < brea.length; i++) {
-    if (max.length < brea[i].length) {
-      max = brea[i];
+  // for (let i = 0; i < brea.length; i++) {
+  //   if (max.length < brea[i].length) {
+  //     max = brea[i];
+  //   }
+  // }
+
+  for (let word of brea) {
+    if (word.length > max.length) {
+      max = word;
     }
   }
 
