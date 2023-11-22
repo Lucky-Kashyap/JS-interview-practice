@@ -18,36 +18,49 @@
 
 // Q2. Write a function that returns the longest word in the sentence?
 
-function longestWord(str) {
-  // let word = "";
+// function longestWord(str) {
+// let word = "";
 
-  let brea = str.split(" ");
-  let max = "";
+// let brea = str.split(" ");
+// let max = "";
 
-  // console.log(brea);
+// console.log(brea);
 
-  // for (let i = 0; i < brea.length; i++) {
-  //   if (max.length < brea[i].length) {
-  //     max = brea[i];
-  //   }
-  // }
+// for (let i = 0; i < brea.length; i++) {
+//   if (max.length < brea[i].length) {
+//     max = brea[i];
+//   }
+// }
 
-  for (let word of brea) {
-    if (word.length > max.length) {
-      max = word;
-    }
-  }
+//   for (let word of brea) {
+//     if (word.length > max.length) {
+//       max = word;
+//     }
+//   }
 
-  return max;
+//   return max;
+// }
+
+// let str = "I, am a React JS Developer having 3 years of experience...";
+
+// let res = longestWord(str);
+
+// console.log(res);
+
+// Q3. Write a function that checks whether a given string is a palindrome or not?
+
+function isPalindrome(str) {
+  let rev = str.split("").reverse().join("");
+
+  return str === rev;
 }
 
-let str = "I, am a React JS Developer having 3 years of experience...";
+let str = "racecar";
 
-let res = longestWord(str);
+let res = isPalindrome(str);
 
-console.log(res);
+console.log("palindrome or not: ", res);
 
-// Q3. Write a function htat checks whether a given string is a palindrome or not?
 // Q4. Write a function to remove duplicate elements from an array?
 // Q5. Write a function that checks whether two strings are anagrams or not?
 // Q6. Write a function that returns the number of vowels in a string?
