@@ -92,21 +92,44 @@
 // console.log(res);
 // Q5. Write a function that checks whether two strings are anagrams or not?
 
-function anagram(str1, str2) {
-  let sortedStr1 = str1.split("").sort().join("");
-  let sortedStr2 = str2.split("").sort().join("");
+// function anagram(str1, str2) {
+//   let sortedStr1 = str1.split("").sort().join("");
+//   let sortedStr2 = str2.split("").sort().join("");
 
-  return sortedStr1 === sortedStr2;
+//   return sortedStr1 === sortedStr2;
+// }
+
+// let str1 = "listen";
+// let str2 = "silent";
+
+// let res = anagram(str1, str2);
+
+// console.log(res);
+
+// Q6. Write a function that returns the number of vowels in a string?
+
+function countVowels(str) {
+  let count = 0;
+
+  let vowels = ["a", "e", "i", "o", "u"];
+
+  for (let char of str.toLowerCase()) {
+    // Check if the character is a vowel
+    if (vowels.includes(char)) {
+      // if true, increment the count
+      count++;
+    }
+  }
+
+  return count;
 }
 
-let str1 = "listen";
-let str2 = "silent";
+let vowels = "Hello, world!";
 
-let res = anagram(str1, str2);
+let res = countVowels(vowels);
 
 console.log(res);
 
-// Q6. Write a function that returns the number of vowels in a string?
 // Q7. Write a function to find the largest number in an array?
 // Q8. Write a function to check if a given number is prime or not?
 // Q9. Write a function to calculate the factorial of a number?
