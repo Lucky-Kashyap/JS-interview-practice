@@ -153,13 +153,25 @@
 
 // 10.)
 
-const obj = {
-  name: "Lucky Kashyap",
-  sayName: function () {
-    console.log(this.name);
-  },
-};
+// const obj = {
+//   name: "Lucky Kashyap",
+//   sayName: function () {
+//     console.log(this.name);
+//   },
+// };
 
 // setTimeout(obj.sayName, 3 * 1000);
 
-setTimeout(obj.sayName.bind(obj), 3 * 1000);
+// setTimeout(obj.sayName.bind(obj), 3 * 1000);
+
+// 11.)/
+
+const obj = {
+  height: 30,
+};
+
+console.log(obj.height);
+
+delete obj.height;
+
+console.log(obj.height);
