@@ -47,18 +47,28 @@
 
 // 4)
 
-var variable = 10;
+// var variable = 10;
 
-(() => {
-  console.log(variable);
+// (() => {
+//   console.log(variable);
 
-  variable = 20;
+//   variable = 20;
 
-  console.log(variable);
-})();
+//   console.log(variable);
+// })();
 
-console.log(variable);
+// console.log(variable);
 
-var variable = 30;
+// var variable = 30;
 
-console.log(variable);
+// console.log(variable);
+
+// 5)
+
+// foo = 30;
+
+// console.log("FOO", foo);
+
+// var foo = 100;
+
+// console.log("FOO", foo);
