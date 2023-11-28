@@ -135,18 +135,31 @@
 
 // 9.)
 
+// const obj = {
+//   name: "lucky kashyap",
+//   sayName: function () {
+//     console.log(this.name);
+//   },
+// };
+
+// const obj2 = {
+//   name: "Ajay Pratap",
+//   sayName: function () {
+//     console.log(this.name);
+//   },
+// };
+
+// obj2.sayName.call(obj);
+
+// 10.)
+
 const obj = {
-  name: "lucky kashyap",
+  name: "Lucky Kashyap",
   sayName: function () {
     console.log(this.name);
   },
 };
 
-const obj2 = {
-  name: "Ajay Pratap",
-  sayName: function () {
-    console.log(this.name);
-  },
-};
+// setTimeout(obj.sayName, 3 * 1000);
 
-obj2.sayName.call(obj);
+setTimeout(obj.sayName.bind(obj), 3 * 1000);
