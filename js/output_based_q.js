@@ -101,6 +101,34 @@
 //   setTimeout(() => console.log(i), 0);
 // }
 
-for (let i = 0; i < 10; i++) {
-  setTimeout(() => console.log(i), 0);
-}
+// for (let i = 0; i < 10; i++) {
+//   setTimeout(() => console.log(i), 0);
+// }
+
+// 8.)
+
+// var fullName = "Lucky Kashyap";
+
+// var obj = {
+// fullName: "Hacked Full Name",
+//   prop: {
+//     fullName: "Inside Prop",
+//     getFullName: function () {
+//       return this.fullName;
+//     },
+//   },
+//   getFullName: function () {
+//     return this.fullName;
+//   },
+//   getFullNameV2: () => this.fullName,
+//   getFullNameV3: (function () {
+//     return this.fullName;
+//   })(),
+// };
+
+// console.log(obj);
+
+// console.log(obj.prop.getFullName());
+// console.log(obj.getFullName());
+// console.log(obj.getFullNameV2());
+// console.log(obj.getFullNameV3);
