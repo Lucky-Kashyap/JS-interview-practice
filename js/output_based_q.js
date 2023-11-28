@@ -132,3 +132,21 @@
 // console.log(obj.getFullName());
 // console.log(obj.getFullNameV2());
 // console.log(obj.getFullNameV3);
+
+// 9.)
+
+const obj = {
+  name: "lucky kashyap",
+  sayName: function () {
+    console.log(this.name);
+  },
+};
+
+const obj2 = {
+  name: "Ajay Pratap",
+  sayName: function () {
+    console.log(this.name);
+  },
+};
+
+obj2.sayName.call(obj);
