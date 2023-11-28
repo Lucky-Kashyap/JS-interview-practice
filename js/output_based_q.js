@@ -31,16 +31,34 @@
 
 // 3)
 
-myFun();
+// myFun();
 
-var myFun = function () {
-  console.log("First");
-};
+// var myFun = function () {
+//   console.log("First");
+// };
 
-myFun();
+// myFun();
 
-function myFun() {
-  console.log("SEcond");
-}
+// function myFun() {
+//   console.log("SEcond");
+// }
 
-myFun();
+// myFun();
+
+// 4)
+
+var variable = 10;
+
+(() => {
+  console.log(variable);
+
+  variable = 20;
+
+  console.log(variable);
+})();
+
+console.log(variable);
+
+var variable = 30;
+
+console.log(variable);
