@@ -92,8 +92,12 @@ const prices = [
 
 // shorter way
 
+// const data = prices
+//   .sort((a, b) => a.value - b.value)
+//   .map((item) => ({ ...item, grade: "very well" }));
+
 const data = prices
   .sort((a, b) => a.value - b.value)
-  .map((item) => ({ ...item, grade: "very well" }));
+  .map((item, index) => ({ ...item, grade: index + 1 }));
 
 console.log(data);
