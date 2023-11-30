@@ -80,12 +80,20 @@ const prices = [
   },
 ];
 
-for (let i = 0; i < prices.length - 1; i++) {
-  for (let j = i + 1; j < prices.length; j++) {
-    if (prices[i].value > prices[j].value) {
-      const temp = prices[i];
-      prices[i] = prices[j];
-      prices[j] = temp;
-    }
-  }
-}
+// for (let i = 0; i < prices.length - 1; i++) {
+//   for (let j = i + 1; j < prices.length; j++) {
+//     if (prices[i].value > prices[j].value) {
+//       const temp = prices[i];
+//       prices[i] = prices[j];
+//       prices[j] = temp;
+//     }
+//   }
+// }
+
+// shorter way
+
+const data = prices
+  .sort((a, b) => a.value - b.value)
+  .map((item) => ({ ...item, grade: "very well" }));
+
+console.log(data);
