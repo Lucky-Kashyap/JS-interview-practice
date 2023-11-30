@@ -39,12 +39,20 @@ const products = [
   },
 ];
 
-const inStock = [];
+// const inStock = [];
 
-for (let i = 0; i < products.length; i++) {
-  if (products[i].inStock) {
-    inStock.push(products[i]);
-  }
-}
+// for (let i = 0; i < products.length; i++) {
+//   if (products[i].inStock) {
+//     inStock.push(products[i]);
+//   }
+// }
 
-console.log(inStock);
+// console.log(inStock);
+
+// console.log(products.filter((prod) => prod.inStock === true));
+
+const ans = products
+  .filter((prod) => prod.inStock === true)
+  .map((item) => ({ name: item.name, price: item.price }));
+
+console.log(ans);
