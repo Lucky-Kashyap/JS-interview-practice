@@ -15,16 +15,34 @@
 // - Javascript Task Queue and Micro Task Queue
 // - Async Javascript and Event Loop
 
-function a() {
-  console.log("A");
+// function a() {
+//   console.log("A");
+// }
+
+// setTimeout(() => {
+//   console.log("B");
+// }, 0);
+
+// a();
+
+// console.log("C");
+
+// Promise.resolve().then(() => console.log("D"));
+
+async function getData() {
+  return 1;
 }
 
-setTimeout(() => {
-  console.log("B");
-}, 0);
+console.log("A");
 
-a();
+console.log("B");
 
-console.log("C");
+setTimeout(() => console.log("C"), 0);
 
-Promise.resolve().then(() => console.log("D"));
+getData().then(() => console.log("I got the data"));
+
+console.log("D");
+
+console.log("E");
+
+console.log("F");
