@@ -1243,7 +1243,10 @@ Example 2:
 
 Using HTML, CSS & JS
 
-<<<<<<< HEAD
+![ezgif com-video-to-gif (1)](https://github.com/Lucky-Kashyap/JS-interview-practice/assets/88204554/014cdcc6-c39e-457f-983e-5434658c63b7)
+
+
+
 # Problem Based on map vs filter vs reduce
 
 1. Convert array
