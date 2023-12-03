@@ -474,25 +474,20 @@
 
 // console.log(res);
 
-
 // count words
 
-
-
-function countWord(str){
-
+function countWord(str) {
   let character = str.length;
 
-  let wordLength = str.trim().split(' ').length;
+  let wordLength = str.trim().split(" ").length;
 
-  console.log('Character length  ',character);
+  console.log("Character length  ", character);
 
   return wordLength;
-
 }
 
 let str = "React JS Developer from India";
 
 let res = countWord(str);
 
-console.log('Word Count : '+res);
+console.log("Word Count : " + res);
