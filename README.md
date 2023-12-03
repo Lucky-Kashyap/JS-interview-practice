@@ -1243,7 +1243,8 @@ Example 2:
 
 Using HTML, CSS & JS
 
-![ezgif com-video-to-gif](https://github.com/Lucky-Kashyap/JS-interview-practice/assets/88204554/ddaf3e8d-8b31-4669-ba4d-b784d54dd588)
+![ezgif com-video-to-gif (1)](https://github.com/Lucky-Kashyap/JS-interview-practice/assets/88204554/591a6887-236c-4f2c-9194-043c717b6b28)
+
 
 
 
