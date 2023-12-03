@@ -55,7 +55,7 @@ const has also block
       console.log(age);
       console.log(a);  // give error
 
-Hoisting: It means moving variables declaration & functions are top of the scope
+### Hoisting: It means moving variables declaration & functions are top of the scope
 
       console.log(count);
 
@@ -78,7 +78,7 @@ Hoisting: It means moving variables declaration & functions are top of the scope
 
 var is hoisted but let a & const hoist in TDZ
 
-Functions in JS :
+### Functions in JS :
 
 - function expression
 - function statement
@@ -112,7 +112,7 @@ function can be passed to another function
         })(2);
        })(1);
 
-Arrow function vs regular function:
+### Arrow function vs regular function:
 
     function square(num){
         return num * num;
@@ -132,7 +132,7 @@ About 'this' keyword:
 
         fn();
 
-Truthy & Falsy values:
+### Truthy & Falsy values:
 
 0,null,'',{},-0,false,undefined,Infinity,-Infinity are falsy values
 
@@ -145,3 +145,114 @@ Truthy & Falsy values:
           if(0){
             console.log('falsy value');
           }
+
+### Solving Array Based Questions logical Based:
+
+1.  How do you check if an element exits in an array?
+
+          const findElement = (arr, target) => {
+          for (let x of arr) {
+            console.log(x);
+            if (x == target) {
+              return true;
+            }
+          }
+          return false;
+        };
+          console.log(findElement(arr, "hello"));
+
+          console.log(findElement(arr, 3));
+
+          console.log(arr.includes("hello"));
+
+2.  How do check if an element exits or not if exits return its index
+
+          const findElementIndex =    (arr,target)=>{
+            for(let i=0;i<arr.length;i++){
+                if(arr[i] === target){
+                    return i;
+                }
+            }
+            return -1;
+        }
+        console.log(findElementIndex(arr,3));
+        console.log(arr.indexOf(2));
+
+3.  How to delete, add & Update element from specific index
+
+            arr.splice(1,3);  // delete 3 items from 1 index
+
+        console.log(arr);
+
+        arr.splice(1, 0, 10, 20, 30); // add items from 1 index
+
+        arr.splice(1,3,10,20,30,40);
+
+        let subArr = arr.slice(1,3);   //slice or break arr into subarray
+
+4.  how to add two array
+
+          const newArr = [...arr, ...arrE];
+
+          console.log(newArr);
+
+          const arr = [1, 2, 3, 4, "hello"];
+
+5.  how to check if two arrays are equal
+
+        const isArrayEqual=(arr1,arr2)=>{
+        if(arr1.length !== arr2.length){
+            return false;
+        }
+
+        for(let i=0;i<arr1.length;i++){
+            if(arr1[i] !== arr2[i]){
+                return false;
+            }
+        }
+
+        // return true;
+
+        return arr1.length === arr2.length && arr1.every((ele,i)=> arr1[i] === arr2[i])
+
+        }
+
+        const arr = [1, 2, 3, 4, "hello"];
+
+        const arr2 = [1,2,3,4,'hello'];
+
+        console.log(isArrayEqual(arr,arr2));
+
+6.  how to sort an array in ascending and desending order
+
+        let arr =[1,4,6,0,-9,-5];
+
+        arr.sort();
+
+        console.log(arr);
+
+7.  How to reverse array
+
+          let arr = [1,4,6,0,-9,-5];
+
+          arr.reverse();
+          let newArr = [];
+
+        for (let i = arr.length - 1; i >= 0; i--) {
+          newArr.push(arr[i]);
+        }
+
+        console.log(newArr);
+
+8.  filter vs find
+
+// find method return first element when condition satisfies
+
+// filter check for revery element and return all elements which satisfy the condition
+
+        const numbers = [1, 2, 3, 4, 5];
+
+      // const evenNumbers = numbers.filter((number) => number % 2 === 0);
+
+    const evenNumbers = numbers.find((number) => number % 2 === 0);
+    console.log(evenNumbers); // return first element which statis condiiton
