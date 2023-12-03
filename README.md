@@ -1243,6 +1243,190 @@ Example 2:
 
 Using HTML, CSS & JS
 
+# Problem Based on map vs filter vs reduce
+
+1. Convert array
+
+Input: const arr = [1,2,3,58,5,6,24,8,15,4];
+
+Output : [1,3,3,59,5,7,25,9,15,5]
+
+    function convertArr(arr) {
+      let newArr = [];
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] % 2 == 0) {
+        arr[i] += 1;
+
+    newArr.push(arr[i]);
+      }
+    }
+
+      newArr = arr.map((el) => (el % 2 == 0 ? (el += 1) : el));
+
+      return newArr;
+    }
+
+    const arr = [1, 2, 3, 58, 5, 6, 24, 8, 15, 4];
+
+    let res = convertArr(arr);
+
+    console.log(res);
+
+2 - Given an array of objects. Write a function to find the sum of ages of each person.
+
+    const arr = [
+      {
+        name: "jay",
+        age: 60,
+      },
+      {
+        name: "Gloria",
+        age: 36,
+      },
+      {
+        name: "Maddy",
+        age: 16,
+      },
+      {
+        name: "Joe",
+        age: 9,
+      },
+    ];
+
+    // output  121 // 60 + 36 + 16 + 9
+
+    console.log(arr.map((el) => (el.age += el.age)));
+
+    console.log(arr.map((el) => el.age).reduce((acc, curr) => (acc += curr)));
+
+3 - Given array of object & find this :
+
+Output: ['Tanay','Tanvi'];
+
+    const family = [
+      {
+        name: "Tanay",
+        haveCycle: true,
+      },
+      {
+        name: "Akansha",
+        haveCycle: false,
+      },
+      {
+        name: "Tanvi",
+        haveCycle: true,
+      },
+      {
+        name: "Kanak",
+        haveCycle: false,
+      },
+    ];
+
+
+
+    console.log(
+      family.filter((name) => name.haveCycle == true).map((name) => name.name)
+    );
+
+    console.log(family.map((el) => el.haveCycle === true).filter((name) => name));
+
+    console.log(family);
+
+4 - Given an array. Write a function that takes in the given array and prints only the numbers which are less than 8 and also an even number
+
+Output: [2,6,8,4]
+
+    const arr = [1, 2, 3, 58, 5, 6, 24, 8, 15, 4];
+
+    console.log(arr.filter((el) => el % 2 == 0 && el <= 8));
+
+5 - Given an array. Write a function that takes in the given array and prints only the words which are more than 5 characters in length.
+
+Your output should be : ['repeat']
+
+    const arr = ["eat", "sleep", "repeat", "code"];
+
+    console.log(arr.filter((el) => el.length > 5));
+
+6 - Given an array. Write a function to get the sum of all elements which are greater than 50.
+
+Your output should be: 190
+
+    const arr = [1, 2, 3, 58, 5, 62, 6, 8, 70];
+
+
+
+    console.log(arr.reduce((acc, cur) => (acc += cur > 50)));
+
+    console.log(arr.filter((el) => el > 50).reduce((acc, curr) => (acc += curr)));
+
+7 - Given an array. Write a function to find the product of all elements which are even.
+
+Your output should be: 96
+
+      const arr = [1, 2, 3, 7, 5, 6, 8, 9];
+
+
+
+      console.log(
+        arr.filter((el) => el % 2 == 0).reduce((acc, curr) => (acc *= curr))
+      );
+
+8 - Given an array. Convert it in to an object with key as the index of each element and value as the element itself.
+
+Output : {'0':'you','1':'all','2':'are','3':'rockstars'};
+
+    function convertIntoObj(arr) {
+      let obj = {};
+
+      for (let i = 0; i < arr.length; i++) {
+        obj[i] = arr[i];
+      }
+
+      return obj;
+    }
+
+    let res = convertIntoObj(arr);
+
+    console.log(res);
+
+    console.log(arr.reduce((acc, curr, index) => ({ ...acc, [index]: curr }), {}));
+
+9 - Given an array. Write a function to join all elements of the array with a hyphen in between them
+
+Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
+
+    function addArrow(arr) {
+    for (let i = 0; i < arr.length; i++) {
+      arr[i] += "-";
+    }
+
+      return arr.join("-");
+    }
+
+    let res = addArrow(arr);
+
+    console.log(res);
+
+    const arr = "Violet";
+
+    console.log([...arr].join("-"));
+
+10 - Flatten an array without using flat()
+
+    const input = [
+      ["a", "b", "c"],
+      ["c", "d", "e"],
+      ["e", "d", "f"],
+    ];
+
+    const flatArr = [...input];
+
+    const flatArr = input.reduce((acc, curr) => [...acc, ...curr], []);
+
+    console.log(flatArr);
+
 # Interview Prep
 
 Happy Learning! ✨
