@@ -1243,6 +1243,7 @@ Example 2:
 
 Using HTML, CSS & JS
 
+<<<<<<< HEAD
 # Problem Based on map vs filter vs reduce
 
 1. Convert array
@@ -1426,6 +1427,12 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
     const flatArr = input.reduce((acc, curr) => [...acc, ...curr], []);
 
     console.log(flatArr);
+=======
+![ezgif com-video-to-gif (1)](https://github.com/Lucky-Kashyap/JS-interview-practice/assets/88204554/591a6887-236c-4f2c-9194-043c717b6b28)
+
+
+
+>>>>>>> d5eb198b8d0c846b0a045b052bc938d5550a203a
 
 # Interview Prep
 
