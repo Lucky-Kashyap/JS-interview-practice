@@ -256,3 +256,66 @@ About 'this' keyword:
 
     const evenNumbers = numbers.find((number) => number % 2 === 0);
     console.log(evenNumbers); // return first element which statis condiiton
+
+### About For Loop
+
+Learning - You don't Know FOR LOOP yet! : 😁
+
+-In JavaScript, the code is executed in two phases:
+
+- Memory Creation Phase. ⚡
+- Code Execution Phase. ⚡
+
+- About for loop - The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop. (Mozilla) docs about JS For Loop.
+
+Examples:
+
+          for(let i=0;i<3;i++){
+          console.log(i); // 0 1 2
+          }
+
+          for(var i=0;i<3;i++){
+          console.log(i); // 0 1 2
+          }
+
+- var - global scope
+- let - block scope.
+- with setTimeOut
+
+      for(let i=0;i<3;i++){
+      setTimeout(()=>{
+      console.log(i); // 0 1 2
+      },1000);
+      }
+
+  for (var i = 0; i <=3; i++) {
+  setTimeout(() => {
+  console.log(i); // 4 - (4) times
+  }, 1000);
+  }
+
+- SetTimeout basically goes inside WEB API (call back Queue) of Browser.
+
+- Lexical Declaration cannot appear in a single statement context.
+
+- The only thing is read MDN DOCS For knowing all about for loop.
+
+- In Docs, all aspects will be cover and given examples.
+
+- Examples:
+
+        for(let i=0;getI=()=>i, i<3;i++){
+        console.log(getI());
+        }
+
+- Declaring a variable within the initialization block has important differences from declaring it in the upper scope, especially when creating a closure within the loop body.
+
+- new lexical scope is created with new block level (let & const both).
+
+- new block is created every time .when it executes loop.
+
+- new block created for every value
+
+       for(let i=0 ;i<3;i++){
+       setTimeout(()=>console.log(i)); // 0 1 2
+       }
