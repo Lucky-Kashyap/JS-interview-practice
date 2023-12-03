@@ -1186,3 +1186,65 @@ print factorial
     .reduce((acc, curr) => acc + curr.marks, 0);
 
     console.log(totalMarks);
+
+# Async vs Sync JS
+
+- Basically how JS code excutes & run async code
+- promise, setTimeout , async, await
+
+For asynchronous Code :
+
+- we write code in promise, setTimeout, async, await
+
+- Javascript Engine Working
+- Javascript Call Stacks
+- Javascript Browser WebAPI's
+- Javascript Task Queue and Micro Task Queue
+- Working with Javascript Promises and Timers
+
+- Javascript Task Queue and Micro Task Queue
+- Async Javascript and Event Loop
+
+       function a() {
+         console.log("A");
+       }
+
+       setTimeout(() => {
+         console.log("B");
+       }, 0);
+
+       a();
+
+       console.log("C");
+
+       Promise.resolve().then(() => console.log("D"));
+
+       async function getData() {
+         return 1;
+       }
+
+Example 2:
+
+      console.log("A");
+
+      console.log("B");
+
+      setTimeout(() => console.log("C"), 0);
+
+      getData().then(() => console.log("I got the data"));
+
+      console.log("D");
+
+      console.log("E");
+
+      console.log("F");
+
+# Hamburger Menu
+
+Using HTML, CSS & JS
+
+# Interview Prep
+
+Happy Learning! ✨
+
+Made with ☕️ by Divyanshu Kashyap
