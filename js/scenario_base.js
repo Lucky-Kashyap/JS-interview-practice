@@ -26,14 +26,36 @@
 
 // By using Slice() method or pagination libraries like react-paginate
 
-const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+// const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
-const itemsPerPage = 10;
+// const itemsPerPage = 10;
 
-const pageNumber = 1;
+// const pageNumber = 1;
 
-const startIndex = (pageNumber - 1) * itemsPerPage;
+// const startIndex = (pageNumber - 1) * itemsPerPage;
 
-const paginatedData = data.slice(startIndex, startIndex + itemsPerPage);
+// const paginatedData = data.slice(startIndex, startIndex + itemsPerPage);
 
-console.log(paginatedData);
+// console.log(paginatedData);
+
+// How to store key-value pairs & efficiently access and manipulate the data?
+
+// By using Objects or Maps.
+
+// store key value pair
+
+// const person = {
+//   name: "Lucky",
+//   age: 23,
+//   work: "Software Engineer",
+// };
+
+// access value by key
+
+// console.log(person.name);
+
+// modify value
+
+// person.name = "Divyanshu Kashyap";
+
+// console.log(person.name);
