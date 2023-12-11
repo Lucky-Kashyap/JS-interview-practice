@@ -1245,8 +1245,6 @@ Using HTML, CSS & JS
 
 ![ezgif com-video-to-gif (1)](https://github.com/Lucky-Kashyap/JS-interview-practice/assets/88204554/014cdcc6-c39e-457f-983e-5434658c63b7)
 
-
-
 # Problem Based on map vs filter vs reduce
 
 1. Convert array
@@ -1430,12 +1428,6 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
     const flatArr = input.reduce((acc, curr) => [...acc, ...curr], []);
 
     console.log(flatArr);
-=======
-![ezgif com-video-to-gif (1)](https://github.com/Lucky-Kashyap/JS-interview-practice/assets/88204554/591a6887-236c-4f2c-9194-043c717b6b28)
-
-
-
->>>>>>> d5eb198b8d0c846b0a045b052bc938d5550a203a
 
 # Interview Prep
 
