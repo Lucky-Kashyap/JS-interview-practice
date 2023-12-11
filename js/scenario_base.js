@@ -78,13 +78,23 @@
 
 // Array of numbers
 
-const numbers = [1, 2, 3, 4, 5];
+// const numbers = [1, 2, 3, 4, 5];
 
 // Fetch number one by one
 
-numbers.forEach((number) => {
-  // modify each element
-  number = number * 2;
+// numbers.forEach((number) => {
+// modify each element
+//   number = number * 2;
 
-  console.log(number);
-});
+//   console.log(number);
+// });
+
+// How to implement a feature that allows users to search for specific items in a large dataset?
+
+const data = ["My", "Name", "is", "Lucky"];
+
+const searchTerm = "pp";
+
+const filteredData = data.filter((item) => item.includes(searchTerm));
+
+console.log(filteredData);
