@@ -59,3 +59,15 @@
 // person.name = "Divyanshu Kashyap";
 
 // console.log(person.name);
+
+// How to implement drag-and-drop functionality for elements on a webpage?
+
+// by setting draggable='true' for the element in html file
+
+// by adding event listener to dragstart event in JS.
+
+const draggableElement = document.getElementById("dragElement");
+
+draggableElement.addEventListener("dragstart", (e) => {
+  e.dataTransfer.setData("text/plain", e.target.id);
+});
