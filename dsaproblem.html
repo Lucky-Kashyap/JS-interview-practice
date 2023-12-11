@@ -17,11 +17,43 @@
     <!-- <script src="js/use_strict.js" defer></script> -->
     <!-- <script src="js/js_interview_async.js" defer></script> -->
     <script src="js/scenario_base.js" defer></script>
+
+    <style>
+      #search-container {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      #suggestions-container {
+        width: 300px;
+        margin: auto;
+        text-align: left;
+        display: none;
+        border: 1px solid #ccc;
+        max-height: 150px;
+        overflow-y: auto;
+      }
+
+      .suggestion {
+        padding: 8px;
+        cursor: pointer;
+      }
+
+      .suggestion:hover {
+        background-color: #f2f2f2;
+      }
+    </style>
   </head>
   <body>
     <h1>Basic Problems with JS</h1>
+    <!-- 
+    <input type="text" id="myInput" />
+    <div draggable="true" id="dragElement">Drag me!</div> -->
 
-    <!-- <input type="text" id="myInput" /> -->
-    <div draggable="true" id="dragElement">Drag me!</div>
+    <div id="search-container">
+      <label for="search">Search:</label>
+      <input type="text" id="myInput" oninput="getSuggestions(this.value)" />
+      <div id="suggestions-container"></div>
+    </div>
   </body>
 </html>

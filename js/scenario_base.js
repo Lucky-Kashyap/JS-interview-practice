@@ -91,10 +91,86 @@
 
 // How to implement a feature that allows users to search for specific items in a large dataset?
 
-const data = ["My", "Name", "is", "Lucky"];
+// const data = ["My", "Name", "is", "Lucky"];
 
-const searchTerm = "pp";
+// const searchTerm = "pp";
 
-const filteredData = data.filter((item) => item.includes(searchTerm));
+// const filteredData = data.filter((item) => item.includes(searchTerm));
 
-console.log(filteredData);
+// console.log(filteredData);
+
+// How to implement a feature that allows users to perform live search suggestions as they type?
+
+// const input = document.getElementById("myInput");
+
+// input.addEventListener("input", (e) => {
+//   const searchText = e.target.value;
+
+//   fetch(`/search/suggestions?query=${searchText}`)
+//     .then((res) => res.json())
+//     .then((data) => {
+// Display search suggestions to the user
+// });
+// });
+
+// Simulated data for demonstration purposes
+const suggestionsData = [
+  "JavaScript",
+  "Java",
+  "Python",
+  "HTML",
+  "CSS",
+  "React",
+  "Node.js",
+  "Angular",
+  "Vue.js",
+  "TypeScript",
+];
+
+const searchInput = document.getElementById("myInput");
+const suggestionsContainer = document.getElementById("suggestions-container");
+
+function getSuggestions(query) {
+  // Filter suggestions based on the query
+  const filteredSuggestions = suggestionsData.filter((suggestion) =>
+    suggestion.toLowerCase().includes(query.toLowerCase())
+  );
+
+  // Display suggestions
+  displaySuggestions(filteredSuggestions);
+}
+
+function displaySuggestions(suggestions) {
+  // Clear previous suggestions
+  suggestionsContainer.innerHTML = "";
+
+  // Display new suggestions
+  suggestions.forEach((suggestion) => {
+    const suggestionElement = document.createElement("div");
+    suggestionElement.className = "suggestion";
+    suggestionElement.textContent = suggestion;
+
+    // Handle suggestion click
+    suggestionElement.addEventListener("click", () => {
+      // Set the selected suggestion as the search input value
+      searchInput.value = suggestion;
+      // Hide suggestions container
+      suggestionsContainer.style.display = "none";
+    });
+
+    suggestionsContainer.appendChild(suggestionElement);
+  });
+
+  // Show suggestions container if there are suggestions, hide otherwise
+  suggestionsContainer.style.display = suggestions.length ? "block" : "none";
+}
+
+// Close suggestions container if user clicks outside of it
+document.addEventListener("click", (event) => {
+  if (
+    !suggestionsContainer.contains(event.target) &&
+    event.target !== searchInput
+  ) {
+    suggestionsContainer.style.display = "none";
+  }
+});
