@@ -1429,6 +1429,22 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
 
     console.log(flatArr);
 
+### Scenario Based Questions
+
+- How to validate user input as they type in a form
+
+- How to implement pagination for displaying large sets of data?
+
+- How to store key-value pairs & efficiently access and manipulate the data?
+
+- How to implement drag-and-drop functionality for elements on a webpage?
+
+- How to iterate over elements in an array and perform a specific operation on each element?
+
+- How to implement a feature that allows users to search for specific items in a large dataset?
+
+- How to implement a feature that allows users to perform live search suggestions as they type?
+
 # Interview Prep
 
 Happy Learning! ✨
