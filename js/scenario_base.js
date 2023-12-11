@@ -66,8 +66,25 @@
 
 // by adding event listener to dragstart event in JS.
 
-const draggableElement = document.getElementById("dragElement");
+// const draggableElement = document.getElementById("dragElement");
 
-draggableElement.addEventListener("dragstart", (e) => {
-  e.dataTransfer.setData("text/plain", e.target.id);
+// draggableElement.addEventListener("dragstart", (e) => {
+//   e.dataTransfer.setData("text/plain", e.target.id);
+// });
+
+// How to iterate over elements in an array and perform a specific operation on each element?
+
+// By using Array methods forEach() or map() or for... of loop.
+
+// Array of numbers
+
+const numbers = [1, 2, 3, 4, 5];
+
+// Fetch number one by one
+
+numbers.forEach((number) => {
+  // modify each element
+  number = number * 2;
+
+  console.log(number);
 });
