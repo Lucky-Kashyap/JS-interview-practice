@@ -45,24 +45,56 @@
 
 // Take one or more functions as arguments
 
-function hof(func) {
-  func();
+// function hof(func) {
+//   func();
+// }
+
+// hof(sayHello);
+
+// function sayHello() {
+//   console.log("Hello !");
+// }
+
+// //  return a function as a result
+
+// function createAdder(number) {
+//   return function (value) {
+//     return value + number;
+// };
+// }
+
+// const addFive = createAdder(5);
+
+// console.log(addFive(5));
+
+// What are Pure and Impure functions in JS
+
+// A Pure function that always produces the same output for the same input
+
+// Pure function
+
+// function add(a, b) {
+//   return a + b;
+// }
+
+// console.log(add(4, 5));
+
+// console.log(add(4, 5));
+
+// Impure function
+
+// An impure function can produce different outputs for the same input
+//  impure functions can modify the state.
+//  impure functions can have side effects
+
+let total = 0;
+
+function addToTotal(value) {
+  total += value;
+
+  return total;
 }
 
-hof(sayHello);
+console.log(addToTotal(5));
 
-function sayHello() {
-  console.log("Hello !");
-}
-
-//  return a function as a result
-
-function createAdder(number) {
-  return function (value) {
-    return value + number;
-  };
-}
-
-const addFive = createAdder(5);
-
-console.log(addFive(5));
+console.log(addToTotal(5));
