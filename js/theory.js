@@ -136,16 +136,52 @@
 
 // Using forEach()
 
-let arr2 = [1, 2, 3];
+// let arr2 = [1, 2, 3];
 
-arr2.forEach((e) => console.log(e * 2));
+// arr2.forEach((e) => console.log(e * 2));
 
 // Does not return anything
 
 // 2 4 6
 
-console.log(arr2);
+// console.log(arr2);
 
 // [1,2,3]
 
 //  The forEach method is used when you want to perform some operation on each element of an array without creating a new array
+
+// What is the difference between for...of & for...in loop ?
+
+// for... of loop is used to loop through the values of an object like arrays,strings.
+
+// It allows you to access each value directly,without having to use an index
+
+let arr = [1, 2, 3];
+
+// for (let val of arr) {
+//   console.log(val);
+// }
+
+// 1 2 3
+
+//  for...in loop is used to loop through the properties of an object
+
+//  It allows you to iterate over the keys of an object and access the values associated by using keys as the index.
+
+// for in loop
+
+const person = {
+  name: "Lucky",
+  role: "Developer",
+};
+
+for (let key in person) {
+  console.log(person[key]);
+}
+
+for (let key in arr) {
+  // console.log(person[key]);
+  console.log(key);
+}
+
+// Lucky Developer
