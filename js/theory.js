@@ -2,38 +2,67 @@
 
 // A callback function is a function that is passed as an argument to another function
 
-function add(x, y) {
-  return x + y;
+// function add(x, y) {
+//   return x + y;
+// }
+// function multiply(x, y) {
+//   return x * y;
+// }
+
+// function subtract(x, y) {
+//   return x - y;
+// }
+
+// function divide(x, y) {
+//   return x / y;
+// }
+
+// let a = 3,
+//   b = 5;
+
+// let res = add(a, b);
+
+// console.log(res); // 8
+
+// function display(x, y, operation) {
+//   let res = operation(x, y);
+
+//   console.log(res);
+// }
+
+// display(10, 5, add);
+
+// display(10, 5, multiply);
+
+// display(10, 5, subtract);
+
+// display(10, 5, divide);
+
+// What is Higher order function in JS
+
+// A Higher order function
+// take one or more functions as arguments (callback function) OR Return a function as a result
+
+// Take one or more functions as arguments
+
+function hof(func) {
+  func();
 }
-function multiply(x, y) {
-  return x * y;
+
+hof(sayHello);
+
+function sayHello() {
+  console.log("Hello !");
 }
 
-function subtract(x, y) {
-  return x - y;
+//  return a function as a result
+
+function createAdder(number) {
+  return function (value) {
+    return value + number;
+  };
 }
 
-function divide(x, y) {
-  return x / y;
-}
+const addFive = createAdder(5);
 
-let a = 3,
-  b = 5;
-
-let res = add(a, b);
-
-console.log(res); // 8
-
-function display(x, y, operation) {
-  let res = operation(x, y);
-
-  console.log(res);
-}
-
-display(10, 5, add);
-
-display(10, 5, multiply);
-
-display(10, 5, subtract);
-
-display(10, 5, divide);
+console.log(addFive(5));
