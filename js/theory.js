@@ -105,12 +105,47 @@
 
 //  a & b are parameters
 
-function add(a, b) {
-  console.log(a + b);
-}
+// function add(a, b) {
+//   console.log(a + b);
+// }
 
 // Arguments are the actual values passed to a function when it is invoked or called
 
-add(3, 4);
+// add(3, 4);
 
 //  3 4 are arguments
+
+// What is the difference map() & forEach() array methods of an Array?
+
+// Array methods for modification & iteration
+
+// map() forEach()
+
+// Using map()
+
+// let arr1 = [1, 2, 3];
+
+// let mapArray = arr1.map((e) => e * 2);
+
+// console.log(mapArray);
+
+// map return a new array
+
+// [2,4,6]
+// The map() method is used when you want to modify each element of an array & create a new aaray with the modified values
+
+// Using forEach()
+
+let arr2 = [1, 2, 3];
+
+arr2.forEach((e) => console.log(e * 2));
+
+// Does not return anything
+
+// 2 4 6
+
+console.log(arr2);
+
+// [1,2,3]
+
+//  The forEach method is used when you want to perform some operation on each element of an array without creating a new array
