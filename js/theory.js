@@ -156,7 +156,7 @@
 
 // It allows you to access each value directly,without having to use an index
 
-let arr = [1, 2, 3];
+// let arr = [1, 2, 3];
 
 // for (let val of arr) {
 //   console.log(val);
@@ -170,18 +170,40 @@ let arr = [1, 2, 3];
 
 // for in loop
 
-const person = {
-  name: "Lucky",
-  role: "Developer",
-};
+// const person = {
+//   name: "Lucky",
+//   role: "Developer",
+// };
 
-for (let key in person) {
-  console.log(person[key]);
-}
+// for (let key in person) {
+//   console.log(person[key]);
+// }
 
-for (let key in arr) {
-  // console.log(person[key]);
-  console.log(key);
-}
+// for (let key in arr) {
+// console.log(person[key]);
+//   console.log(key);
+// }
 
 // Lucky Developer
+
+// What is the difference between for and for... of loop in JS
+
+// for loop is slightly more complex having more lines of code whereas for... of is much simpler and better for iterating arrays.
+
+// let arr = [1, 2, 3];
+
+// for loop has more code
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+
+// 1 2 3
+
+//  for of is much simpler
+
+// for (let val of arr) {
+//   console.log(val);
+// }
+
+//  1 2 3
