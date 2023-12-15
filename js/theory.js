@@ -251,32 +251,52 @@
 
 //  Assigning function like a variable
 
-const myFunc = function () {
-  console.log("Hello");
-};
+// const myFunc = function () {
+//   console.log("Hello");
+// };
 
-myFunc();
+// myFunc();
 
-function double(num) {
-  return num * 2;
-}
+// function double(num) {
+//   return num * 2;
+// }
 
 // passing function as an argument like a variable
 
-function performOperation(double, val) {
-  return double(val);
-}
+// function performOperation(double, val) {
+//   return double(val);
+// }
 
-console.log(performOperation(double, 5)); // 10
+// console.log(performOperation(double, 5)); // 10
 
 // a function that returns another function
 
-function createSimpleFunction() {
-  return function () {
-    console.log("I am from return function");
-  };
-}
+// function createSimpleFunction() {
+//   return function () {
+//     console.log("I am from return function");
+//   };
+// }
 
-const simpleFunction = createSimpleFunction();
+// const simpleFunction = createSimpleFunction();
 
-simpleFunction(); // I am from return function
+// simpleFunction(); // I am from return function
+
+//  What is function expression in JS
+
+//  A function expression is a way to define a function by assigning it to a variable
+
+//  Anonymous function expression
+
+// const add = function (a, b) {
+//   return a + b;
+// };
+
+// console.log(add(4, 3)); // 7
+
+// Named function expression
+
+const add = function sum(a, b) {
+  return a + b;
+};
+
+console.log(add(5, 3)); // 8
