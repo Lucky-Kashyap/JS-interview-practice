@@ -229,14 +229,54 @@
 
 // ANonymous functions do not have a name identifier and cannot be referenced directly by name
 
-console.log(
-  (function (a, b) {
-    return a * b;
-  })(4, 5)
-);
+// console.log(
+//   (function (a, b) {
+//     return a * b;
+//   })(4, 5)
+// );
 
 //  output 20
 
 // Use anonymous functions for small logics
 
 //  Use when want to use a function in a single place
+
+//  What are first class functions in JS
+
+//  A programming language is said to have first class functions if functions in that language are treated like other variables
+
+// Assignable
+//  Passable as Arguments
+//  Returnable as Values
+
+//  Assigning function like a variable
+
+const myFunc = function () {
+  console.log("Hello");
+};
+
+myFunc();
+
+function double(num) {
+  return num * 2;
+}
+
+// passing function as an argument like a variable
+
+function performOperation(double, val) {
+  return double(val);
+}
+
+console.log(performOperation(double, 5)); // 10
+
+// a function that returns another function
+
+function createSimpleFunction() {
+  return function () {
+    console.log("I am from return function");
+  };
+}
+
+const simpleFunction = createSimpleFunction();
+
+simpleFunction(); // I am from return function
