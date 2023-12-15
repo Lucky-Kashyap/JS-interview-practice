@@ -87,14 +87,30 @@
 //  impure functions can modify the state.
 //  impure functions can have side effects
 
-let total = 0;
+// let total = 0;
 
-function addToTotal(value) {
-  total += value;
+// function addToTotal(value) {
+//   total += value;
 
-  return total;
+//   return total;
+// }
+
+// console.log(addToTotal(5));
+
+// console.log(addToTotal(5));
+
+//  What is the difference between arguments & parameters
+
+//  Parameters are the placeholders defined in the function declaration
+
+//  a & b are parameters
+
+function add(a, b) {
+  console.log(a + b);
 }
 
-console.log(addToTotal(5));
+// Arguments are the actual values passed to a function when it is invoked or called
 
-console.log(addToTotal(5));
+add(3, 4);
+
+//  3 4 are arguments
