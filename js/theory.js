@@ -207,3 +207,36 @@
 // }
 
 //  1 2 3
+
+//  What is the difference between named and anonymous functions whean to use what in applications
+
+//  Named functions have a name identifier
+
+// Named function
+//  function declaration
+
+// function sum(a, b) {
+//   return a + b;
+// }
+
+// console.log(add(5, 4));
+
+// output 9
+
+//  Use named functions for big & complex logics
+
+//  Use when you want to reuse one function at multiple places
+
+// ANonymous functions do not have a name identifier and cannot be referenced directly by name
+
+console.log(
+  (function (a, b) {
+    return a * b;
+  })(4, 5)
+);
+
+//  output 20
+
+// Use anonymous functions for small logics
+
+//  Use when want to use a function in a single place
