@@ -190,8 +190,14 @@
 
 // console.log(res);
 
-let arr = ["lucky", "amit", "raghav", "nisha", "sumit", "avinya"];
+// let arr = ["lucky", "amit", "raghav", "nisha", "sumit", "avinya"];
 
-let res = arr.filter((val) => !val.includes("a"));
+// let res = arr.filter((val) => !val.includes("a"));
 
-console.log(res);
+// console.log(res);
+
+// let res = arr.filter((val) => {
+// if (val.split("a").length <= 2) return true;
+// });
+
+// console.log(res);
