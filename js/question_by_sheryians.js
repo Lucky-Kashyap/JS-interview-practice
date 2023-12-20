@@ -102,36 +102,55 @@
 
 // There are two arrays on is of users and other is of cities they live in, make a new array which contains the unified data.
 
-const users = [
-  {
-    id: 1,
-    name: "John",
-    age: 24,
-  },
-  {
-    id: 2,
-    name: "Johnny",
-    age: 29,
-  },
-  {
-    id: 3,
-    name: "John ke Chacha",
-    age: 21,
-  },
-];
+// const users = [
+//   {
+//     id: 1,
+//     name: "John",
+//     age: 24,
+//   },
+//   {
+//     id: 2,
+//     name: "Johnny",
+//     age: 29,
+//   },
+//   {
+//     id: 3,
+//     name: "John ke Chacha",
+//     age: 21,
+//   },
+// ];
 
-const cities = [
-  {
-    id: 11,
-    city: "Agra",
-  },
-  { id: 2, city: "Delhi" },
-  { id: 3, city: "Bijnor" },
-];
+// const cities = [
+//   {
+//     id: 11,
+//     city: "Agra",
+//   },
+//   { id: 2, city: "Delhi" },
+//   { id: 3, city: "Bijnor" },
+// ];
 
-const data = users.map((item) => ({
-  ...item,
-  ...cities.find((item2) => item.id === item2.id),
-}));
+// const data = users.map((item) => ({
+//   ...item,
+//   ...cities.find((item2) => item.id === item2.id),
+// }));
 
-console.log(data);
+// console.log(data);
+
+// 20-12-23
+
+// array - map filter
+
+// objects - access loop
+
+// freeze, this call apply bind
+
+// ek array se ek naya array banao jismien agar word ki lebgth 5 akshar ho to p tag mein daalo nahitoword ko span tag mein daalo
+
+let arr = ["hello", "a", "apples", "guava", "lucky", "ajay"];
+
+let res = arr.map((val) => {
+  if (val.length === 5) return `<p>${val}</p>`;
+  else return `<span>${val}</span>`;
+});
+
+console.log(res);
