@@ -215,9 +215,27 @@
 
 // q2 write a JS function to clone an array
 
-function array_clone(arr) {
-  return [...arr];
-}
+// function array_clone(arr) {
+//   return [...arr];
+// }
 
-console.log(array_clone([1, 2, 4, 0]));
-console.log(array_clone([1, 2, [4, 0]]));
+// console.log(array_clone([1, 2, 4, 0]));
+// console.log(array_clone([1, 2, [4, 0]]));
+
+// q3 write a JS function to get the first elemet of an array. Passing a parameter 'n' will return the first 'n' elements of the array.
+
+// function first(arr, get = 1) {
+// return [arr[0]];
+//   let clone = [];
+//   for (let i = 0; i < get; i++) {
+//     clone.push(arr[i]);
+//   }
+
+//   return clone;
+// }
+
+// console.log(first([1, 2, 3, 4, 5]));
+// console.log(first([], 3));
+// console.log(first([7, 9, 0, -2], 3));
+
+// console.log(first([7, 9, 0, -2], -3));
