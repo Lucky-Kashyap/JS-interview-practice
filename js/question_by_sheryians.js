@@ -146,11 +146,52 @@
 
 // ek array se ek naya array banao jismien agar word ki lebgth 5 akshar ho to p tag mein daalo nahitoword ko span tag mein daalo
 
-let arr = ["hello", "a", "apples", "guava", "lucky", "ajay"];
+// let arr = ["hello", "a", "apples", "guava", "lucky", "ajay"];
 
-let res = arr.map((val) => {
-  if (val.length === 5) return `<p>${val}</p>`;
-  else return `<span>${val}</span>`;
-});
+// let res = arr.map((val) => {
+//   if (val.length === 5) return `<p>${val}</p>`;
+//   else return `<span>${val}</span>`;
+// });
+
+// console.log(res);
+
+// let arr = [
+//   {
+//     name: "lucky",
+//     age: 23,
+//   },
+//   {
+//     name: "harsh",
+//     age: 25,
+//   },
+//   {
+//     name: "ajay",
+//     age: 21,
+//   },
+// ];
+
+// let res = arr.map((val) => {
+//   return { name: val.name };
+// });
+
+// console.log(res);
+
+// filter
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// let res = arr.filter((val) => {
+//   if (val % 2 === 0) {
+//     return true;
+//   }
+// });
+
+// let res = arr.filter((val) => val % 2 === 0);
+
+// console.log(res);
+
+let arr = ["lucky", "amit", "raghav", "nisha", "sumit", "avinya"];
+
+let res = arr.filter((val) => !val.includes("a"));
 
 console.log(res);
