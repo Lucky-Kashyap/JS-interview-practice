@@ -239,3 +239,13 @@
 // console.log(first([7, 9, 0, -2], 3));
 
 // console.log(first([7, 9, 0, -2], -3));
+
+// q4 write a simple JS program to join all elements of the following array into a string.
+
+// let myColor = ["Red", "Green", "White", "Black"];
+
+// function joinArray(arr) {
+//   return arr.join(",");
+// }
+
+// console.log(joinArray(myColor));
