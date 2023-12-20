@@ -201,3 +201,14 @@
 // });
 
 // console.log(res);
+
+// q1 write a js function to check whether an input is an array or not
+
+function is_array(arr) {
+  // return Array.isArray(arr);
+  return arr instanceof Array;
+}
+
+console.log(is_array("w3resource")); // false
+
+console.log(is_array([1, 2, 4, 0])); // true
