@@ -75,28 +75,65 @@
 
 // debouncing concept
 
-let count = 0;
+// let count = 0;
 
-const getData = () => {
-  // calls an API and gets data
+// const getData = () => {
+// calls an API and gets data
 
-  console.log("Fetching data...", count++);
-};
+//   console.log("Fetching data...", count++);
+// };
 
-const doSomeMagic = function (fn, delay) {
-  let timer;
-  return function () {
-    let context = this;
-    let args = arguments;
+// const doSomeMagic = function (fn, delay) {
+//   let timer;
+//   return function () {
+//     let context = this;
+//     let args = arguments;
 
-    clearTimeout(timer);
-    timer = setTimeout(() => {
-      // fn();
-      getData.apply(context, arguments);
-    }, delay);
-  };
-};
+//     clearTimeout(timer);
+//     timer = setTimeout(() => {
+//       // fn();
+//       getData.apply(context, arguments);
+//     }, delay);
+//   };
+// };
 
-const betterFunction = doSomeMagic(getData, 300);
+// const betterFunction = doSomeMagic(getData, 300);
 
 // only do some magic when the difference is greater than 300 ms
+
+// closure
+
+//  A closure in JavaScript is a combination of a function and the lexical environment
+
+// closure can be used for data modification with data privacy (encapsulation)
+
+// closures are used to modify data or variables safely
+
+// persistent data & state each time createCounter() is called, it creates a new closure with its own seperate count variable
+
+// code reusabilty the closure returned by createCounter()
+//  is  a reusable counter function
+
+function createCounter() {
+  let count = 0;
+
+  return function () {
+    count++;
+
+    console.log(count);
+  };
+}
+
+// DAta privacy & encapsulated
+
+const closure1 = createCounter();
+
+closure1(); // 1
+
+closure1(); // 2
+
+// persistent data & state
+
+const closure2 = createCounter();
+
+closure2(); // 1
