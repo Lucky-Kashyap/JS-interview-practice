@@ -114,3 +114,53 @@
 // Canvas API
 
 // Audio & Video APIs
+
+// What is the difference between Promise.all() and Promise.race()
+
+// Promise.all() is used when you want to wait for all the inut promises to settle
+
+// The returned promise resolves with an array of resolved values from the input promises, in the same order as the input promises.
+
+// Promise.race() is used when you want to react as soon a the first promise settles
+
+// The settles value(fulfilled values or rejection reason) of the first settled promise is used as the settled value of the returned promise
+
+let promise1 = new Promise((resolve, reject) => {
+  if (1 === 1) {
+    resolve("promise resolve");
+  } else {
+    reject("promise reject");
+  }
+});
+let promise2 = new Promise((resolve, reject) => {
+  let a = 10;
+  if (a === 1) {
+    resolve("promise resolve");
+  } else {
+    reject("promise reject");
+  }
+});
+let promise3 = new Promise((resolve, reject) => {
+  let str = "lucky";
+  if (str === "") {
+    resolve("promise resolve");
+  } else {
+    reject("promise reject");
+  }
+});
+
+Promise.all([promise1, promise2, promise3])
+  .then((res) => {
+    console.log(res);
+  })
+  .catch((e) => {
+    console.error(e);
+  });
+
+Promise.race([promise1, promise2, promise3])
+  .then((res) => {
+    console.log(res);
+  })
+  .catch((e) => {
+    console.error(e);
+  });
