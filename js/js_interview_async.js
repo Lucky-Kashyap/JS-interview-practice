@@ -66,29 +66,51 @@
 
 // async/await provides a more concise and readable syntax that resembles synchronous code whereas Promises use a chaining syntax with then() and catch() which is not that readable
 
-function fetchData() {
-  return new Promise((res, rej) => {
-    setTimeout(() => {
-      res("DAta has been fetched");
-    }, 1000);
-  });
-}
+// async await still relies on Promises for handling the asynchronous nature of code
+
+// function fetchData() {
+//   return new Promise((res, rej) => {
+//     setTimeout(() => {
+//       res("DAta has been fetched");
+//     }, 1000);
+//   });
+// }
 
 // promises
 
-fetchData()
-  .then((res) => console.log(res))
-  .catch((err) => console.log(err));
+// fetchData()
+//   .then((res) => console.log(res))
+//   .catch((err) => console.log(err));
 
 // async await
 
-async function doSomething() {
-  try {
-    const result = await fetchData();
-    console.log(result);
-  } catch (e) {
-    console.error(e);
-  }
-}
+// async function doSomething() {
+//   try {
+//     const result = await fetchData();
+//     console.log(result);
+//   } catch (e) {
+//     console.error(e);
+//   }
+// }
 
-doSomething();
+// doSomething();
+
+// Browser APIs
+
+// DOM API
+
+// XMLHttpRequest (XHR)
+
+// Fetch API
+
+// Storage API
+
+// History API
+
+// Geolocation API
+
+// Notification API
+
+// Canvas API
+
+// Audio & Video APIs
