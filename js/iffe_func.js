@@ -26,16 +26,76 @@
 //   p.innerText = num;
 // })();
 
-(function () {
-  const h1 = document.querySelector("h1");
+// (function () {
+//   const h1 = document.querySelector("h1");
 
-  const p = document.querySelector("p");
+//   const p = document.querySelector("p");
 
-  const num = 120;
+//   const num = 120;
 
-  h1.style.backgroundColor = "pink";
+//   h1.style.backgroundColor = "pink";
 
-  h1.style.color = "black";
+//   h1.style.color = "black";
 
-  p.innerText = num;
-})();
+//   p.innerText = num;
+// })();
+
+// +(function () {
+//   console.log("IIFE");
+// })();
+
+// -(function () {
+//   console.log("IIFE");
+// })();
+
+// const a = (function () {
+//   console.log("IIFE");
+// })();
+
+// const a = (function () {
+//   console.log("IIFE");
+// })();
+
+// !(function () {
+//   console.log("IIFE");
+// })();
+
+// ~(function () {
+//   console.log("IIFE");
+// })();
+
+// void (function () {
+//   console.log("IIFE");
+// })();
+
+// new (function () {
+//   console.log("IIFE");
+// })();
+
+// (function () {
+//   console.log("IIFE");
+// })();
+
+// true &&
+//   (function () {
+//     console.log("IIFE");
+//   })();
+
+// false ||
+//   (function () {
+//     console.log("IIFE");
+//   })();
+
+// true
+//   ? (function () {
+//       console.log("IIFE");
+//     })()
+//   : "";
+
+// try {
+//   throw (function () {
+//     console.log("IIFE");
+//   })();
+// } catch (e) {
+//   e();
+// }
