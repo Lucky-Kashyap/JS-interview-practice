@@ -166,12 +166,28 @@
 
 // 11.)/
 
-const obj = {
-  height: 30,
-};
+// const obj = {
+//   height: 30,
+// };
 
-console.log(obj.height);
+// console.log(obj.height);
 
-delete obj.height;
+// delete obj.height;
 
-console.log(obj.height);
+// console.log(obj.height);
+
+// tiny error in the result
+
+// In Binary, the decimal fraction 0.1 cannot be represented exactly. The binary representation of .1 is a repeating fraction, similar to how the fraction 1/3 repeats in deciml (0.333....). When you add .1 and .2, you encounter a situation where the limited precision of floating-point numbers leads to a tiny error in the result
+
+const sum = 0.1 + 0.1;
+
+const sum1 = sum.toFixed(2);
+
+const sum2 = Number(sum1) + 24;
+
+console.log(sum);
+
+console.log(sum1);
+
+console.log(sum2);
