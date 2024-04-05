@@ -1447,7 +1447,7 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
 
 # 100 Days of JavaScript Coding Challenges
 
-## Day #1
+## Day 1
 
 #### Write a function to find longest word that takes a string as input and returns the longest word in the string. If there are multiple longest words, return the first one encountered.
 
@@ -1468,6 +1468,26 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
 - sort method sort values in unicode value . first letter in a ascending order
 
 - a>b 1 b>a -1
+
+## Day 2
+
+#### Programming Question: HAsh Tag Generator
+
+- You are required to implement a function generateHAsh that generates a hash tag from a given input string.
+
+- The hash tag should be constructed as follows:
+
+- The input string should be converted to a hash tag format, where each word is capitalized and concatenated together without spaces.
+
+- If the length of the input string is greater then 280 characters or if the input string is empty or contains only whitespaces, the function should return false.
+
+- Otherwise the function should return the generated hash tag prefixed with #.
+
+- write a function generateHAsh to accomplish this task
+
+- generatehash
+  - input str = 'my name is lucky kashyap';
+  - output #MyNameIsLuckyKashyap
 
 # Interview Prep
 
