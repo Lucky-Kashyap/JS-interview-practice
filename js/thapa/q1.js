@@ -65,30 +65,77 @@
 
 // output   #MyNameIsLuckyKashyap
 
-const generateHash = (str) => {
-  if (str.length > 280 || str.trim().length === 0) {
-    return false;
-  }
+// const generateHash = (str) => {
+//   if (str.length > 280 || str.trim().length === 0) {
+//     return false;
+//   }
 
-  let newStr = str.split(" ");
+//   let newStr = str.split(" ");
 
-  console.log(newStr);
+//   console.log(newStr);
 
-  newStr = newStr.map((el) => el.replace(el[0], el[0].toUpperCase()));
+//   newStr = newStr.map((el) => el.replace(el[0], el[0].toUpperCase()));
 
-  // approach 2
+// approach 2
 
-  // newStr = newStr.map(el=>el.replace(el[0],el.charAt(0).toUpperCase()));
+// newStr = newStr.map(el=>el.replace(el[0],el.charAt(0).toUpperCase()));
 
-  // el.charAt(0).toUpperCase();
+// el.charAt(0).toUpperCase();
 
-  // console.log(newArray);
+// console.log(newArray);
 
-  // str = `#${str.join("")}`;
+// str = `#${str.join("")}`;
 
-  return "#" + newStr.join("");
+//   return "#" + newStr.join("");
+// };
+
+// const str = "my name is lucky kashyap";
+
+// console.log(generateHash(str));
+
+// Day 3
+
+// Inter view Question: Count Occurrences of Character
+
+// Write a function called countChar tht takes two parameters: a string and a character to count. The function should return the number of times the specified character appears in the string.
+
+//  console.log(countChar("MissIssippi","I"))   // output : 4
+
+// Note the function should be case-senstive
+// The function should handle both lowercase and uppercase characters
+
+// The character parameter can be any printable ASCII character (the function should accept any character that is part of the ASCII character set and is printable).
+
+// function countChar(str, char) {
+//   str = str.toLowerCase().split("");
+
+//   console.log(str);
+
+//   let count = 0;
+
+//   for (let i = 0; i < str.length; i++) {
+//     // console.log(str[i]);
+//     if (str[i] === char.toLowerCase()) {
+//       count++;
+//     }
+//   }
+
+//   return count;
+// }
+
+const countChar = (word, char) => {
+  word = word.toLowerCase();
+  char = char.toLowerCase();
+
+  // use reduce method
+
+  let totalCount = word.split("").reduce((acc, curr) => {
+    if (curr === char) {
+      acc++;
+    }
+    return acc;
+  }, 0);
+
+  return totalCount;
 };
-
-const str = "my name is lucky kashyap";
-
-console.log(generateHash(str));
+console.log(countChar("MissIssippi", "I")); // output 4

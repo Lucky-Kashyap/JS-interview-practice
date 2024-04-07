@@ -1489,6 +1489,19 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
   - input str = 'my name is lucky kashyap';
   - output #MyNameIsLuckyKashyap
 
+## Day 3
+
+#### Programming Question: Count Occurrences of Character
+
+- Write a function called countChar tht takes two parameters: a string and a character to count. The function should return the number of times the specified character appears in the string.
+
+- Input : console.log(countChar("MissIssippi","I")) // output : 4
+
+- Note:
+  - The function should be case-senstive
+  - The function should handle both lowercase and uppercase characters
+  - The character parameter can be any printable ASCII character (the function should accept any character that is part of the ASCII character set and is printable).
+
 # Interview Prep
 
 Happy Learning! ✨
