@@ -1502,6 +1502,22 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
   - The function should handle both lowercase and uppercase characters
   - The character parameter can be any printable ASCII character (the function should accept any character that is part of the ASCII character set and is printable).
 
+## Day 4
+
+#### Coding Challenge: Check Triangle
+
+- Write a function called checkTriangleType that takes three parameters representing the lengths of the sides of a triangle. The function should return a string indicating the type of triangle: "equilateral", "isosceles", or "scalene"
+
+- 3 3 3 "equilateral"
+- 3 4 3 "isosceles"
+- 5 8 6 "scalene"
+
+- Todo The Function should adhere to the following rules:
+
+  - If all three sides are of equal length, return "equilateral"
+  - If only two sides are of equal length, return "isosceles"
+  - If all three sides have different lengths, return "scalene"
+
 # Interview Prep
 
 Happy Learning! ✨
