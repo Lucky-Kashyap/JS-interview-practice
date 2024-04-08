@@ -163,7 +163,7 @@ const checkTriangleType = (a, b, c) => {
   return "scalene";
 };
 
-console.log(checkTriangleType(3, 3, 3));
+console.log("Input sides 3 3 3 ", checkTriangleType(3, 3, 3));
 
-console.log(checkTriangleType(3, 4, 3));
-console.log(checkTriangleType(5, 6, 7));
+console.log("Input sides 3 4 3 ", checkTriangleType(3, 4, 3));
+console.log("Input sides 5 6 7 ", checkTriangleType(5, 6, 7));
