@@ -156,14 +156,70 @@
 
 // If all three sides have different lengths, return "scalene"
 
-const checkTriangleType = (a, b, c) => {
-  if (a === b && b === c) return "equilateral";
-  if (a === b || b === c || a === c) return "isosceles";
+// const checkTriangleType = (a, b, c) => {
+//   if (a === b && b === c) return "equilateral";
+//   if (a === b || b === c || a === c) return "isosceles";
 
-  return "scalene";
+//   return "scalene";
+// };
+
+// console.log("Input sides 3 3 3 ", checkTriangleType(3, 3, 3));
+
+// console.log("Input sides 3 4 3 ", checkTriangleType(3, 4, 3));
+// console.log("Input sides 5 6 7 ", checkTriangleType(5, 6, 7));
+
+// #Day 5
+
+// Write a function to sort an array of numbers in an ascending order.
+
+//  Example
+
+//  console.log(sortAscending([5,3,1,8]));  // Output: [1,3,5,8]
+
+// console.log(typeof sortAscending[2]);
+
+// Note:
+
+//  The function should take an array of numbers as input.
+// It should return a new array with the numbers sorted in ascending order.
+
+// The original array should remain unchanged.
+// you are not allowed to use the built-in sort() method.
+
+const sortAscending = (arr) => {
+  // return arr.sort((a, b) => a - b);
+
+  // let i = 0,
+  //   j;
+  // while (i < arr.length) {
+  //   j = i + 1;
+  //   while (j < arr.length) {
+  //     if (arr[j] < arr[i]) {
+  //       let temp = arr[i];
+  //       arr[i] = arr[j];
+  //       arr[j] = temp;
+  //     }
+  //     j++;
+  //   }
+  //   i++;
+  // }
+
+  for (let i = 0; i < arr.length; i++) {
+    // j=i+1;
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[j] < arr[i]) {
+        let temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+      }
+    }
+  }
+
+  return arr;
 };
 
-console.log("Input sides 3 3 3 ", checkTriangleType(3, 3, 3));
+const arr = [2, 3, 1, 10, 30, 12, 11];
 
-console.log("Input sides 3 4 3 ", checkTriangleType(3, 4, 3));
-console.log("Input sides 5 6 7 ", checkTriangleType(5, 6, 7));
+console.log(sortAscending(arr));
+
+// console.log(arr.sort((a,b)=>a-b));

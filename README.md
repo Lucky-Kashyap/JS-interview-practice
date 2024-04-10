@@ -1518,6 +1518,17 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
   - If only two sides are of equal length, return "isosceles"
   - If all three sides have different lengths, return "scalene"
 
+## Day 5
+
+#### Write a function to sort an array of numbers in an ascending order.
+
+- Note:
+
+  - The function should take an array of numbers as input.
+  - It should return a new array with the numbers sorted in ascending order.
+  - The original array should remain unchanged.
+  - You are not allowed to use the built-in sort() method.
+
 # Interview Prep
 
 Happy Learning! ✨
