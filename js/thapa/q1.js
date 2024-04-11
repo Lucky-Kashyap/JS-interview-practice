@@ -186,40 +186,81 @@
 // The original array should remain unchanged.
 // you are not allowed to use the built-in sort() method.
 
-const sortAscending = (arr) => {
-  // return arr.sort((a, b) => a - b);
+// const sortAscending = (arr) => {
+// return arr.sort((a, b) => a - b);
 
-  // let i = 0,
-  //   j;
-  // while (i < arr.length) {
-  //   j = i + 1;
-  //   while (j < arr.length) {
-  //     if (arr[j] < arr[i]) {
-  //       let temp = arr[i];
-  //       arr[i] = arr[j];
-  //       arr[j] = temp;
-  //     }
-  //     j++;
-  //   }
-  //   i++;
-  // }
+// let i = 0,
+//   j;
+// while (i < arr.length) {
+//   j = i + 1;
+//   while (j < arr.length) {
+//     if (arr[j] < arr[i]) {
+//       let temp = arr[i];
+//       arr[i] = arr[j];
+//       arr[j] = temp;
+//     }
+//     j++;
+//   }
+//   i++;
+// }
 
-  for (let i = 0; i < arr.length; i++) {
-    // j=i+1;
-    for (let j = i + 1; j < arr.length; j++) {
-      if (arr[j] < arr[i]) {
-        let temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-      }
-    }
-  }
+// for (let i = 0; i < arr.length; i++) {
+// j=i+1;
+//   for (let j = i + 1; j < arr.length; j++) {
+//     if (arr[j] < arr[i]) {
+//       let temp = arr[i];
+//       arr[i] = arr[j];
+//       arr[j] = temp;
+//     }
+//   }
+// }
 
-  return arr;
-};
+//   return arr;
+// };
 
-const arr = [2, 3, 1, 10, 30, 12, 11];
+// const arr = [2, 3, 1, 10, 30, 12, 11];
 
-console.log(sortAscending(arr));
+// console.log(sortAscending(arr));
 
 // console.log(arr.sort((a,b)=>a-b));
+
+//  #Day 6
+
+// Write a function to determine whether a given string is a palindrome or not. A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward, ignoring spaces, punctuation, and capitalization.
+
+// console.log(isPalindrome('A man, a plan, a canal, Panama'));   // Output : true
+
+// console.log(isPalindrome('racecar'));   // Output : true
+
+// console.log(isPalindrome('Lucky'));   // Output : false
+
+// Note:
+
+// The input string may contain letters, digits, spaces, punctuation, and special characters.
+
+// The function should be case-insensitive, meaning "Racecar" and "racecar" should be considered the same.
+
+// Ignore spaces, punctuation, and special characters when determining if a string is a palindrome.
+
+// The function should return true if the input string is a palindrome and false otherwise.
+
+// .replace(/\W/g,''); Uses the replace() method with a regular ecpression (/\W/g) to remove ll non-word characters from the string. Here:
+
+// \W matches any non-word character (equivalent to [^a-zA-Z0-9_]).
+
+// The g flag performs a global search, meaning it replaces all occurrences of non-word characters in the string.
+
+// So, replace(/\W/g,'') replaces all non-word characters with an empty string, effectively removing them from the string.
+
+const isPalindrome = (str) => {
+  str = str.toLowerCase().replace(/\W/g, "");
+  let revStr = str.split("").reverse().join("");
+
+  console.log(revStr);
+
+  return str === revStr ? true : false;
+};
+
+console.log(isPalindrome("racecar"));
+
+console.log(isPalindrome("Lucky"));
