@@ -1551,6 +1551,10 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
 
   - So, replace(/\W/g,'') replaces all non-word characters with an empty string, effectively removing them from the string.
 
+## day 7
+
+#### Write a function findMax that takes an array of numbers as input nd returns the maximum number in the array.
+
 # Interview Prep
 
 Happy Learning! ✨

@@ -252,15 +252,38 @@
 
 // So, replace(/\W/g,'') replaces all non-word characters with an empty string, effectively removing them from the string.
 
-const isPalindrome = (str) => {
-  str = str.toLowerCase().replace(/\W/g, "");
-  let revStr = str.split("").reverse().join("");
+// const isPalindrome = (str) => {
+//   str = str.toLowerCase().replace(/\W/g, "");
+//   let revStr = str.split("").reverse().join("");
 
-  console.log(revStr);
+//   console.log(revStr);
 
-  return str === revStr ? true : false;
+//   return str === revStr ? true : false;
+// };
+
+// console.log(isPalindrome("racecar"));
+
+// console.log(isPalindrome("Lucky"));
+
+// #Day 7
+
+// Write a function findMax that takes an array of numbers as input nd returns the maximum number in the array.
+
+// Example Usage:
+
+const findMax = (arr) => {
+  // return Math.max(...arr);
+
+  return arr.reduce((acc, elem) => {
+    if (acc < elem) {
+      acc = elem;
+    }
+    return acc;
+  });
 };
 
-console.log(isPalindrome("racecar"));
+console.log(findMax([1, 5, 3, 9, 2])); // Output: 9
 
-console.log(isPalindrome("Lucky"));
+console.log(findMax([-10, -5, -3, -9, -2])); // Output: -2
+
+console.log(findMax([5])); // Output: 5
