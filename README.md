@@ -1563,14 +1563,35 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
 
 - Here are some examples of factorial calculations:
 
-   - factorial(0) => 1
-   - factorial(1) => 1
-   - factorial(2) => 2
-   - factorial(3) => 6
-   - factorial(4) => 24
-   - factorial(5) => 120
+  - factorial(0) => 1
+  - factorial(1) => 1
+  - factorial(2) => 2
+  - factorial(3) => 6
+  - factorial(4) => 24
+  - factorial(5) => 120
 
 - Your function should work for any non-negative integer
+
+## Day 9
+
+### Challenge: Calculate the Average
+
+#### Write a function called calculateAverage that takes an array of numbers as input and returns the avarage of those numbers.
+
+##### Your function should:
+
+- Accept an array of numbers as input.
+
+- Calculate the sum of all the numbers in the array.
+
+- Divide the sum by total number of elements in the array to find the averae.
+
+- Return the calculated average.
+
+- Note:
+
+  - Ensure the function handles arrays of any length.
+  - The average should be returned as a floating-point-number.
 
 # Interview Prep
 

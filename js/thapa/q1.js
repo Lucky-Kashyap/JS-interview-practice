@@ -272,7 +272,7 @@
 // Example Usage:
 
 // const findMax = (arr) => {
-  // return Math.max(...arr);
+// return Math.max(...arr);
 
 //   return arr.reduce((acc, elem) => {
 //     if (acc < elem) {
@@ -287,7 +287,6 @@
 // console.log(findMax([-10, -5, -3, -9, -2])); // Output: -2
 
 // console.log(findMax([5])); // Output: 5
-
 
 //  #Day 8
 
@@ -308,7 +307,6 @@
 
 // factorial(5) => 120
 
-
 // Your function should work for any non-negative integer
 
 // const factorial= (num)=>{
@@ -321,23 +319,62 @@
 //   return fact;
 // }
 
-
 // Use recursive method
 
-const factorial= (num)=>{
-    
-    if (num === 0 || num === 1) {
-      return 1;
+// const factorial= (num)=>{
+
+//     if (num === 0 || num === 1) {
+//       return 1;
+//   }
+
+//   else {
+//       return num * factorial(num - 1);
+//   }
+// }
+
+// console.log(factorial(5));  // Output: 120
+
+// console.log(factorial(0));   // Output: 1
+
+// console.log(factorial(3));   // Output: 6
+
+// #Day 9
+
+// Challenge: Calculate the Average
+
+// Write a function called calculateAverage that takes an array of numbers as input and returns the avarage of those numbers.
+
+// Your function should:
+
+// Accept an array of numbers as input.
+
+// Calculate the sum of all the numbers in the array.
+
+// Divide the sum by total number of elements in the array to find the averae.
+
+// Return the calculated average.
+
+// Note:
+
+// Ensure the function handles arrays of any length.
+// The average should be returned as a floating-point-number.
+
+const calculateAverage = (arr) => {
+  // let sum = arr.reduce((acc, el) => acc + el);
+
+  // console.log(sum);
+
+  // return sum / arr.length;
+
+  let sum = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
   }
-  
-  else {
-      return num * factorial(num - 1);
-  }
-}
 
-console.log(factorial(5));  // Output: 120
+  return sum / arr.length;
+};
 
-console.log(factorial(0));   // Output: 1
+// console.log(calculateAverage([5, 10, 2, 8])); // Output: 6.25
 
-console.log(factorial(3));   // Output: 6
-
+console.log(calculateAverage([2, 6, 17, 45, 3]));
