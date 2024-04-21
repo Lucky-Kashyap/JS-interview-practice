@@ -1576,7 +1576,7 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
 
 ### Challenge: Calculate the Average
 
-#### Write a function called calculateAverage that takes an array of numbers as input and returns the avarage of those numbers.
+#### Write a function called calculateAverage that takes an array of numbers as input and returns the average of those numbers.
 
 ##### Your function should:
 
@@ -1584,7 +1584,7 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
 
 - Calculate the sum of all the numbers in the array.
 
-- Divide the sum by total number of elements in the array to find the averae.
+- Divide the sum by total number of elements in the array to find the average.
 
 - Return the calculated average.
 
