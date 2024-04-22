@@ -1593,6 +1593,16 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
   - Ensure the function handles arrays of any length.
   - The average should be returned as a floating-point-number.
 
+## day 10
+
+#### Write a function arraysAreEqual that takes two arrays arr1 and arr2 as input and returns true if the arrays are equal (i.e., contains the same elements in the same order), and false otherwise.
+
+- Note:
+
+  - The function should return false if the arrays have different lengths.
+  - The function should compare each element of arr1 with the corresponding element in arr2.
+  - The function should return true only if all elements in arr1 are equal to their corresponding elements in arr2.
+
 # Interview Prep
 
 Happy Learning! ✨
