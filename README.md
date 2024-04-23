@@ -1603,6 +1603,20 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
   - The function should compare each element of arr1 with the corresponding element in arr2.
   - The function should return true only if all elements in arr1 are equal to their corresponding elements in arr2.
 
+## Day 11
+
+#### Write a function that takes a number as input and returns the sum of its digits.
+
+- Note:
+
+  - The input number will always be a positive integer.
+
+  - The input number can have multiple digits.
+
+  - The output should be the sum of all the digits in the input number.
+
+  - This function calculates the sum of digits without converting the number to a string.
+
 # Interview Prep
 
 Happy Learning! ✨

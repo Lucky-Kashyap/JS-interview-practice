@@ -391,23 +391,59 @@
 
 // The function should return true only if all elements in arr1 are equal to their corresponding elements in arr2.
 
-const arraysAreEqual = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  // return arr1.every((cur, index) => cur === arr2[index]);
+// const arraysAreEqual = (arr1, arr2) => {
+//   if (arr1.length !== arr2.length) {
+//     return false;
+//   }
+// return arr1.every((cur, index) => cur === arr2[index]);
 
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr1[i] !== arr2[i]) {
+//       return false;
+//     }
+//   }
 
-  return true;
+//   return true;
+// };
+
+// console.log(arraysAreEqual([1, 2, 3], [1, 2, 3])); // Output- true
+
+// console.log(arraysAreEqual([1, 2, 3], [1, 2, 4])); // Output- false
+
+// console.log(arraysAreEqual([], [])); // Output- true
+
+// #Day 11
+
+// Write a function that takes a number as input and returns the sum of its digits.
+
+// Note:
+
+// The input number will always be a positive integer.
+
+// The input number can have multiple digits.
+
+// The output should be the sum of all the digits in the input number.
+
+// This function calculates the sum of digits without converting the number to a string.
+
+const sumOfDigits = (num) => {
+  let sum = 0;
+  while (num > 0) {
+    let temp = num % 10;
+    sum += temp;
+    num = Math.floor(num / 10);
+  }
+  return sum;
+
+  // let arr = Array.from(String(num), Number);
+
+  // console.log(arr);
+
+  // return arr.reduce((acc, cur) => (acc += cur), 0);
 };
 
-console.log(arraysAreEqual([1, 2, 3], [1, 2, 3])); // Output- true
+console.log(typeof sumOfDigits(1234)); // output: 10
 
-console.log(arraysAreEqual([1, 2, 3], [1, 2, 4])); // Output- false
+console.log(sumOfDigits(4321)); // Ouput: 10
 
-console.log(arraysAreEqual([], [])); // Output- true
+console.log(sumOfDigits(123456)); // Output: 21
