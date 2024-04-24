@@ -426,24 +426,61 @@
 
 // This function calculates the sum of digits without converting the number to a string.
 
-const sumOfDigits = (num) => {
-  let sum = 0;
-  while (num > 0) {
-    let temp = num % 10;
-    sum += temp;
-    num = Math.floor(num / 10);
-  }
-  return sum;
+// const sumOfDigits = (num) => {
+//   let sum = 0;
+//   while (num > 0) {
+//     let temp = num % 10;
+//     sum += temp;
+//     num = Math.floor(num / 10);
+//   }
+//   return sum;
 
-  // let arr = Array.from(String(num), Number);
+// let arr = Array.from(String(num), Number);
 
-  // console.log(arr);
+// console.log(arr);
 
-  // return arr.reduce((acc, cur) => (acc += cur), 0);
+// return arr.reduce((acc, cur) => (acc += cur), 0);
+// };
+
+// console.log(typeof sumOfDigits(1234)); // output: 10
+
+// console.log(sumOfDigits(4321)); // Ouput: 10
+
+// console.log(sumOfDigits(123456)); // Output: 21
+
+// #Day 12
+
+// Write a function that takes an array of integers as input and removes any duplicate elements, returning a new array with only the unique elements.
+
+// The new Set() method in JavaScript creates a new Set object. A Set object is a
+// collection of unique values. It can store any type of value, whether primitive values or ojbect references.
+
+// The input array may contain both positive and negative integers.
+
+// The input array may be empty.
+
+// The elements in the input arrat are not guranteed to be sorted.
+// The output array should retain the original order of elements from the
+// input array
+
+const removeDuplicates = (arr) => {
+  // let newArr = [...new Set(arr)];
+
+  // console.log(newArr);
+
+  // return newArr;
+
+  return arr
+    .filter((index, item) => arr.indexOf(index) === item)
+    .sort((a, b) => {
+      return a - b;
+    });
 };
 
-console.log(typeof sumOfDigits(1234)); // output: 10
+console.log(removeDuplicates([1, 2, 3, 4])); // Output : [1,2,3,4]
 
-console.log(sumOfDigits(4321)); // Ouput: 10
+console.log(removeDuplicates([])); // Output : []
 
-console.log(sumOfDigits(123456)); // Output: 21
+console.log(removeDuplicates([1, 2, 3, 2, 1, 4])); // Output : [1,2,3,4]
+
+console.log(removeDuplicates([5, 6, 7, 7, 8, 8, 9])); // Output : [5,6,7,8,9];
