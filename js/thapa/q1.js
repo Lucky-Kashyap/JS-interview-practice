@@ -463,24 +463,71 @@
 // The output array should retain the original order of elements from the
 // input array
 
-const removeDuplicates = (arr) => {
-  // let newArr = [...new Set(arr)];
+// const removeDuplicates = (arr) => {
+// let newArr = [...new Set(arr)];
 
-  // console.log(newArr);
+// console.log(newArr);
 
-  // return newArr;
+// return newArr;
 
-  return arr
-    .filter((index, item) => arr.indexOf(index) === item)
-    .sort((a, b) => {
-      return a - b;
-    });
+//   return arr
+//     .filter((index, item) => arr.indexOf(index) === item)
+//     .sort((a, b) => {
+//       return a - b;
+//     });
+// };
+
+// console.log(removeDuplicates([1, 2, 3, 4])); // Output : [1,2,3,4]
+
+// console.log(removeDuplicates([])); // Output : []
+
+// console.log(removeDuplicates([1, 2, 3, 2, 1, 4])); // Output : [1,2,3,4]
+
+// console.log(removeDuplicates([5, 6, 7, 7, 8, 8, 9])); // Output : [5,6,7,8,9];
+
+// #Day 13
+
+// Write a function that takes a string as input and returns the count of vowels in that string. Consider 'a', 'e', 'i', 'o' and 'u'
+// as vowels (both lowecase and uppercase)
+
+// Note:
+
+// The input string may contain letters in both uppercase and lowercase.
+
+// The output should be a non-negative intger representing the count of vowels in the input string.
+
+const countVowels = (str) => {
+  // let vowels = ["a", "e", "i", "o", "u"];
+
+  // let arr = str.split("");
+  // let count = 0;
+
+  // for (let char of arr) {
+  //   if (vowels.includes(char.toLowerCase())) {
+  //     count++;
+  //   }
+  // }
+
+  // return count;
+
+  str = str.toLowerCase();
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (
+      str[i] === "a" ||
+      str[i] === "e" ||
+      str[i] === "i" ||
+      str[i] === "o" ||
+      str[i] === "u"
+    ) {
+      count++;
+    }
+  }
+
+  return count;
 };
 
-console.log(removeDuplicates([1, 2, 3, 4])); // Output : [1,2,3,4]
+console.log(countVowels("Helloo world")); // Output: 4
+console.log(countVowels("ThE quIck brOwn fOx")); // Output: 5
 
-console.log(removeDuplicates([])); // Output : []
-
-console.log(removeDuplicates([1, 2, 3, 2, 1, 4])); // Output : [1,2,3,4]
-
-console.log(removeDuplicates([5, 6, 7, 7, 8, 8, 9])); // Output : [5,6,7,8,9];
+console.log(countVowels("Brrrp")); // Output: 0

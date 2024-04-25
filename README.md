@@ -1634,6 +1634,16 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
   - The output array should retain the original order of elements from the
     input array
 
+## Day 13
+
+#### Write a function that takes a string as input and returns the count of vowels in that string. Consider 'a', 'e', 'i', 'o' and 'u' as vowels (both lowecase and uppercase)
+
+- Note:
+
+  - The input string may contain letters in both uppercase and lowercase.
+
+  - The output should be a non-negative intger representing the count of vowels in the input string.
+
 # Interview Prep
 
 Happy Learning! ✨
