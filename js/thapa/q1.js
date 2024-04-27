@@ -548,35 +548,69 @@
 // we can solve it using bitwise operator too but its your chance
 // to do it....
 
-const isPowerOfTwo = (num) => {
-  // let op = false;
+// const isPowerOfTwo = (num) => {
+// let op = false;
 
-  // for(let i=1;i<num;i++){
-  //   if(2**i===num){
-  //     op=true;
-  //   }
+// for(let i=1;i<num;i++){
+//   if(2**i===num){
+//     op=true;
+//   }
+// }
+// return op;
+// let x = 1;
+// while (x < num) {
+//   x = x * 2;
+// }
+// return x === num;
+
+// return (num & (num - 1)) === 0 && num !== 0;
+
+// return num !== 0 && (num & (num - 1)) === 0;
+// if (num < 1) return false;
+
+// while (num != 1) {
+//   if (num % 2 == 1) return false;
+
+//   num = num / 2;
+// }
+
+// return true;
+
+//   if (num <= 0) {
+//     return false;
+//   }
+//   return (num & (num - 1)) === 0;
+// };
+
+// console.log(isPowerOfTwo(8)); // Output: true
+
+// console.log(isPowerOfTwo(7)); // Output: false
+
+// Day 15
+
+// Write a function to calculate the sum of squares of al  elements in an array. For example, given the array [1,2,3], the function should return 14 because 1*1 + 2*2 + 3*3 = 1+4 + 9 = 14
+
+const sumOfSquares = (arr) => {
+  // let result = 0;
+  // for (let i = 0; i < arr.length; i++) {
+  //   result += arr[i] * arr[i];
   // }
-  // return op;
-  // let x = 1;
-  // while (x < num) {
-  //   x = x * 2;
-  // }
-  // return x === num;
 
-  // return (num & (num - 1)) === 0 && num !== 0;
+  // return result;
 
-  // return num !== 0 && (num & (num - 1)) === 0;
-  if (num < 1) return false;
+  // return arr.reduce((acc, curr) => acc + curr * curr);
 
-  while (num != 1) {
-    if (num % 2 == 1) return false;
+  let sum = 0;
 
-    num = num / 2;
+  for (let elem of arr) {
+    sum += elem * elem;
   }
 
-  return true;
+  return sum;
 };
 
-console.log(isPowerOfTwo(8)); // Output: true
+console.log(sumOfSquares([1, 2, 3])); // Output: 14
 
-console.log(isPowerOfTwo(7)); // Output: false
+console.log(sumOfSquares([1, 3, 12, 3, 4])); // Output: 179
+
+console.log(sumOfSquares([11, 4, 3, 12])); // Output: 290

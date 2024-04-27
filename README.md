@@ -1653,6 +1653,10 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
 
   - The function should return true if the given number is a power of 2, and false otherwise.
 
+## Day 15
+
+#### Write a function to calculate the sum of squares of al elements in an array. For example, given the array [1,2,3], the function should return 14 because 1*1 + 2*2 + 3\*3 = 1+4 + 9 = 14
+
 # Interview Prep
 
 Happy Learning! ✨
