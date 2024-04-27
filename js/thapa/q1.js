@@ -496,38 +496,78 @@
 
 // The output should be a non-negative intger representing the count of vowels in the input string.
 
-const countVowels = (str) => {
-  // let vowels = ["a", "e", "i", "o", "u"];
+// const countVowels = (str) => {
+// let vowels = ["a", "e", "i", "o", "u"];
 
-  // let arr = str.split("");
-  // let count = 0;
+// let arr = str.split("");
+// let count = 0;
 
-  // for (let char of arr) {
-  //   if (vowels.includes(char.toLowerCase())) {
-  //     count++;
+// for (let char of arr) {
+//   if (vowels.includes(char.toLowerCase())) {
+//     count++;
+//   }
+// }
+
+// return count;
+
+// str = str.toLowerCase();
+// let count = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if (
+//       str[i] === "a" ||
+//       str[i] === "e" ||
+//       str[i] === "i" ||
+//       str[i] === "o" ||
+//       str[i] === "u"
+//     ) {
+//       count++;
+//     }
+//   }
+
+//   return count;
+// };
+
+// console.log(countVowels("Helloo world")); // Output: 4
+// console.log(countVowels("ThE quIck brOwn fOx")); // Output: 5
+
+// console.log(countVowels("Brrrp")); // Output: 0
+
+// Day 14
+
+// Write a function called isPowerOfTwo that takes an integer num as input and returns true if num is
+// a power of two, and false otherwise.
+
+// Note:
+
+//  The input num will be a positive integer
+// Zero (0)  and negative integers are not considered powers of two.
+
+// The function should return true if the given number is a power of 2, and
+// false otherwise.
+
+// we can solve it using bitwise operator too but its your chance
+// to do it....
+
+const isPowerOfTwo = (num) => {
+  // let op = false;
+
+  // for(let i=1;i<num;i++){
+  //   if(2**i===num){
+  //     op=true;
   //   }
   // }
+  // return op;
+  // let x = 1;
+  // while (x < num) {
+  //   x = x * 2;
+  // }
+  // return x === num;
 
-  // return count;
+  // return (num & (num - 1)) === 0 && num !== 0;
 
-  str = str.toLowerCase();
-  let count = 0;
-  for (let i = 0; i < str.length; i++) {
-    if (
-      str[i] === "a" ||
-      str[i] === "e" ||
-      str[i] === "i" ||
-      str[i] === "o" ||
-      str[i] === "u"
-    ) {
-      count++;
-    }
-  }
-
-  return count;
+  return num !== 0 && (num & (num - 1)) === 0;
 };
 
-console.log(countVowels("Helloo world")); // Output: 4
-console.log(countVowels("ThE quIck brOwn fOx")); // Output: 5
+console.log(isPowerOfTwo(8)); // Output: true
 
-console.log(countVowels("Brrrp")); // Output: 0
+console.log(isPowerOfTwo(7)); // Output: false

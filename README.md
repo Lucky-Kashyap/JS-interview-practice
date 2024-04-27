@@ -1644,6 +1644,19 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
 
   - The output should be a non-negative intger representing the count of vowels in the input string.
 
+## Day 14
+
+#### Write a function called isPowerOfTwo that takes an integer num as input and returns true if num is
+
+a power of two, and false otherwise.
+
+- Note:
+
+  - The input num will be a positive integer
+    Zero (0) and negative integers are not considered powers of two.
+
+  - The function should return true if the given number is a power of 2, and false otherwise.
+
 # Interview Prep
 
 Happy Learning! ✨
