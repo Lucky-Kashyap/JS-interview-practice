@@ -565,7 +565,16 @@ const isPowerOfTwo = (num) => {
 
   // return (num & (num - 1)) === 0 && num !== 0;
 
-  return num !== 0 && (num & (num - 1)) === 0;
+  // return num !== 0 && (num & (num - 1)) === 0;
+  if (num < 1) return false;
+
+  while (num != 1) {
+    if (num % 2 == 1) return false;
+
+    num = num / 2;
+  }
+
+  return true;
 };
 
 console.log(isPowerOfTwo(8)); // Output: true

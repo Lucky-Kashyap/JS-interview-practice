@@ -1621,8 +1621,7 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
 
 #### Write a function that takes an array of integers as input and removes any duplicate elements, returning a new array with only the unique elements.
 
-- The new Set() method in JavaScript creates a new Set object. A Set object is a
-  collection of unique values. It can store any type of value, whether primitive values or object references.
+- The new Set() method in JavaScript creates a new Set object. A Set object is a collection of unique values. It can store any type of value, whether primitive values or object references.
 
 - Note:
 
@@ -1631,12 +1630,11 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
   - The input array may be empty.
 
   - The elements in the input array are not guranteed to be sorted.
-  - The output array should retain the original order of elements from the
-    input array
+  - The output array should retain the original order of elements from the input array
 
 ## Day 13
 
-#### Write a function that takes a string as input and returns the count of vowels in that string. Consider 'a', 'e', 'i', 'o' and 'u' as vowels (both lowecase and uppercase)
+#### Write a function that takes a string as input and returns the count of vowels in that string. Consider 'a', 'e', 'i', 'o' and 'u' as vowels (both lowercase and uppercase)
 
 - Note:
 
@@ -1646,9 +1644,7 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
 
 ## Day 14
 
-#### Write a function called isPowerOfTwo that takes an integer num as input and returns true if num is
-
-a power of two, and false otherwise.
+#### Write a function called isPowerOfTwo that takes an integer num as input and returns true if num is a power of two, and false otherwise.
 
 - Note:
 
