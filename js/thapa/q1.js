@@ -590,27 +590,73 @@
 
 // Write a function to calculate the sum of squares of al  elements in an array. For example, given the array [1,2,3], the function should return 14 because 1*1 + 2*2 + 3*3 = 1+4 + 9 = 14
 
-const sumOfSquares = (arr) => {
-  // let result = 0;
-  // for (let i = 0; i < arr.length; i++) {
-  //   result += arr[i] * arr[i];
-  // }
+// const sumOfSquares = (arr) => {
+// let result = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   result += arr[i] * arr[i];
+// }
 
-  // return result;
+// return result;
 
-  // return arr.reduce((acc, curr) => acc + curr * curr);
+// return arr.reduce((acc, curr) => acc + curr * curr);
 
-  let sum = 0;
+//   let sum = 0;
 
-  for (let elem of arr) {
-    sum += elem * elem;
+//   for (let elem of arr) {
+//     sum += elem * elem;
+//   }
+
+//   return sum;
+// };
+
+// console.log(sumOfSquares([1, 2, 3])); // Output: 14
+
+// console.log(sumOfSquares([1, 3, 12, 3, 4])); // Output: 179
+
+// console.log(sumOfSquares([11, 4, 3, 12])); // Output: 290
+
+// #Day 16
+
+// Find the Minimum Value in an Array
+
+// Write a function findMin that takes an array of numbers as input and returns the minimum value found in the array.
+
+// Note:
+
+// The input array may contain both positive and negative integers
+// The input array may be empty
+// The input array may container duplicate values
+
+// Ensure the function handles adge cases gracefully, such as an
+// empty input array.
+
+// Consider using ES6 features like the spread syntax (...) for a concise implementation.
+
+// todo In JavaScript, the spread syntax (...) is used to expand
+// an array into individual elements. In this function, ...arr is used
+// to spread the elements of the input array arr.
+
+const findMin = (arr) => {
+  // arr = arr.sort((a, b) => {
+  //   if (b > a) return -1;
+  // });
+  // return arr[0];
+  // if (arr.length === 0) return "Array is Empty";
+  // return Math.min(...arr);
+  let min = Infinity;
+  if (arr.length === 0) {
+    return "Array is Empty";
+  }
+  for (let i = 0; i < arr.length; i++) {
+    if (min > arr[i]) {
+      min = arr[i];
+    }
   }
 
-  return sum;
+  return min;
 };
 
-console.log(sumOfSquares([1, 2, 3])); // Output: 14
+console.log(findMin([5, 10, 2, 8])); // Output: 2
+console.log(findMin([5, -3, 0, 12, -7])); // Output: -7
 
-console.log(sumOfSquares([1, 3, 12, 3, 4])); // Output: 179
-
-console.log(sumOfSquares([11, 4, 3, 12])); // Output: 290
+console.log(findMin([])); // Output: undefined

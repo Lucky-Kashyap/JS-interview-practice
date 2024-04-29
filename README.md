@@ -1657,6 +1657,24 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
 
 #### Write a function to calculate the sum of squares of al elements in an array. For example, given the array [1,2,3], the function should return 14 because 1*1 + 2*2 + 3\*3 = 1+4 + 9 = 14
 
+## Day 16
+
+#### Write a function findMin that takes an array of numbers as input and returns the minimum value found in the array.Find the Minimum Value in an Array
+
+- Note:
+
+  - The input array may contain both positive and negative integers
+  - The input array may be empty
+  - The input array may container duplicate values
+
+- Ensure the function handles adge cases gracefully, such as an
+  empty input array.
+
+- Consider using ES6 features like the spread syntax (...) for a concise implementation.
+
+- Todo In JavaScript, the spread syntax (...) is used to expand
+  an array into individual elements. In this function, ...arr is used to spread the elements of the input array arr.
+
 # Interview Prep
 
 Happy Learning! ✨
