@@ -1667,13 +1667,21 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
   - The input array may be empty
   - The input array may container duplicate values
 
-- Ensure the function handles adge cases gracefully, such as an
-  empty input array.
+- Ensure the function handles edge cases gracefully, such as an empty input array.
 
 - Consider using ES6 features like the spread syntax (...) for a concise implementation.
 
 - Todo In JavaScript, the spread syntax (...) is used to expand
   an array into individual elements. In this function, ...arr is used to spread the elements of the input array arr.
+
+## Day 17
+
+#### Write a function to convert a string to camelCase & snake_case.
+
+- slice() extracts a part of a string and returns the extracted part ina new String.
+
+  - JS counts positions from zero.
+  - slice() extracts up to but not includding indexEnd.
 
 # Interview Prep
 

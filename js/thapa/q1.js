@@ -636,27 +636,88 @@
 // an array into individual elements. In this function, ...arr is used
 // to spread the elements of the input array arr.
 
-const findMin = (arr) => {
-  // arr = arr.sort((a, b) => {
-  //   if (b > a) return -1;
-  // });
-  // return arr[0];
-  // if (arr.length === 0) return "Array is Empty";
-  // return Math.min(...arr);
-  let min = Infinity;
-  if (arr.length === 0) {
-    return "Array is Empty";
-  }
-  for (let i = 0; i < arr.length; i++) {
-    if (min > arr[i]) {
-      min = arr[i];
-    }
-  }
+// const findMin = (arr) => {
+// arr = arr.sort((a, b) => {
+//   if (b > a) return -1;
+// });
+// return arr[0];
+// if (arr.length === 0) return "Array is Empty";
+// return Math.min(...arr);
+// let min = Infinity;
+// if (arr.length === 0) {
+//   return "Array is Empty";
+// }
+// for (let i = 0; i < arr.length; i++) {
+//   if (min > arr[i]) {
+//     min = arr[i];
+//   }
+// }
 
-  return min;
+// return min;
+// };
+
+// console.log(findMin([5, 10, 2, 8])); // Output: 2
+// console.log(findMin([5, -3, 0, 12, -7])); // Output: -7
+
+// console.log(findMin([])); // Output: undefined
+
+// Day 17
+
+// Write a function to convert a string to camelCase & snake_case.
+
+const toCamelCase = (str) => {
+  str = str.trim().split(" ");
+
+  str = str.map((curr, index) => {
+    if (index === 0) {
+      return curr.toLowerCase();
+    } else {
+      return curr.charAt(0).toUpperCase() + curr.slice(1).toLowerCase();
+    }
+  });
+
+  return str.join("");
 };
 
-console.log(findMin([5, 10, 2, 8])); // Output: 2
-console.log(findMin([5, -3, 0, 12, -7])); // Output: -7
+const toSnakeCase = (str) => {
+  // return str.toLowerCase().split("").join("_");
 
-console.log(findMin([])); // Output: undefined
+  // return str.toLowerCase().trim().replace("", "_");
+  // str = str.trim();
+
+  // let arr = str.split(" ");
+  // let i = 0;
+  // while (i < arr.length) {
+  //   arr[i] = arr[i].charAt(0) + arr[i].slice(1);
+  //   i++;
+  // }
+  // return arr.join("_");
+
+  // return str.toLowerCase().replaceAll(" ", "_");
+
+  // return str
+  //   .split(" ")
+  //   .map((x) => x.toLowerCase())
+  //   .join("_");
+
+  let res = "";
+  for (let char of str) {
+    if (char === char.toUpperCase()) {
+      res += "_" + char.toLowerCase();
+    } else {
+      res += char;
+    }
+  }
+  return res;
+};
+console.log(toCamelCase("hello world luCky")); // Output: helloWorldLucky
+
+console.log(toSnakeCase("helloWorld")); // Output: hello_world
+
+// slice() extracts a part of a string and returns the extracted part in
+// a new String.
+
+// 1 JS counts positions from zero.
+// 2: slice() extracts up to but not includding indexEnd.
+
+// todo homework:
