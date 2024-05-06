@@ -1693,6 +1693,9 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
 
 - Output: true if the given string starts with the specified substring, otherwise false
 
+## Day 20
+
+#### Write a function to reverse a string without using any built-in method or libraries.The function should take a string as input and return the reversed string.
 
 # Interview Prep
 

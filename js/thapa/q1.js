@@ -738,13 +738,35 @@
 // Output: true if the given string starts with the specified substring, otherwise false
 
 
-const startsWith = (str,substr)=>{
+// const startsWith = (str,substr)=>{
   // return str.toLowerCase().startsWith(substr.toLowerCase());
 
-  return str.toLowerCase().slice(0,substr.length) === substr.toLowerCase();
+//   return str.toLowerCase().slice(0,substr.length) === substr.toLowerCase();
+// }
+
+
+// console.log(startsWith('Hello world','hello'));  // Output: true
+
+// console.log(startsWith('Hello world','World'));  // Output: false
+
+
+
+// Day 20
+
+// Write a function to reverse a string without using any built-in method or libraries.The function should take a string as input and return the reversed string.
+
+
+const reverseString = (str)=>{
+  // return str.split('').reverse().join('');
+
+
+  // let rev = '';
+  // for (let i = str.length - 1; i >= 0; i--) {
+  //     rev += str[i];
+  // }
+  // return rev;
+
+  return str.split('').reduce((rev, char) => char + rev, '');
 }
 
-
-console.log(startsWith('Hello world','hello'));  // Output: true
-
-console.log(startsWith('Hello world','World'));  // Output: false
+console.log(reverseString('hello'));  // Output: olleH
