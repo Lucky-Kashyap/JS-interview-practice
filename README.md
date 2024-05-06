@@ -1683,6 +1683,17 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
   - JS counts positions from zero.
   - slice() extracts up to but not includding indexEnd.
 
+## Day 19
+
+#### Write a function to check if a given string starts with a specific substring.
+
+- str: A string (e.g. "Hello world").
+
+- subStr: A substring to check if it starts the given string(e.g. "Hello").
+
+- Output: true if the given string starts with the specified substring, otherwise false
+
+
 # Interview Prep
 
 Happy Learning! ✨

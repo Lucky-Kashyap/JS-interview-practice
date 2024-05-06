@@ -665,21 +665,21 @@
 
 // Write a function to convert a string to camelCase & snake_case.
 
-const toCamelCase = (str) => {
-  str = str.trim().split(" ");
+// const toCamelCase = (str) => {
+//   str = str.trim().split(" ");
 
-  str = str.map((curr, index) => {
-    if (index === 0) {
-      return curr.toLowerCase();
-    } else {
-      return curr.charAt(0).toUpperCase() + curr.slice(1).toLowerCase();
-    }
-  });
+//   str = str.map((curr, index) => {
+//     if (index === 0) {
+//       return curr.toLowerCase();
+//     } else {
+//       return curr.charAt(0).toUpperCase() + curr.slice(1).toLowerCase();
+//     }
+//   });
 
-  return str.join("");
-};
+//   return str.join("");
+// };
 
-const toSnakeCase = (str) => {
+// const toSnakeCase = (str) => {
   // return str.toLowerCase().split("").join("_");
 
   // return str.toLowerCase().trim().replace("", "_");
@@ -700,19 +700,19 @@ const toSnakeCase = (str) => {
   //   .map((x) => x.toLowerCase())
   //   .join("_");
 
-  let res = "";
-  for (let char of str) {
-    if (char === char.toUpperCase()) {
-      res += "_" + char.toLowerCase();
-    } else {
-      res += char;
-    }
-  }
-  return res;
-};
-console.log(toCamelCase("hello world luCky")); // Output: helloWorldLucky
+//   let res = "";
+//   for (let char of str) {
+//     if (char === char.toUpperCase()) {
+//       res += "_" + char.toLowerCase();
+//     } else {
+//       res += char;
+//     }
+//   }
+//   return res;
+// };
+// console.log(toCamelCase("hello world luCky")); // Output: helloWorldLucky
 
-console.log(toSnakeCase("helloWorld")); // Output: hello_world
+// console.log(toSnakeCase("helloWorld")); // Output: hello_world
 
 // slice() extracts a part of a string and returns the extracted part in
 // a new String.
@@ -721,3 +721,30 @@ console.log(toSnakeCase("helloWorld")); // Output: hello_world
 // 2: slice() extracts up to but not includding indexEnd.
 
 // todo homework:
+
+
+
+
+// Coding Challenge
+
+// Day 19
+
+// Write a function to check if a given string starts with a specific substring.
+
+// str: A string (e.g. "Hello world").
+
+// subStr: A substring to check if it starts the given string(e.g. "Hello").
+
+// Output: true if the given string starts with the specified substring, otherwise false
+
+
+const startsWith = (str,substr)=>{
+  // return str.toLowerCase().startsWith(substr.toLowerCase());
+
+  return str.toLowerCase().slice(0,substr.length) === substr.toLowerCase();
+}
+
+
+console.log(startsWith('Hello world','hello'));  // Output: true
+
+console.log(startsWith('Hello world','World'));  // Output: false
