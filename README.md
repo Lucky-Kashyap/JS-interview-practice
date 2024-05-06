@@ -1697,6 +1697,19 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
 
 #### Write a function to reverse a string without using any built-in method or libraries.The function should take a string as input and return the reversed string.
 
+## Day 21
+
+#### Write a function called calculateMean that takes an array of numbers as input and returns the mean (average) of those numbers.
+
+- Note :
+
+  - In math, the mean is the average of a set of numbers, or the numeric value that represents the center of collection of numbers.
+
+- Constraints:
+
+  - The input array may contain positive and negative integers.
+  - The input array may be empty. If it is empty, the function should return 0.
+
 # Interview Prep
 
 Happy Learning! ✨

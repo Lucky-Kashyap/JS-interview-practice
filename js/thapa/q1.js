@@ -756,7 +756,7 @@
 // Write a function to reverse a string without using any built-in method or libraries.The function should take a string as input and return the reversed string.
 
 
-const reverseString = (str)=>{
+// const reverseString = (str)=>{
   // return str.split('').reverse().join('');
 
 
@@ -766,7 +766,45 @@ const reverseString = (str)=>{
   // }
   // return rev;
 
-  return str.split('').reduce((rev, char) => char + rev, '');
+  // return str.split('').reduce((rev, char) => char + rev, '');
+// }
+
+// console.log(reverseString('hello'));  // Output: olleH
+
+// Day 21
+
+// Write a function called calculateMean that takes an array of numbers as input and returns the mean (average) of those numbers.
+
+// Note :
+
+// In math, the mean is the average of a set of numbers, or the numeric value that represents the center of collection of numbers.
+
+// Constraints:
+
+// The input array may contain positive and nagetive integers,
+// The input array may be empty. If it is empty, the function should return 0.
+
+
+const calculateMean=(arr)=>{
+  if(arr.length ===0){
+    return 0;
+  }
+
+  // let sum = arr.reduce((acc,cur)=>acc+cur,0);
+
+  let sum = 0;
+
+
+  for(let i=0;i<arr.length;i++){
+    sum+=arr[i];
+  }
+
+  return sum/arr.length;
 }
 
-console.log(reverseString('hello'));  // Output: olleH
+
+console.log(calculateMean([1,2,3,4,5]));  // Output: 3
+
+console.log(calculateMean([10,20,30]));  // Output: 20
+console.log(calculateMean([-1,0,1]));  // Output: 0
+console.log(calculateMean([]));  // Output: 0
