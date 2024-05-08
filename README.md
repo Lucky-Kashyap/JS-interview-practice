@@ -1683,6 +1683,21 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
   - JS counts positions from zero.
   - slice() extracts up to but not includding indexEnd.
 
+## Day 18
+
+#### Write a function to chek if a character is uppercase or lowercase.
+
+- Constraints:
+
+  - The input char will be a single character.
+  - The character can be any printable ASCII character.
+  - You can assume that the input will always be a string of length 1.
+
+- Note:
+
+  - Ensure that the function correctly identifies uppercase characters based on their ASCII values.
+  - Optimize the function to handle edge cases efficiently.
+
 ## Day 19
 
 #### Write a function to check if a given string starts with a specific substring.
@@ -1710,7 +1725,6 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
   - The input array may contain positive and negative integers.
   - The input array may be empty. If it is empty, the function should return 0.
 
-
 ## Day 22
 
 #### Write a JS function findMedian(arr) that takes an array of numbers as input and returns the median value. If the array has an even number of elements, return the average of the two middle values
@@ -1720,9 +1734,8 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
 - todo
 
   - Sort the array in ascending order.
-  - If the array has an odd number of elements, the   median is the middle element.
+  - If the array has an odd number of elements, the median is the middle element.
   - If the array has an even number of elements, the median is the average of the two middle elements.
-
 
 # Interview Prep
 

@@ -680,25 +680,25 @@
 // };
 
 // const toSnakeCase = (str) => {
-  // return str.toLowerCase().split("").join("_");
+// return str.toLowerCase().split("").join("_");
 
-  // return str.toLowerCase().trim().replace("", "_");
-  // str = str.trim();
+// return str.toLowerCase().trim().replace("", "_");
+// str = str.trim();
 
-  // let arr = str.split(" ");
-  // let i = 0;
-  // while (i < arr.length) {
-  //   arr[i] = arr[i].charAt(0) + arr[i].slice(1);
-  //   i++;
-  // }
-  // return arr.join("_");
+// let arr = str.split(" ");
+// let i = 0;
+// while (i < arr.length) {
+//   arr[i] = arr[i].charAt(0) + arr[i].slice(1);
+//   i++;
+// }
+// return arr.join("_");
 
-  // return str.toLowerCase().replaceAll(" ", "_");
+// return str.toLowerCase().replaceAll(" ", "_");
 
-  // return str
-  //   .split(" ")
-  //   .map((x) => x.toLowerCase())
-  //   .join("_");
+// return str
+//   .split(" ")
+//   .map((x) => x.toLowerCase())
+//   .join("_");
 
 //   let res = "";
 //   for (let char of str) {
@@ -722,9 +722,34 @@
 
 // todo homework:
 
+// Day 18
 
+// Write a function to chek if a character is uppercase or lowercase.
 
+// Constraints:
 
+// The input char will be a single character.
+// The character can be any printable ASCII character.
+// You can assume that the input will always be a string of length 1.
+
+// Note:
+
+// Ensure that the function correctly identifies uppercase characters based on their ASCII values.
+
+// Optimize the function to handle edge cases efficiently.
+
+const isUpperCase = (char) => {
+  // if (char.charCodeAt(0) >= 65 && char.charCodeAt(0) <= 90) {
+  //   return true;
+  // }
+
+  // return false;
+
+  return char === char.toUpperCase();
+};
+
+console.log(isUpperCase("S")); // Output: true
+console.log(isUpperCase("b")); // Output: false
 // Coding Challenge
 
 // Day 19
@@ -737,36 +762,30 @@
 
 // Output: true if the given string starts with the specified substring, otherwise false
 
-
 // const startsWith = (str,substr)=>{
-  // return str.toLowerCase().startsWith(substr.toLowerCase());
+// return str.toLowerCase().startsWith(substr.toLowerCase());
 
 //   return str.toLowerCase().slice(0,substr.length) === substr.toLowerCase();
 // }
-
 
 // console.log(startsWith('Hello world','hello'));  // Output: true
 
 // console.log(startsWith('Hello world','World'));  // Output: false
 
-
-
 // Day 20
 
 // Write a function to reverse a string without using any built-in method or libraries.The function should take a string as input and return the reversed string.
 
-
 // const reverseString = (str)=>{
-  // return str.split('').reverse().join('');
+// return str.split('').reverse().join('');
 
+// let rev = '';
+// for (let i = str.length - 1; i >= 0; i--) {
+//     rev += str[i];
+// }
+// return rev;
 
-  // let rev = '';
-  // for (let i = str.length - 1; i >= 0; i--) {
-  //     rev += str[i];
-  // }
-  // return rev;
-
-  // return str.split('').reduce((rev, char) => char + rev, '');
+// return str.split('').reduce((rev, char) => char + rev, '');
 // }
 
 // console.log(reverseString('hello'));  // Output: olleH
@@ -784,16 +803,14 @@
 // The input array may contain positive and nagetive integers,
 // The input array may be empty. If it is empty, the function should return 0.
 
-
 // const calculateMean=(arr)=>{
 //   if(arr.length ===0){
 //     return 0;
 //   }
 
-  // let sum = arr.reduce((acc,cur)=>acc+cur,0);
+// let sum = arr.reduce((acc,cur)=>acc+cur,0);
 
 //   let sum = 0;
-
 
 //   for(let i=0;i<arr.length;i++){
 //     sum+=arr[i];
@@ -802,14 +819,11 @@
 //   return sum/arr.length;
 // }
 
-
 // console.log(calculateMean([1,2,3,4,5]));  // Output: 3
 
 // console.log(calculateMean([10,20,30]));  // Output: 20
 // console.log(calculateMean([-1,0,1]));  // Output: 0
 // console.log(calculateMean([]));  // Output: 0
-
-
 
 // Day 22
 
@@ -824,35 +838,30 @@
 // If the array has an odd number of elements, the median is the middle element.
 // If the array has an even number of elements, the median is the average of the two middle elements.
 
+// const findMedian=(arr)=>{
 
+// Step 1: Sort the array
 
-const findMedian=(arr)=>{
+// console.log(arr.sort((a,b)=>a-b));
 
-  // Step 1: Sort the array
+// Step 2: Check if the array length is odd or even
 
-  console.log(arr.sort((a,b)=>a-b));
+// let len = arr.length;
+// let mid = Math.floor(len/2);
+// console.log(mid);
 
-  // Step 2: Check if the array length is odd or even
+// Step 3: for even length array
 
-  let len = arr.length;
-  let mid = Math.floor(len/2);
-  // console.log(mid);
+// if(len % 2 === 0){
+//   return (arr[mid] + arr[mid-1]) / 2;
+// }
+// else{
+// Step 4: for odd length array
+// return arr[mid];
+//   }
 
+// }
 
-  // Step 3: for even length array
-
-  if(len % 2 === 0){
-    return (arr[mid] + arr[mid-1]) / 2;
-  }
-  else{
-  // Step 4: for odd length array
-return arr[mid];
-  }
-
-
-}
-
-console.log(findMedian([5,3,9,1,7]));  // Output: 5
-console.log(findMedian([2,4,6,8]));  // Output: 5
-console.log(findMedian([1,3,5,7,9,11]));  // Output: 6
-
+// console.log(findMedian([5,3,9,1,7]));  // Output: 5
+// console.log(findMedian([2,4,6,8]));  // Output: 5
+// console.log(findMedian([1,3,5,7,9,11]));  // Output: 6
