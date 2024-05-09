@@ -738,18 +738,18 @@
 
 // Optimize the function to handle edge cases efficiently.
 
-const isUpperCase = (char) => {
-  // if (char.charCodeAt(0) >= 65 && char.charCodeAt(0) <= 90) {
-  //   return true;
-  // }
+// const isUpperCase = (char) => {
+// if (char.charCodeAt(0) >= 65 && char.charCodeAt(0) <= 90) {
+//   return true;
+// }
 
-  // return false;
+// return false;
 
-  return char === char.toUpperCase();
-};
+//   return char === char.toUpperCase();
+// };
 
-console.log(isUpperCase("S")); // Output: true
-console.log(isUpperCase("b")); // Output: false
+// console.log(isUpperCase("S")); // Output: true
+// console.log(isUpperCase("b")); // Output: false
 // Coding Challenge
 
 // Day 19
@@ -762,15 +762,15 @@ console.log(isUpperCase("b")); // Output: false
 
 // Output: true if the given string starts with the specified substring, otherwise false
 
-// const startsWith = (str,substr)=>{
-// return str.toLowerCase().startsWith(substr.toLowerCase());
+// const startsWith = (str, substr) => {
+//   return str.toLowerCase().startsWith(substr.toLowerCase());
 
-//   return str.toLowerCase().slice(0,substr.length) === substr.toLowerCase();
-// }
+// return str.toLowerCase().slice(0,substr.length) === substr.toLowerCase();
+// };
 
-// console.log(startsWith('Hello world','hello'));  // Output: true
+// console.log(startsWith("Hello world", "hello")); // Output: true
 
-// console.log(startsWith('Hello world','World'));  // Output: false
+// console.log(startsWith("Hello world", "World")); // Output: false
 
 // Day 20
 
@@ -865,3 +865,56 @@ console.log(isUpperCase("b")); // Output: false
 // console.log(findMedian([5,3,9,1,7]));  // Output: 5
 // console.log(findMedian([2,4,6,8]));  // Output: 5
 // console.log(findMedian([1,3,5,7,9,11]));  // Output: 6
+
+// Day 23
+
+// Write a JS function to count the occurrences of each element in an array and store the counts in an object. The keys of the object should represent the elements of the array, and the values should represent the number of times each element appears in the array.
+
+// Note:
+
+// Accept an array of numbers as input.
+// Create an empty object called counts to store the counts of each element.
+
+// Iterate through each number in the array.
+// For each number, increment the count in the counts object.
+// If the count for a number does not exist yet, initialize it to 1.
+// Return the counts object containing the counts of each element.
+
+// The input aray may contain positive integers only.
+// You can assume that the input array is not empty.
+
+// Input
+const numbers = [1, 2, 2, 3, 1, 4, 2];
+
+// const count = (nums) => {
+//   let counts = {};
+
+//   for (let i = 0; i < nums.length; i++) {
+//     let count = 0;
+//     for (let j = 0; j < nums.length; j++) {
+//       if (nums[i] === nums[j]) {
+//         count++;
+//       }
+//     }
+//     counts[nums[i]] = count;
+//   }
+
+//   return counts;
+// };
+
+const count = (arr) => {
+  let count = 1;
+  var res = {};
+  for (ele of arr) {
+    if (res[ele] === undefined) {
+      res[ele] = count;
+    } else {
+      res[ele] = res[ele] + count;
+    }
+  }
+  return res;
+};
+// console.log(count(numbers));
+
+// Output
+//  {'1' :2,'2' :3,'3' :1,'4' :1}

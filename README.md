@@ -1737,6 +1737,21 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
   - If the array has an odd number of elements, the median is the middle element.
   - If the array has an even number of elements, the median is the average of the two middle elements.
 
+## Day 23
+
+#### Write a JS function to count the occurrences of each element in an array and store the counts in an object. The keys of the object should represent the elements of the array, and the values should represent the number of times each element appears in the array.
+
+- Note:
+
+  - Accept an array of numbers as input.
+  - Create an empty object called counts to store the counts of each element.
+  - Iterate through each number in the array.
+  - For each number, increment the count in the counts object.
+  - If the count for a number does not exist yet, initialize it to 1.
+  - Return the counts object containing the counts of each element.
+  - The input aray may contain positive integers only.
+  - You can assume that the input array is not empty.
+
 # Interview Prep
 
 Happy Learning! ✨
