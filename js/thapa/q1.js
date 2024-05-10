@@ -776,8 +776,8 @@
 
 // Write a function to reverse a string without using any built-in method or libraries.The function should take a string as input and return the reversed string.
 
-// const reverseString = (str)=>{
-// return str.split('').reverse().join('');
+// const reverseString = (str) => {
+//   return str.split("").reverse().join("");
 
 // let rev = '';
 // for (let i = str.length - 1; i >= 0; i--) {
@@ -786,9 +786,11 @@
 // return rev;
 
 // return str.split('').reduce((rev, char) => char + rev, '');
-// }
+// };
 
-// console.log(reverseString('hello'));  // Output: olleH
+// console.log(reverseString("hello")); // Output: olleh
+
+// console.log(reverseString("lucky kashyap"));
 
 // Day 21
 
@@ -884,7 +886,7 @@
 // You can assume that the input array is not empty.
 
 // Input
-const numbers = [1, 2, 2, 3, 1, 4, 2];
+// const numbers = [1, 2, 2, 3, 1, 4, 2];
 
 // const count = (nums) => {
 //   let counts = {};
@@ -902,19 +904,66 @@ const numbers = [1, 2, 2, 3, 1, 4, 2];
 //   return counts;
 // };
 
-const count = (arr) => {
-  let count = 1;
-  var res = {};
-  for (ele of arr) {
-    if (res[ele] === undefined) {
-      res[ele] = count;
-    } else {
-      res[ele] = res[ele] + count;
-    }
-  }
-  return res;
-};
+// const count = (arr) => {
+//   let count = 1;
+//   var res = {};
+//   for (ele of arr) {
+//     if (res[ele] === undefined) {
+//       res[ele] = count;
+//     } else {
+//       res[ele] = res[ele] + count;
+//     }
+//   }
+//   return res;
+// };
 // console.log(count(numbers));
 
 // Output
 //  {'1' :2,'2' :3,'3' :1,'4' :1}
+
+// Day 24
+
+// Write a function called findMode that takes an array of numbers as input and returns the mode of the array (the number that appears most frequently).
+
+// Note:
+
+// The input array will always contain at least one element.
+// The mode will be unique (i.e., there won't be multiple numbers with the same highest frequency).
+
+const findMode = (arr) => {
+  // let count = {};
+
+  // let high = 0;
+  // let mode;
+
+  // for (let el of arr) {
+  //   count[el] = (count[el] || 0) + 1;
+
+  //   if (3 > high) {
+  //     high = count[el];
+  //     mode = el;
+  //   }
+  // }
+
+  // return mode;
+  if (arr.length === 0) {
+    return null;
+  }
+
+  let count = {};
+  let high = 0;
+  let mode = null;
+
+  for (var i = 0; i < arr.length; i++) {
+    var num = arr[i];
+    count[num] = (count[num] || 0) + 1;
+    if (count[num] > high) {
+      high = count[num];
+      mode = num;
+    }
+  }
+
+  return mode;
+};
+
+console.log(findMode([1, 2, 2, 3, 1, , 4, 2])); // Output: 2

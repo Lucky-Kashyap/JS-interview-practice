@@ -1752,6 +1752,15 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
   - The input aray may contain positive integers only.
   - You can assume that the input array is not empty.
 
+## Day 24
+
+#### Write a function called findMode that takes an array of numbers as input and returns the mode of the array (the number that appears most frequently).
+
+- Note:
+
+  - The input array will always contain at least one element.
+  - The mode will be unique (i.e., there won't be multiple numbers with the same highest frequency).
+
 # Interview Prep
 
 Happy Learning! ✨
