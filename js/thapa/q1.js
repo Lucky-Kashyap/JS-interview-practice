@@ -805,27 +805,27 @@
 // The input array may contain positive and nagetive integers,
 // The input array may be empty. If it is empty, the function should return 0.
 
-// const calculateMean=(arr)=>{
-//   if(arr.length ===0){
+// const calculateMean = (arr) => {
+//   if (arr.length === 0) {
 //     return 0;
 //   }
 
-// let sum = arr.reduce((acc,cur)=>acc+cur,0);
+// let sum = arr.reduce((acc, cur) => acc + cur, 0);
 
-//   let sum = 0;
+// let sum = 0;
 
-//   for(let i=0;i<arr.length;i++){
-//     sum+=arr[i];
-//   }
-
-//   return sum/arr.length;
+// for (let i = 0; i < arr.length; i++) {
+//   sum += arr[i];
 // }
 
-// console.log(calculateMean([1,2,3,4,5]));  // Output: 3
+// return sum / arr.length;
+// };
 
-// console.log(calculateMean([10,20,30]));  // Output: 20
-// console.log(calculateMean([-1,0,1]));  // Output: 0
-// console.log(calculateMean([]));  // Output: 0
+// console.log(calculateMean([1, 2, 3, 4, 5])); // Output: 3
+
+// console.log(calculateMean([10, 20, 30])); // Output: 20
+// console.log(calculateMean([-1, 0, 1])); // Output: 0
+// console.log(calculateMean([])); // Output: 0
 
 // Day 22
 
@@ -930,40 +930,63 @@
 // The input array will always contain at least one element.
 // The mode will be unique (i.e., there won't be multiple numbers with the same highest frequency).
 
-const findMode = (arr) => {
-  // let count = {};
+// const findMode = (arr) => {
+// let count = {};
 
-  // let high = 0;
-  // let mode;
+// let high = 0;
+// let mode;
 
-  // for (let el of arr) {
-  //   count[el] = (count[el] || 0) + 1;
+// for (let el of arr) {
+//   count[el] = (count[el] || 0) + 1;
 
-  //   if (3 > high) {
-  //     high = count[el];
-  //     mode = el;
-  //   }
-  // }
+//   if (3 > high) {
+//     high = count[el];
+//     mode = el;
+//   }
+// }
 
-  // return mode;
-  if (arr.length === 0) {
-    return null;
+// return mode;
+//   if (arr.length === 0) {
+//     return null;
+//   }
+
+//   let count = {};
+//   let high = 0;
+//   let mode = null;
+
+//   for (var i = 0; i < arr.length; i++) {
+//     var num = arr[i];
+//     count[num] = (count[num] || 0) + 1;
+//     if (count[num] > high) {
+//       high = count[num];
+//       mode = num;
+//     }
+//   }
+
+//   return mode;
+// };
+
+// console.log(findMode([1, 2, 2, 3, 1, , 4, 2])); // Output: 2
+
+// Day 25
+
+// Write a function to calculate the factorial of a number (using Recursion)
+
+//  Recursion is a programming technique where a function calls itself in order to solve a problem. Inessence, it's  function that calls itself with smaller or simpler input until it reaches a base case
+
+// Base Case:
+
+// The base case is the condition in a recursive function that stops the recursion. It's the point at which the function stops calling itself and returns a value without further recursion, Withput a base case the recursive function would continue calling itself indefinitely, leading to what's known as infinite recursion.
+
+// Recursive Case:
+
+// It is the condition in a recursive function that determines when the function should call itself again. It's typically an expression or condition that evaluates to true for certain inputs, indicating that further recursion is necessary to solve the problem. EAch recursive call should move closer to the base case, evetually leading to termination of the recursion
+
+const factorial = (num) => {
+  if (num === 0 || num === 1) {
+    return 1;
   }
-
-  let count = {};
-  let high = 0;
-  let mode = null;
-
-  for (var i = 0; i < arr.length; i++) {
-    var num = arr[i];
-    count[num] = (count[num] || 0) + 1;
-    if (count[num] > high) {
-      high = count[num];
-      mode = num;
-    }
-  }
-
-  return mode;
+  return num * factorial(num - 1);
 };
 
-console.log(findMode([1, 2, 2, 3, 1, , 4, 2])); // Output: 2
+console.log(factorial(5)); // Output: 120

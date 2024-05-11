@@ -1761,6 +1761,20 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
   - The input array will always contain at least one element.
   - The mode will be unique (i.e., there won't be multiple numbers with the same highest frequency).
 
+## Day 25
+
+#### Write a function to calculate the factorial of a number (using Recursion)
+
+- Recursion is a programming technique where a function calls itself in order to solve a problem. Inessence, it's function that calls itself with smaller or simpler input until it reaches a base case
+
+- Base Case:
+
+  - The base case is the condition in a recursive function that stops the recursion. It's the point at which the function stops calling itself and returns a value without further recursion, Withput a base case the recursive function would continue calling itself indefinitely, leading to what's known as infinite recursion.
+
+- Recursive Case:
+
+  - It is the condition in a recursive function that determines when the function should call itself again. It's typically an expression or condition that evaluates to true for certain inputs, indicating that further recursion is necessary to solve the problem. Each recursive call should move closer to the base case, eventually leading to termination of the recursion
+
 # Interview Prep
 
 Happy Learning! ✨
