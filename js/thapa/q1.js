@@ -840,33 +840,30 @@
 // If the array has an odd number of elements, the median is the middle element.
 // If the array has an even number of elements, the median is the average of the two middle elements.
 
-// const findMedian=(arr)=>{
+// const findMedian = (arr) => {
+//   // Step 1: Sort the array
 
-// Step 1: Sort the array
+//   console.log(arr.sort((a, b) => a - b));
 
-// console.log(arr.sort((a,b)=>a-b));
+//   // Step 2: Check if the array length is odd or even
 
-// Step 2: Check if the array length is odd or even
+//   let len = arr.length;
+//   let mid = Math.floor(len / 2);
+//   // console.log(mid);
 
-// let len = arr.length;
-// let mid = Math.floor(len/2);
-// console.log(mid);
+//   // Step 3: for even length array
 
-// Step 3: for even length array
-
-// if(len % 2 === 0){
-//   return (arr[mid] + arr[mid-1]) / 2;
-// }
-// else{
-// Step 4: for odd length array
-// return arr[mid];
+//   if (len % 2 === 0) {
+//     return (arr[mid] + arr[mid - 1]) / 2;
+//   } else {
+//     // Step 4: for odd length array
+//     return arr[mid];
 //   }
+// };
 
-// }
-
-// console.log(findMedian([5,3,9,1,7]));  // Output: 5
-// console.log(findMedian([2,4,6,8]));  // Output: 5
-// console.log(findMedian([1,3,5,7,9,11]));  // Output: 6
+// console.log(findMedian([5, 3, 9, 1, 7])); // Output: 5
+// console.log(findMedian([2, 4, 6, 8])); // Output: 5
+// console.log(findMedian([1, 3, 5, 7, 9, 11])); // Output: 6
 
 // Day 23
 
@@ -982,11 +979,35 @@
 
 // It is the condition in a recursive function that determines when the function should call itself again. It's typically an expression or condition that evaluates to true for certain inputs, indicating that further recursion is necessary to solve the problem. EAch recursive call should move closer to the base case, evetually leading to termination of the recursion
 
-const factorial = (num) => {
-  if (num === 0 || num === 1) {
-    return 1;
+// const factorial = (num) => {
+//   if (num === 0 || num === 1) {
+//     return 1;
+//   }
+//   return num * factorial(num - 1);
+// };
+
+// console.log(factorial(5)); // Output: 120
+
+// Day 26
+
+// Write a function series is a sequence of numbers in which each number (Fibonacci number) is the sum of the two preceding ones. It starts with 0, 1, 1, 2, 3, 5, 8, 13, 21, ...
+
+// Note:
+// Fibonacci number is calculated using formula:
+
+// F(n)= F(n-1) + F(n-2), where, F(1) = F(2)= 1.
+
+const fibonacci = (num) => {
+  if (num <= 1) {
+    return num;
+  } else {
+    return fibonacci(num - 1) + fibonacci(num - 2);
   }
-  return num * factorial(num - 1);
 };
 
-console.log(factorial(5)); // Output: 120
+console.log(fibonacci(0)); // Output: 0
+console.log(fibonacci(1)); // Output: 1
+console.log(fibonacci(2)); // Output: 1
+console.log(fibonacci(3)); // Output: 2
+console.log(fibonacci(4)); // Output: 3
+console.log(fibonacci(5)); // Output: 5

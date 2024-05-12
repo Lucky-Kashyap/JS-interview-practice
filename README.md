@@ -1775,6 +1775,14 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
 
   - It is the condition in a recursive function that determines when the function should call itself again. It's typically an expression or condition that evaluates to true for certain inputs, indicating that further recursion is necessary to solve the problem. Each recursive call should move closer to the base case, eventually leading to termination of the recursion
 
+## Day 26
+
+#### Write a function series is a sequence of numbers in which each number (Fibonacci number) is the sum of the two preceding ones. It starts with 0, 1, 1, 2, 3, 5, 8, 13, 21, ...
+
+- Note:
+  - Fibonacci number is calculated using formula:
+  - F(n)= F(n-1) + F(n-2), where, F(1) = F(2)= 1.
+
 # Interview Prep
 
 Happy Learning! ✨
