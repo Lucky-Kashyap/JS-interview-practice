@@ -1783,6 +1783,20 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
   - Fibonacci number is calculated using formula:
   - F(n)= F(n-1) + F(n-2), where, F(1) = F(2)= 1.
 
+## Day 27
+
+#### Write a function called repeatString that takes two parameters:
+
+- str: A string that needs to be repeated.
+- num: An integer representing the number of times the string should be repeated.
+- The function should repeat the input string str the specified number of times num and return the resulting string.
+
+- Note:
+
+  - The input string str will contain only alphanumeric characters and punctuation marks.
+  - The input number num will be a non-negative integer.
+  - The output string length should not exceed the length of str multiplied by num.
+
 # Interview Prep
 
 Happy Learning! ✨

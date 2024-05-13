@@ -886,32 +886,32 @@
 // const numbers = [1, 2, 2, 3, 1, 4, 2];
 
 // const count = (nums) => {
-//   let counts = {};
+// let counts = {};
 
-//   for (let i = 0; i < nums.length; i++) {
-//     let count = 0;
-//     for (let j = 0; j < nums.length; j++) {
-//       if (nums[i] === nums[j]) {
-//         count++;
-//       }
+// for (let i = 0; i < nums.length; i++) {
+//   let count = 0;
+//   for (let j = 0; j < nums.length; j++) {
+//     if (nums[i] === nums[j]) {
+//       count++;
 //     }
-//     counts[nums[i]] = count;
 //   }
+//   counts[nums[i]] = count;
+// }
 
-//   return counts;
+// return counts;
 // };
 
 // const count = (arr) => {
-//   let count = 1;
-//   var res = {};
-//   for (ele of arr) {
-//     if (res[ele] === undefined) {
-//       res[ele] = count;
-//     } else {
-//       res[ele] = res[ele] + count;
-//     }
+// let count = 1;
+// var res = {};
+// for (ele of arr) {
+//   if (res[ele] === undefined) {
+//     res[ele] = count;
+//   } else {
+//     res[ele] = res[ele] + count;
 //   }
-//   return res;
+// }
+// return res;
 // };
 // console.log(count(numbers));
 
@@ -997,17 +997,47 @@
 
 // F(n)= F(n-1) + F(n-2), where, F(1) = F(2)= 1.
 
-const fibonacci = (num) => {
-  if (num <= 1) {
-    return num;
-  } else {
-    return fibonacci(num - 1) + fibonacci(num - 2);
+// const fibonacci = (num) => {
+//   if (num <= 1) {
+//     return num;
+//   } else {
+//     return fibonacci(num - 1) + fibonacci(num - 2);
+//   }
+// };
+
+// console.log(fibonacci(0)); // Output: 0
+// console.log(fibonacci(1)); // Output: 1
+// console.log(fibonacci(2)); // Output: 1
+// console.log(fibonacci(3)); // Output: 2
+// console.log(fibonacci(4)); // Output: 3
+// console.log(fibonacci(5)); // Output: 5
+
+// Day 27
+
+// Write a function called repeatString that takes two parameters:
+
+// str: A string that needs to be repeated.
+// num: An integer representing the number of times the string should be repeated.
+// The function should repeat the input string str the specified number of times num and return the resulting string.
+
+const repeatString = (str, count) => {
+  let res = "";
+
+  for (let i = 0; i < count; i++) {
+    res += str;
   }
+
+  // return res;
+
+  return count > 0 ? str.repeat(count) : str;
 };
 
-console.log(fibonacci(0)); // Output: 0
-console.log(fibonacci(1)); // Output: 1
-console.log(fibonacci(2)); // Output: 1
-console.log(fibonacci(3)); // Output: 2
-console.log(fibonacci(4)); // Output: 3
-console.log(fibonacci(5)); // Output: 5
+console.log(repeatString("abc", 10));
+
+// Output: 'abcabcabcabcabc'
+
+// Note:
+
+// The input string str will contain only alphanumeric characters and punctuation marks.
+// The input number num will be a non-negative integer.
+// The output string length should not exceed the length of str multiplied by num.
