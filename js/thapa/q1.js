@@ -1020,19 +1020,19 @@
 // num: An integer representing the number of times the string should be repeated.
 // The function should repeat the input string str the specified number of times num and return the resulting string.
 
-const repeatString = (str, count) => {
-  let res = "";
+// const repeatString = (str, count) => {
+//   let res = "";
 
-  for (let i = 0; i < count; i++) {
-    res += str;
-  }
+//   for (let i = 0; i < count; i++) {
+//     res += str;
+//   }
 
-  // return res;
+// return res;
 
-  return count > 0 ? str.repeat(count) : str;
-};
+//   return count > 0 ? str.repeat(count) : str;
+// };
 
-console.log(repeatString("abc", 10));
+// console.log(repeatString("abc", 10));
 
 // Output: 'abcabcabcabcabc'
 
@@ -1041,3 +1041,32 @@ console.log(repeatString("abc", 10));
 // The input string str will contain only alphanumeric characters and punctuation marks.
 // The input number num will be a non-negative integer.
 // The output string length should not exceed the length of str multiplied by num.
+
+// Day 28
+
+// Write a function called truncateString tht takes two parameters:
+
+// str: A string tht needs to be truncated.
+// maxLength: An integer representing the maximum length of the string allowed.
+// The function should truncate the input string str if its length exceeds the specified maxLength. If trunction occurs, function should add '...' to the end of the trucated string.
+
+// Constraints:
+// The input string str will contain only alphanumeric characters and punctution marks.
+// The maximum length maxLength will be a positive integer.
+// The output string length should not exceed maxLength + 3 characters due to the addition of '...'.
+
+const truncateString = (str, count) => {
+  // if (count <= 0) {
+  //   return str;
+  // } else if (str.length > count) {
+  //   return str.slice(0, count).concat("...");
+  // }
+
+  // return count <= 0 ? str : str.slice(0, count).concat("...");
+
+  // return count <= 0 ? str : str.slice(0, count) + "...";
+  return count <= 0 ? str : str.substr(0, count) + "...";
+};
+
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
+// Output: 'A-tisket...'
