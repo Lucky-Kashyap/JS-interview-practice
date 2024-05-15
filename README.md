@@ -1810,6 +1810,24 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
   - The maximum length maxLength will be a positive integer.
   - The output string length should not exceed maxLength + 3 characters due to the addition of '...'.
 
+## Day 29
+
+#### Write a function called numberRange that generates an array containing consecutive numbers from a to b (inclusive)
+
+- Input:
+
+  - a: An integer representing the starting number of the range.
+  - b: An integer representing the ending number of the range.
+  - arr: An optional parameter representing the array to store the numbers in the range. It defaults to an empty array.
+
+- Output:
+
+  - An array containing consecutive numbers from a to b (inclusive).
+
+- Constraints:
+  - a and b will be integers.
+  - a will be less than or equal to b
+
 # Interview Prep
 
 Happy Learning! ✨

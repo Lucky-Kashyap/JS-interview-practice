@@ -1055,18 +1055,54 @@
 // The maximum length maxLength will be a positive integer.
 // The output string length should not exceed maxLength + 3 characters due to the addition of '...'.
 
-const truncateString = (str, count) => {
-  // if (count <= 0) {
-  //   return str;
-  // } else if (str.length > count) {
-  //   return str.slice(0, count).concat("...");
+// const truncateString = (str, count) => {
+// if (count <= 0) {
+//   return str;
+// } else if (str.length > count) {
+//   return str.slice(0, count).concat("...");
+// }
+
+// return count <= 0 ? str : str.slice(0, count).concat("...");
+
+// return count <= 0 ? str : str.slice(0, count) + "...";
+//   return count <= 0 ? str : str.substr(0, count) + "...";
+// };
+
+// console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
+// Output: 'A-tisket...'
+
+// Day 29
+
+// Write a function called numberRange that generates an array containing consecutive numbers from a to b (inclusive)
+
+// Input:
+// a: An integer representing the starting number of the range.
+// b: An integer representing the ending number of the range.
+// arr: An optional parameter representing the array to store the numbers in the range. It defaults to an empty array.
+
+// Output:
+// An array containing consecutive numbers from a to b (inclusive).
+
+// Constraints:
+// a and b will be integers.
+// a will be less than or equal to b
+
+const numberRange = (start, end) => {
+  let arr = [];
+
+  // for (let i = start; i <= end; i++) {
+  //   arr.push(i);
   // }
 
-  // return count <= 0 ? str : str.slice(0, count).concat("...");
+  while (start <= end) {
+    arr.push(start);
+    start++;
+  }
 
-  // return count <= 0 ? str : str.slice(0, count) + "...";
-  return count <= 0 ? str : str.substr(0, count) + "...";
+  return arr;
 };
 
-console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
-// Output: 'A-tisket...'
+console.log(numberRange(0, 5)); // Output: [0,1,2,3,4,5]
+console.log(numberRange(3, 7)); // Output: [3,4,5,6,7]
+
+console.log(numberRange(-2, 2)); // Output: [-2,-1,0,1,2]
