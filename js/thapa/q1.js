@@ -1087,22 +1087,52 @@
 // a and b will be integers.
 // a will be less than or equal to b
 
-const numberRange = (start, end) => {
-  let arr = [];
+// const numberRange = (start, end) => {
+//   let arr = [];
 
-  // for (let i = start; i <= end; i++) {
-  //   arr.push(i);
-  // }
+// for (let i = start; i <= end; i++) {
+//   arr.push(i);
+// }
 
-  while (start <= end) {
+// while (start <= end) {
+//     arr.push(start);
+//     start++;
+//   }
+
+//   return arr;
+// };
+
+// console.log(numberRange(0, 5)); // Output: [0,1,2,3,4,5]
+// console.log(numberRange(3, 7)); // Output: [3,4,5,6,7]
+
+// console.log(numberRange(-2, 2)); // Output: [-2,-1,0,1,2]
+
+// Day 30
+
+// Write a function called numberRangeRecursive that generates an array containing consecutive numbers from a to b (inclusive)
+
+// Input:
+// a: An integer representing the starting number of the range.
+// b: An integer representing the ending number of the range.
+// arr: An optional parameter representing the array to store the numbers in the range. It defaults to an empty array.
+
+// Output:
+// An array containing consecutive numbers from a to b (inclusive).
+
+// Constraints:
+// a and b will be integers.
+// a will be less than or equal to b
+
+const numberRangeRecursive = (start, end, arr = []) => {
+  if (start <= end) {
     arr.push(start);
-    start++;
+    return numberRangeRecursive(start + 1, end, arr);
+  } else {
+    return arr;
   }
-
-  return arr;
 };
 
-console.log(numberRange(0, 5)); // Output: [0,1,2,3,4,5]
-console.log(numberRange(3, 7)); // Output: [3,4,5,6,7]
+console.log(numberRangeRecursive(0, 5)); // Output: [0,1,2,3,4,5]
+console.log(numberRangeRecursive(3, 7)); // Output: [3,4,5,6,7]
 
-console.log(numberRange(-2, 2)); // Output: [-2,-1,0,1,2]
+console.log(numberRangeRecursive(-2, 2)); // Output: [-2,-1,0,1,2]

@@ -1825,8 +1825,13 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
   - An array containing consecutive numbers from a to b (inclusive).
 
 - Constraints:
+
   - a and b will be integers.
   - a will be less than or equal to b
+
+  ## Day 29
+
+#### Write a function called numberRangeRecursive that generates an array containing consecutive numbers from a to b (inclusive) (same as above)
 
 # Interview Prep
 
