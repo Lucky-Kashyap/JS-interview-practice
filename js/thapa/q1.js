@@ -1012,6 +1012,22 @@
 // console.log(fibonacci(4)); // Output: 3
 // console.log(fibonacci(5)); // Output: 5
 
+// tribonacci number
+
+// const tribonacciNumber = (n) => {
+//   if (n == 0) return 0;
+
+//   let a = 0,
+//     b = 1,
+//     c = 1;
+
+//   for (i = 3; i <= n; i++) {
+//     [a, b, c] = [b, c, a + b + c];
+//   }
+
+//   return c;
+// };
+
 // Day 27
 
 // Write a function called repeatString that takes two parameters:
@@ -1123,16 +1139,18 @@
 // a and b will be integers.
 // a will be less than or equal to b
 
-const numberRangeRecursive = (start, end, arr = []) => {
-  if (start <= end) {
-    arr.push(start);
-    return numberRangeRecursive(start + 1, end, arr);
-  } else {
-    return arr;
-  }
-};
+// const numberRangeRecursive = (start, end, arr = []) => {
+//   if (start <= end) {
+//     arr.push(start);
+//     return numberRangeRecursive(start + 1, end, arr);
+//   } else {
+//     return arr;
+//   }
+// };
 
-console.log(numberRangeRecursive(0, 5)); // Output: [0,1,2,3,4,5]
-console.log(numberRangeRecursive(3, 7)); // Output: [3,4,5,6,7]
+// console.log(numberRangeRecursive(0, 5)); // Output: [0,1,2,3,4,5]
+// console.log(numberRangeRecursive(3, 7)); // Output: [3,4,5,6,7]
 
-console.log(numberRangeRecursive(-2, 2)); // Output: [-2,-1,0,1,2]
+// console.log(numberRangeRecursive(-2, 2)); // Output: [-2,-1,0,1,2]
+
+// Day 31
