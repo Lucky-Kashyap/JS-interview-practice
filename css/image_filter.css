@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+  background-color: #ecf0f1;
+  height: auto;
+  font-family: "Lucida Sans", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+.filter-btns {
+  display: flex;
+  gap: 3.2rem;
+  padding: 1vw 0;
+  text-transform: uppercase;
+  cursor: pointer;
+  list-style: none;
+  margin-bottom: 3.2rem;
+}
+.images {
+  display: flex;
+  gap: 3.2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img {
+  width: 32rem;
+  height: 100%;
+  border-radius: 0.6rem;
+}
