@@ -27,7 +27,7 @@ body {
   list-style: none;
   margin-bottom: 3.2rem;
 }
-.images {
+.menu-images {
   display: flex;
   gap: 3.2rem;
   flex-wrap: wrap;
@@ -35,7 +35,8 @@ body {
 }
 
 img {
-  width: 32rem;
-  height: 100%;
+  width: 24rem;
+  height: 24rem;
   border-radius: 0.6rem;
+  -wekit-border-radius: 0.6rem;
 }

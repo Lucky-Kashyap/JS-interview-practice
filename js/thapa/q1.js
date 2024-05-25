@@ -1141,12 +1141,12 @@
 // a will be less than or equal to b
 
 // const numberRangeRecursive = (start, end, arr = []) => {
-//   if (start <= end) {
-//     arr.push(start);
-//     return numberRangeRecursive(start + 1, end, arr);
-//   } else {
-//     return arr;
-//   }
+// if (start <= end) {
+//   arr.push(start);
+//   return numberRangeRecursive(start + 1, end, arr);
+// } else {
+//   return arr;
+// }
 // };
 
 // console.log(numberRangeRecursive(0, 5)); // Output: [0,1,2,3,4,5]
@@ -1175,29 +1175,61 @@
 // Constraints
 // The input string password will contain only alphanumeric characters and punctuation marks
 
-const simplePasswordValidator = (str) => {
-  let lowerCasePass = false;
-  let upperCasePass = false;
-  let numberPass = false;
+// const simplePasswordValidator = (str) => {
+// let lowerCasePass = false;
+// let upperCasePass = false;
+// let numberPass = false;
 
-  for (let elem of str) {
-    if (elem.charCodeAt(0) >= 65 && elem.charCodeAt(0) <= 90) {
-      upperCasePass = true;
-    } else if (elem.charCodeAt(0) >= 97 && elem.charCodeAt(0) <= 122) {
-      lowerCasePass = true;
-    } else if (!isNaN(Number(elem))) {
-      numberPass = true;
+// for (let elem of str) {
+//   if (elem.charCodeAt(0) >= 65 && elem.charCodeAt(0) <= 90) {
+//     upperCasePass = true;
+//   } else if (elem.charCodeAt(0) >= 97 && elem.charCodeAt(0) <= 122) {
+//     lowerCasePass = true;
+//   } else if (!isNaN(Number(elem))) {
+//     numberPass = true;
+//   }
+// }
+
+// if (!lowerCasePass || !upperCasePass || !numberPass || str.length < 8) {
+//   return false;
+// }
+// return true;
+// };
+
+// console.log(simplePasswordValidator("avhLK234jhb"));
+
+// console.log(simplePasswordValidator("avhhjbL4"));
+// console.log(simplePasswordValidator("2Dgvhhjbjhj"));
+// console.log(simplePasswordValidator("avhhjbjhj"));
+
+// Day 32
+
+// Image Filter Project
+
+//  filter-btns
+
+const menu_tabs = document.querySelector(".filter-btns");
+const images = document.querySelectorAll(".images");
+
+menu_tabs.addEventListener("click", (e) => {
+  // console.log(e.target.dataset.category);
+
+  if (e.target.dataset.category !== undefined) {
+    filterSearch(e.target.dataset.category);
+  }
+});
+
+const filterSearch = (search) => {
+  images.forEach((cur) => {
+    // console.log(cur.dataset.category);
+    if (cur.dataset.category === search || search === "all") {
+      cur.style.display = "block";
     }
-  }
-
-  if (!lowerCasePass || !upperCasePass || !numberPass || str.length < 8) {
-    return false;
-  }
-  return true;
+    // else if (search === "all") {
+    //   cur.style.display = "block";
+    // }
+    else {
+      cur.style.display = "none";
+    }
+  });
 };
-
-console.log(simplePasswordValidator("avhLK234jhb"));
-
-console.log(simplePasswordValidator("avhhjbL4"));
-console.log(simplePasswordValidator("2Dgvhhjbjhj"));
-console.log(simplePasswordValidator("avhhjbjhj"));
