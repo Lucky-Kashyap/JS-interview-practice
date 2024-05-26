@@ -1860,6 +1860,22 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
 
 #### Image Filter App
 
+## Day 33
+
+#### Write a function randomHexColor that generates a random hexadecimal color code each time it is called. The function should return a string representing the random color code in the format '#RRGGBB', where RR, GG & BB are two-digit hexadecimal numbers representing the red, green & blue components of the color, respectively.
+
+- your challenge is to implement the randomHexColor function using JS and ensure taht it produces a valid hexdecimal color code with a length of 7 characters (including the # symbol)
+
+- Constraints
+
+  - The output color should always start with # followed by six hexadecimal characters (RRGGBB).
+
+  - The function should not take any parameters.
+  - The generated color codes should be unique and evenly distributed across the entire range of possible hexadecml color codes
+
+- Hint
+  - converts the random number into a hexadecimal string representation
+
 # Interview Prep
 
 Happy Learning! ✨

@@ -1208,28 +1208,50 @@
 
 //  filter-btns
 
-const menu_tabs = document.querySelector(".filter-btns");
-const images = document.querySelectorAll(".images");
+// const menu_tabs = document.querySelector(".filter-btns");
+// const images = document.querySelectorAll(".images");
 
-menu_tabs.addEventListener("click", (e) => {
-  // console.log(e.target.dataset.category);
+// menu_tabs.addEventListener("click", (e) => {
+// console.log(e.target.dataset.category);
 
-  if (e.target.dataset.category !== undefined) {
-    filterSearch(e.target.dataset.category);
-  }
-});
+//   if (e.target.dataset.category !== undefined) {
+//     filterSearch(e.target.dataset.category);
+//   }
+// });
 
-const filterSearch = (search) => {
-  images.forEach((cur) => {
-    // console.log(cur.dataset.category);
-    if (cur.dataset.category === search || search === "all") {
-      cur.style.display = "block";
-    }
-    // else if (search === "all") {
-    //   cur.style.display = "block";
-    // }
-    else {
-      cur.style.display = "none";
-    }
-  });
+// const filterSearch = (search) => {
+//   images.forEach((cur) => {
+// console.log(cur.dataset.category);
+// if (cur.dataset.category === search || search === "all") {
+//   cur.style.display = "block";
+// }
+// else if (search === "all") {
+//   cur.style.display = "block";
+// }
+//     else {
+//       cur.style.display = "none";
+//     }
+//   });
+// };
+
+// Day 33
+
+// Write a function randomHexColor that generates a random hexadecimal color code each time it is called. The function should return a string representing the random color code in the format '#RRGGBB', where RR, GG & BB are two-digit hexadecimal numbers representing the red, green & blue components of the color, respectively.
+
+// your challenge is to implement the randomHexColor function using JS and ensure taht it produces a valid hexdecimal color code with a length of 7 characters (including the # symbol)
+
+// Constraints
+
+// The output color should always start with # followed by six hexadecimal characters (RRGGBB).
+
+// The function should not take any parameters.
+// The generated color codes should be unique and evenly distributed across the entire range of possible hexadecml color codes
+
+// Hint
+// converts the random number into a hexadecimal string representation
+
+const randomHexColor = () => {
+  return `#${Math.random().toString(16).slice(2, 8).padEnd(6, 0)}`;
 };
+
+console.log(randomHexColor());
