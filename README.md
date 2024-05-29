@@ -1889,6 +1889,22 @@ Output: Violet-Indigo-Blue-Green-Yellow-Orange-Red
 
 - You should use the provided removeDuplicates function signature without any additional parameters
 
+## Day 35
+
+#### Write a function isEmptyObject that takes an object as input and determines whether it is empty or not. An empty object is defined as an object with no own properties.
+
+- Almost everything in the JS is an object including arrays and functions or gets treated as an object
+
+- Your task is to implement the isEmptyObject function using JvaScript and return a message indicating whether the object is empty or not.
+
+- Constraints
+
+  - The input object may have any number of properties, including zero.
+
+  - The function should return a message indicating whether the object is empty or not.
+
+  - You should use the provided isEmptyObject function signature without any additional parameters
+
 # Interview Prep
 
 Happy Learning! ✨
